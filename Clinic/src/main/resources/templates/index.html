@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>MainPage</title>
+
+    <link rel="stylesheet" type="text/css" href ="http://localhost:8090/style.css"/>
+
+</head>
+<body>
+
+<div class="topnav">
+    <a id="rightBut"  onclick="LogOut()">Выход</a>
+    <a id="rightBut" href="/reg">Регистрация</a>
+    <a id="rightBut" href="/aut">Войти</a>
+    <a href="/" >Главная</a>
+   
+    <div id="doc_or_patient"> </div>
+    <h1 class="HeaderText">Поликлиника</h1>
+
+</div>
+
+<div class="content"  id="index_main">
+    <h2 >Городская поликлиника</h2>
+    <div class="container1 src_link" >
+        <div class="row">
+            <div class="column_img_src"  >
+                <img src="https://www.farosta.ru/sites/default/files/articles/15/poliklinika.jpg" width="350" height="250">
+            </div>
+            <div class="column" >
+                Государственное учреждение здравоохранения “Витебская городская центральная поликлиника” является головным учреждением и осуществляет руководство системой здравоохранения коммунальной собственности
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    <p style="float: right;">&#169 java spring project 2022</p>
+
+</div>
+
+<script type="text/javascript">
+    function LogOut(){
+        localStorage.clear();
+        document.location.href = "/aut";
+        document.getElementById('doc_or_patient').innerHTML="";
+    }
+    console.log(localStorage.getItem('Role_id'));
+    if(localStorage.getItem('who')==="pat"){
+        document.getElementById('doc_or_patient').innerHTML="<a href='/patient'>Reception</a>";
+    }
+    else if(localStorage.getItem('who')==="doc"){
+        document.getElementById('doc_or_patient').innerHTML="<a href='/doctor'>Doctor</a>";
+    }
+    else if(localStorage.getItem('who')==="adm"){
+        document.getElementById('doc_or_patient').innerHTML="<a href='/admin'>Admin</a>";
+    }
+    else{
+        document.getElementById('doc_or_patient').innerHTML="";
+    }
+</script>
+</body>
+</html>
+

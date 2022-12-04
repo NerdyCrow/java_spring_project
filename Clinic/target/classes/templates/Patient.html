@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>admin Patient</title>
+
+    <link rel="stylesheet" type="text/css" href ="http://localhost:8090/style.css"/>
+
+</head>
+<body>
+
+<div class="topnav">
+    <a id="rightBut" href="/reg">Register</a>
+    <a id="rightBut" href="/aut">Autorisation</a>
+    <a href="/" >Main</a>
+    <a  href="/admin">Back</a>
+    <a id="rightBut" onclick="LogOut()">LogOut</a>
+    <button onclick="getAll()" class="button button5">refresh</button>
+
+    <h1 class="HeaderText">Hospital</h1>
+</div>
+<div class="content1" >
+    <div  id="result"> </div>
+    <b>Id user:</b>
+    <input type="text" placeholder="Input id user" id="id" >
+    <hr>
+    <b>Home address:</b>
+    <input type="text" placeholder="Input home address" id="Home_adress">
+    <hr>
+    <b>Phone number:</b>
+    <input type="text" placeholder="Input Phone number" id="Passport">
+    <hr>
+    <button onclick="Send()" class="button button5">Add patient</button>
+    <hr>
+    <b>Del for id Patient:</b>
+    <input type="text" placeholder="Input id patient" id="id_del">
+    <hr>
+    <button onclick="Del()" class="button button5">Delete</button>
+    <hr>
+    <b>Id Patient:</b>
+    <input type="text" placeholder="Input id patient" id="id_patient" >
+    <hr>
+    <b>New home address:</b>
+    <input type="text" placeholder="Input home address" id="Home_adress_patient">
+    <hr>
+    <b>New Phone number:</b>
+    <input type="text" placeholder="Input new Phone number" id="Passport_patient">
+    <hr>
+    <button onclick="Update()" class="button button5">Update patient</button>
+
+
+</div>
+<div class="footer">
+    <p style="float: right;">&#169 java spring project 2022</p>
+
+</div>
+<script type="text/javascript">
+    getAll();
+    function LogOut(){
+        localStorage.clear();
+        document.location.href = "/aut";
+    }
+    async function getAll() {
+        document.getElementById('result').innerHTML = "";
+        document.getElementById('result_for_login').innerHTML="";
+        let response = await fetch("/api/v1/admin/patient",
+            {
+                method: 'POST',
+                headers: {'Authorization': 'Bearer_' + localStorage.getItem('token'),'Content-Type': 'application/json', 'Accept': 'application/json'},
+                body: JSON.stringify({
+                    User_id:  localStorage.getItem('User_id'),
+                    Role_id: localStorage.getItem('Role_id')
+                })
+            });
+        let data = await response.json();
+        document.getElementById("result_for_login").innerHTML = "";
+        if(response.status === 200)
+        {document.getElementById("result_for_login").innerHTML = "";
+            console.log(localStorage.getItem('token'));
+            console.log(localStorage.getItem('Role_id'));
+            let json = JSON.parse(data.patients);
+            table_result =
+                "<tr><th onclick='sortTable(0)'>Id patient</th>" +
+                "<th onclick='sortTable(1)'>Home address</th>" +
+                "<th onclick='sortTable(2)'>Phone number</th>" +
+                "<th onclick='sortTable(3)'>Id user</th></tr>";
+            for (let i = 0; i < json.length; i++) {
+                table_result += "<tr>";
+                table_result += "<td>" + json[i].id + "</td>";
+                table_result += "<td>" + json[i].home_adress + "</td>";
+                table_result += "<td>" + json[i].passport + "</td>";
+                table_result += "<td>" + json[i].id_user + "</td>";
+                table_result += "</tr>";
+            }
+
+            document.getElementById('result_for_login').innerHTML = table_result;
+        }
+        else
+        {
+            document.getElementById("result_for_login").innerHTML="Get:error";
+        }
+    }
+
+    async function Update() {
+        let send={
+            id:document.getElementById('id_patient').value,
+            passport:document.getElementById('Passport_patient').value,
+            homeadress:document.getElementById('Home_adress_patient').value,
+        };
+        console.log(send);
+        let response = await fetch('/api/v1/admin/updatePatient', {
+            method: 'POST',
+            headers: {'Authorization': 'Bearer_' + localStorage.getItem('token'),
+                'Content-Type': 'application/json', 'Accept': 'application/json'
+            },
+            body: JSON.stringify(send)
+        });
+        let data = await response.json();
+        if(response.status === 200)
+        {
+            document.getElementById('result').innerHTML ="Update:"+ data.userError;
+        }
+        else
+        {
+            if(typeof  data.userError != "undefined"){
+                document.getElementById('result').innerHTML = "Update:"+data.userError+"<br>";
+            }
+            else{
+                if(response.status === 403)
+                {
+                    document.getElementById('result').innerHTML ="Error:no rights";
+                }
+                data.errors.forEach(err =>
+                {
+                    document.getElementById('result').innerHTML= "Update:";
+                    document.getElementById('result').innerHTML+=err.message;
+                });
+            }
+        }
+        document.getElementById('id_patient').value="";
+        document.getElementById('Passport_patient').value="";
+        document.getElementById('Home_adress_patient').value="";
+    }
+    async function Del() {
+        let send={
+            id:document.getElementById('id_del').value
+        };
+        console.log(send);
+        let response = await fetch('/api/v1/admin/delPatient', {
+            method: 'POST',
+            headers: {'Authorization': 'Bearer_' + localStorage.getItem('token'),
+                'Content-Type': 'application/json', 'Accept': 'application/json'
+            },
+            body: JSON.stringify(send)
+        });
+        let data = await response.json();
+        if(response.status === 200)
+        {
+            document.getElementById('result').innerHTML ="Delete:"+ data.userError;
+        }
+        else
+        {
+            if(typeof  data.userError != "undefined"){
+                document.getElementById('result').innerHTML ="Delete:"+ data.userError+"<br>";
+            }
+            else{
+                if(response.status === 403)
+                {
+                    document.getElementById('result').innerHTML ="Error:no rights";
+                }
+                data.errors.forEach(err =>
+                {
+                    document.getElementById('result').innerHTML="Delete:";
+                    document.getElementById('result').innerHTML+=err.message+"<br>";
+                });
+            }
+
+        }
+        document.getElementById('id_del').value="";
+    }
+    async function Send() {
+        let send={
+            id:document.getElementById('id').value,
+            passport:document.getElementById('Passport').value,
+            homeadress:document.getElementById('Home_adress').value,
+        };
+        console.log(send);
+        let response = await fetch('/api/v1/admin/addPatient', {
+            method: 'POST',
+            headers: {'Authorization': 'Bearer_' + localStorage.getItem('token'),
+                'Content-Type': 'application/json', 'Accept': 'application/json'
+            },
+            body: JSON.stringify(send)
+        });
+        let data = await response.json();
+        if(response.status === 200)
+        {
+            document.getElementById('result').innerHTML ="Add:"+ data.userError;
+        }
+        else
+        {
+            if(typeof  data.userError != "undefined"){
+                document.getElementById('result').innerHTML ="Add:"+ data.userError+"<br>";
+            }
+            else{
+                if(response.status === 403)
+                {
+                    document.getElementById('result').innerHTML ="Error:no rights";
+                }
+                data.errors.forEach(err =>
+                {document.getElementById('result').innerHTML="Add:";
+                    document.getElementById('result').innerHTML+=err.message+"<br>";
+                });
+            }
+        }
+        document.getElementById('id').value="";
+        document.getElementById('Passport').value="";
+        document.getElementById('Home_adress').value="";
+    }
+
+    function sortTable(n) {
+        var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+        table = document.getElementById("result_for_login");
+        switching = true;
+        //Set the sorting direction to ascending:
+        dir = "asc";
+        /*Make a loop that will continue until
+        no switching has been done:*/
+        while (switching) {
+            //start by saying: no switching is done:
+            switching = false;
+            rows = table.getElementsByTagName("TR");
+            /*Loop through all table rows (except the
+            first, which contains table headers):*/
+            for (i = 1; i < (rows.length - 1); i++) {
+                //start by saying there should be no switching:
+                shouldSwitch = false;
+                /*Get the two elements you want to compare,
+                one from current row and one from the next:*/
+                x = rows[i].getElementsByTagName("TD")[n];
+                y = rows[i + 1].getElementsByTagName("TD")[n];
+                /*check if the two rows should switch place,
+                based on the direction, asc or desc:*/
+                if (dir == "asc") {
+                    if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                        //if so, mark as a switch and break the loop:
+                        shouldSwitch= true;
+                        break;
+                    }
+                } else if (dir == "desc") {
+                    if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                        //if so, mark as a switch and break the loop:
+                        shouldSwitch = true;
+                        break;
+                    }
+                }
+            }
+            if (shouldSwitch) {
+                /*If a switch has been marked, make the switch
+                and mark that a switch has been done:*/
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+                //Each time a switch is done, increase this count by 1:
+                switchcount ++;
+            } else {
+                /*If no switching has been done AND the direction is "asc",
+                set the direction to "desc" and run the while loop again.*/
+                if (switchcount == 0 && dir == "asc") {
+                    dir = "desc";
+                    switching = true;
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>

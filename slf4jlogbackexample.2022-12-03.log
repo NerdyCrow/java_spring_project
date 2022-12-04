@@ -1,0 +1,1056 @@
+03.12.2022 10:15:22.241 [background-preinit] INFO - HV000001: Hibernate Validator 5.4.1.Final
+03.12.2022 10:15:22.285 [main] INFO - Starting HospitalApplication on VICTORY with PID 18428 (D:\3 kurs\labs\JAVA\js\Hospital\Hospital\target\classes started by VICTORY in D:\3 kurs\labs\JAVA\js\Hospital)
+03.12.2022 10:15:22.287 [main] INFO - No active profile set, falling back to default profiles: default
+03.12.2022 10:15:24.059 [main] INFO - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+03.12.2022 10:15:24.318 [main] INFO - Finished Spring Data repository scanning in 239ms. Found 9 JPA repository interfaces.
+03.12.2022 10:15:25.596 [main] INFO - Tomcat initialized with port(s): 8075 (http)
+03.12.2022 10:15:25.615 [main] INFO - Initializing ProtocolHandler ["http-nio-8075"]
+03.12.2022 10:15:25.616 [main] INFO - Starting service [Tomcat]
+03.12.2022 10:15:25.617 [main] INFO - Starting Servlet engine: [Apache Tomcat/9.0.38]
+03.12.2022 10:15:25.967 [main] INFO - Initializing Spring embedded WebApplicationContext
+03.12.2022 10:15:25.968 [main] INFO - Root WebApplicationContext: initialization completed in 3584 ms
+03.12.2022 10:15:26.389 [main] INFO - Initializing ExecutorService 'applicationTaskExecutor'
+03.12.2022 10:15:26.473 [task-1] INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+03.12.2022 10:15:26.602 [task-1] INFO - HHH000412: Hibernate ORM core version 5.4.21.Final
+03.12.2022 10:15:26.862 [main] WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03.12.2022 10:15:26.953 [task-1] INFO - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+03.12.2022 10:15:27.191 [task-1] INFO - HikariPool-1 - Starting...
+03.12.2022 10:15:27.447 [main] INFO - Adding welcome page template: index
+03.12.2022 10:15:28.355 [task-1] ERROR- HikariPool-1 - Exception during pool initialization.
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:118)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:152)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:955)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	... 33 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:539)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 36 common frames omitted
+03.12.2022 10:15:28.358 [task-1] WARN - HHH000342: Could not obtain connection to query metadata : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+03.12.2022 10:15:29.234 [main] INFO - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@a316f6b, org.springframework.security.web.context.SecurityContextPersistenceFilter@10618775, org.springframework.security.web.header.HeaderWriterFilter@26fadd98, org.springframework.security.web.authentication.logout.LogoutFilter@164d01ba, by.slemnev.Clinic.security.jwt.JwtTokenFilter@63f9ddf9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20a3e10c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f559c74, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@410fc508, org.springframework.security.web.session.SessionManagementFilter@65f3e805, org.springframework.security.web.access.ExceptionTranslationFilter@722531ab, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6c5ca0b6]
+03.12.2022 10:15:29.339 [main] INFO - Starting ProtocolHandler ["http-nio-8075"]
+03.12.2022 10:15:29.398 [main] INFO - Tomcat started on port(s): 8075 (http) with context path ''
+03.12.2022 10:15:29.402 [main] INFO - Triggering deferred initialization of Spring Data repositories…
+03.12.2022 10:15:29.490 [main] WARN - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'doctorCrudRepository' defined in by.slemnev.Clinic.repository.DoctorCrudRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+03.12.2022 10:15:29.495 [main] INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+03.12.2022 10:15:29.496 [main] WARN - Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+03.12.2022 10:15:29.496 [main] INFO - Shutting down ExecutorService 'applicationTaskExecutor'
+03.12.2022 10:15:29.502 [main] INFO - Pausing ProtocolHandler ["http-nio-8075"]
+03.12.2022 10:15:29.551 [main] INFO - Stopping service [Tomcat]
+03.12.2022 10:15:29.564 [main] INFO - Stopping ProtocolHandler ["http-nio-8075"]
+03.12.2022 10:15:29.600 [main] INFO - Destroying ProtocolHandler ["http-nio-8075"]
+03.12.2022 10:15:29.614 [main] INFO - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+03.12.2022 10:15:29.627 [main] ERROR- Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'doctorCrudRepository' defined in by.slemnev.Clinic.repository.DoctorCrudRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1697)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1442)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:624)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:612)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:51)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:36)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:898)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at by.slemnev.Clinic.HospitalApplication.main(HospitalApplication.java:10)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 28 common frames omitted
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:118)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:100)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:54)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:137)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	... 17 common frames omitted
+03.12.2022 10:16:24.457 [background-preinit] INFO - HV000001: Hibernate Validator 5.4.1.Final
+03.12.2022 10:16:24.499 [main] INFO - Starting HospitalApplication on VICTORY with PID 18072 (D:\3 kurs\labs\JAVA\js\Hospital\Hospital\target\classes started by VICTORY in D:\3 kurs\labs\JAVA\js\Hospital)
+03.12.2022 10:16:24.502 [main] INFO - No active profile set, falling back to default profiles: default
+03.12.2022 10:16:26.102 [main] INFO - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+03.12.2022 10:16:26.344 [main] INFO - Finished Spring Data repository scanning in 228ms. Found 9 JPA repository interfaces.
+03.12.2022 10:16:27.490 [main] INFO - Tomcat initialized with port(s): 8075 (http)
+03.12.2022 10:16:27.505 [main] INFO - Initializing ProtocolHandler ["http-nio-8075"]
+03.12.2022 10:16:27.507 [main] INFO - Starting service [Tomcat]
+03.12.2022 10:16:27.507 [main] INFO - Starting Servlet engine: [Apache Tomcat/9.0.38]
+03.12.2022 10:16:27.820 [main] INFO - Initializing Spring embedded WebApplicationContext
+03.12.2022 10:16:27.820 [main] INFO - Root WebApplicationContext: initialization completed in 3219 ms
+03.12.2022 10:16:28.146 [main] INFO - Initializing ExecutorService 'applicationTaskExecutor'
+03.12.2022 10:16:28.235 [task-1] INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+03.12.2022 10:16:28.338 [task-1] INFO - HHH000412: Hibernate ORM core version 5.4.21.Final
+03.12.2022 10:16:28.579 [main] WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03.12.2022 10:16:28.584 [task-1] INFO - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+03.12.2022 10:16:28.771 [task-1] INFO - HikariPool-1 - Starting...
+03.12.2022 10:16:29.137 [main] INFO - Adding welcome page template: index
+03.12.2022 10:16:29.991 [task-1] ERROR- HikariPool-1 - Exception during pool initialization.
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:118)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:152)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:955)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	... 33 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:539)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 36 common frames omitted
+03.12.2022 10:16:29.994 [task-1] WARN - HHH000342: Could not obtain connection to query metadata : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+03.12.2022 10:16:30.819 [main] INFO - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2674d4f6, org.springframework.security.web.context.SecurityContextPersistenceFilter@720f56e2, org.springframework.security.web.header.HeaderWriterFilter@65f3e805, org.springframework.security.web.authentication.logout.LogoutFilter@70091872, by.slemnev.Clinic.security.jwt.JwtTokenFilter@5d9d2119, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4466cf5d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@734ce281, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5a4464c5, org.springframework.security.web.session.SessionManagementFilter@f559c74, org.springframework.security.web.access.ExceptionTranslationFilter@b506ed0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@410fc508]
+03.12.2022 10:16:30.902 [main] INFO - Starting ProtocolHandler ["http-nio-8075"]
+03.12.2022 10:16:30.955 [main] INFO - Tomcat started on port(s): 8075 (http) with context path ''
+03.12.2022 10:16:30.958 [main] INFO - Triggering deferred initialization of Spring Data repositories…
+03.12.2022 10:16:31.027 [main] WARN - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userCrudRepository' defined in by.slemnev.Clinic.repository.UserCrudRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+03.12.2022 10:16:31.032 [main] INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+03.12.2022 10:16:31.032 [main] WARN - Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+03.12.2022 10:16:31.033 [main] INFO - Shutting down ExecutorService 'applicationTaskExecutor'
+03.12.2022 10:16:31.037 [main] INFO - Pausing ProtocolHandler ["http-nio-8075"]
+03.12.2022 10:16:31.087 [main] INFO - Stopping service [Tomcat]
+03.12.2022 10:16:31.094 [main] INFO - Stopping ProtocolHandler ["http-nio-8075"]
+03.12.2022 10:16:31.133 [main] INFO - Destroying ProtocolHandler ["http-nio-8075"]
+03.12.2022 10:16:31.155 [main] INFO - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+03.12.2022 10:16:31.168 [main] ERROR- Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userCrudRepository' defined in by.slemnev.Clinic.repository.UserCrudRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1697)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1442)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:624)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:612)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:51)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:36)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:898)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at by.slemnev.Clinic.HospitalApplication.main(HospitalApplication.java:10)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 28 common frames omitted
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:118)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:100)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:54)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:137)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	... 17 common frames omitted
+03.12.2022 10:20:21.508 [background-preinit] INFO - HV000001: Hibernate Validator 5.4.1.Final
+03.12.2022 10:20:21.547 [main] INFO - Starting HospitalApplication on VICTORY with PID 11636 (D:\3 kurs\labs\JAVA\js\Hospital\Hospital\target\classes started by VICTORY in D:\3 kurs\labs\JAVA\js\Hospital)
+03.12.2022 10:20:21.549 [main] INFO - No active profile set, falling back to default profiles: default
+03.12.2022 10:20:23.225 [main] INFO - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+03.12.2022 10:20:23.439 [main] INFO - Finished Spring Data repository scanning in 202ms. Found 9 JPA repository interfaces.
+03.12.2022 10:20:24.608 [main] INFO - Tomcat initialized with port(s): 8075 (http)
+03.12.2022 10:20:24.625 [main] INFO - Initializing ProtocolHandler ["http-nio-8075"]
+03.12.2022 10:20:24.626 [main] INFO - Starting service [Tomcat]
+03.12.2022 10:20:24.626 [main] INFO - Starting Servlet engine: [Apache Tomcat/9.0.38]
+03.12.2022 10:20:24.949 [main] INFO - Initializing Spring embedded WebApplicationContext
+03.12.2022 10:20:24.949 [main] INFO - Root WebApplicationContext: initialization completed in 3300 ms
+03.12.2022 10:20:25.260 [main] INFO - Initializing ExecutorService 'applicationTaskExecutor'
+03.12.2022 10:20:25.354 [task-1] INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+03.12.2022 10:20:25.433 [task-1] INFO - HHH000412: Hibernate ORM core version 5.4.21.Final
+03.12.2022 10:20:25.681 [task-1] INFO - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+03.12.2022 10:20:25.690 [main] WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03.12.2022 10:20:25.880 [task-1] INFO - HikariPool-1 - Starting...
+03.12.2022 10:20:26.210 [main] INFO - Adding welcome page template: index
+03.12.2022 10:20:27.057 [task-1] ERROR- HikariPool-1 - Exception during pool initialization.
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:118)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:152)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:955)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	... 33 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:539)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 36 common frames omitted
+03.12.2022 10:20:27.060 [task-1] WARN - HHH000342: Could not obtain connection to query metadata : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+03.12.2022 10:20:27.832 [main] INFO - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2a484710, org.springframework.security.web.context.SecurityContextPersistenceFilter@52621501, org.springframework.security.web.header.HeaderWriterFilter@59918c8f, org.springframework.security.web.authentication.logout.LogoutFilter@20216016, by.slemnev.Clinic.security.jwt.JwtTokenFilter@661e1399, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@164d01ba, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c33fcf8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ffd4b12, org.springframework.security.web.session.SessionManagementFilter@7a358613, org.springframework.security.web.access.ExceptionTranslationFilter@2c60ce47, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5ebbde60]
+03.12.2022 10:20:27.912 [main] INFO - Starting ProtocolHandler ["http-nio-8075"]
+03.12.2022 10:20:27.973 [main] INFO - Tomcat started on port(s): 8075 (http) with context path ''
+03.12.2022 10:20:27.977 [main] INFO - Triggering deferred initialization of Spring Data repositories…
+03.12.2022 10:20:28.065 [main] WARN - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in by.slemnev.Clinic.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+03.12.2022 10:20:28.070 [main] INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+03.12.2022 10:20:28.070 [main] WARN - Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+03.12.2022 10:20:28.070 [main] INFO - Shutting down ExecutorService 'applicationTaskExecutor'
+03.12.2022 10:20:28.077 [main] INFO - Pausing ProtocolHandler ["http-nio-8075"]
+03.12.2022 10:20:28.123 [main] INFO - Stopping service [Tomcat]
+03.12.2022 10:20:28.133 [main] INFO - Stopping ProtocolHandler ["http-nio-8075"]
+03.12.2022 10:20:28.172 [main] INFO - Destroying ProtocolHandler ["http-nio-8075"]
+03.12.2022 10:20:28.191 [main] INFO - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+03.12.2022 10:20:28.205 [main] ERROR- Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in by.slemnev.Clinic.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1697)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1442)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:624)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:612)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:51)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:36)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:898)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at by.slemnev.Clinic.HospitalApplication.main(HospitalApplication.java:10)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 28 common frames omitted
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:118)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:100)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:54)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:137)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	... 17 common frames omitted
+03.12.2022 10:21:50.033 [background-preinit] INFO - HV000001: Hibernate Validator 5.4.1.Final
+03.12.2022 10:21:50.092 [main] INFO - Starting HospitalApplication on VICTORY with PID 5100 (D:\3 kurs\labs\JAVA\js\Hospital\Hospital\target\classes started by VICTORY in D:\3 kurs\labs\JAVA\js\Hospital)
+03.12.2022 10:21:50.093 [main] INFO - No active profile set, falling back to default profiles: default
+03.12.2022 10:21:51.652 [main] INFO - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+03.12.2022 10:21:51.896 [main] INFO - Finished Spring Data repository scanning in 231ms. Found 9 JPA repository interfaces.
+03.12.2022 10:21:53.039 [main] INFO - Tomcat initialized with port(s): 8075 (http)
+03.12.2022 10:21:53.058 [main] INFO - Initializing ProtocolHandler ["http-nio-8075"]
+03.12.2022 10:21:53.059 [main] INFO - Starting service [Tomcat]
+03.12.2022 10:21:53.060 [main] INFO - Starting Servlet engine: [Apache Tomcat/9.0.38]
+03.12.2022 10:21:53.393 [main] INFO - Initializing Spring embedded WebApplicationContext
+03.12.2022 10:21:53.393 [main] INFO - Root WebApplicationContext: initialization completed in 3190 ms
+03.12.2022 10:21:53.684 [main] INFO - Initializing ExecutorService 'applicationTaskExecutor'
+03.12.2022 10:21:53.754 [task-1] INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+03.12.2022 10:21:53.859 [task-1] INFO - HHH000412: Hibernate ORM core version 5.4.21.Final
+03.12.2022 10:21:54.106 [task-1] INFO - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+03.12.2022 10:21:54.109 [main] WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03.12.2022 10:21:54.281 [task-1] INFO - HikariPool-1 - Starting...
+03.12.2022 10:21:54.633 [main] INFO - Adding welcome page template: index
+03.12.2022 10:21:55.460 [task-1] ERROR- HikariPool-1 - Exception during pool initialization.
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:118)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:152)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:955)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	... 33 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:539)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 36 common frames omitted
+03.12.2022 10:21:55.463 [task-1] WARN - HHH000342: Could not obtain connection to query metadata : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+03.12.2022 10:21:56.335 [main] INFO - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6befbb12, org.springframework.security.web.context.SecurityContextPersistenceFilter@54247647, org.springframework.security.web.header.HeaderWriterFilter@1ec88aa1, org.springframework.security.web.authentication.logout.LogoutFilter@409732fb, by.slemnev.Clinic.security.jwt.JwtTokenFilter@21d9cd04, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@e0d1dc4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@8f57e4c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@799f354a, org.springframework.security.web.session.SessionManagementFilter@134a8ead, org.springframework.security.web.access.ExceptionTranslationFilter@5f193335, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@25699aa7]
+03.12.2022 10:21:56.428 [main] INFO - Starting ProtocolHandler ["http-nio-8075"]
+03.12.2022 10:21:56.481 [main] INFO - Tomcat started on port(s): 8075 (http) with context path ''
+03.12.2022 10:21:56.485 [main] INFO - Triggering deferred initialization of Spring Data repositories…
+03.12.2022 10:21:56.590 [main] WARN - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'patientCrudRepository' defined in by.slemnev.Clinic.repository.PatientCrudRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+03.12.2022 10:21:56.594 [main] INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+03.12.2022 10:21:56.594 [main] WARN - Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+03.12.2022 10:21:56.594 [main] INFO - Shutting down ExecutorService 'applicationTaskExecutor'
+03.12.2022 10:21:56.603 [main] INFO - Pausing ProtocolHandler ["http-nio-8075"]
+03.12.2022 10:21:56.658 [main] INFO - Stopping service [Tomcat]
+03.12.2022 10:21:56.666 [main] INFO - Stopping ProtocolHandler ["http-nio-8075"]
+03.12.2022 10:21:56.707 [main] INFO - Destroying ProtocolHandler ["http-nio-8075"]
+03.12.2022 10:21:56.727 [main] INFO - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+03.12.2022 10:21:56.743 [main] ERROR- Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'patientCrudRepository' defined in by.slemnev.Clinic.repository.PatientCrudRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1697)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1442)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:624)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:612)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:51)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:36)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:898)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at by.slemnev.Clinic.HospitalApplication.main(HospitalApplication.java:10)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 28 common frames omitted
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:118)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:100)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:54)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:137)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	... 17 common frames omitted
+03.12.2022 10:22:36.395 [background-preinit] INFO - HV000001: Hibernate Validator 5.4.1.Final
+03.12.2022 10:22:36.446 [main] INFO - Starting HospitalApplication on VICTORY with PID 4448 (D:\3 kurs\labs\JAVA\js\Hospital\Hospital\target\classes started by VICTORY in D:\3 kurs\labs\JAVA\js\Hospital)
+03.12.2022 10:22:36.449 [main] INFO - No active profile set, falling back to default profiles: default
+03.12.2022 10:22:38.053 [main] INFO - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+03.12.2022 10:22:38.273 [main] INFO - Finished Spring Data repository scanning in 205ms. Found 9 JPA repository interfaces.
+03.12.2022 10:22:39.464 [main] INFO - Tomcat initialized with port(s): 8075 (http)
+03.12.2022 10:22:39.481 [main] INFO - Initializing ProtocolHandler ["http-nio-8075"]
+03.12.2022 10:22:39.482 [main] INFO - Starting service [Tomcat]
+03.12.2022 10:22:39.482 [main] INFO - Starting Servlet engine: [Apache Tomcat/9.0.38]
+03.12.2022 10:22:39.787 [main] INFO - Initializing Spring embedded WebApplicationContext
+03.12.2022 10:22:39.788 [main] INFO - Root WebApplicationContext: initialization completed in 3226 ms
+03.12.2022 10:22:40.137 [main] INFO - Initializing ExecutorService 'applicationTaskExecutor'
+03.12.2022 10:22:40.235 [task-1] INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+03.12.2022 10:22:40.322 [task-1] INFO - HHH000412: Hibernate ORM core version 5.4.21.Final
+03.12.2022 10:22:40.561 [main] WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03.12.2022 10:22:40.572 [task-1] INFO - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+03.12.2022 10:22:40.760 [task-1] INFO - HikariPool-1 - Starting...
+03.12.2022 10:22:41.130 [main] INFO - Adding welcome page template: index
+03.12.2022 10:22:41.922 [task-1] ERROR- HikariPool-1 - Exception during pool initialization.
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:118)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:152)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:955)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	... 33 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:539)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 36 common frames omitted
+03.12.2022 10:22:41.924 [task-1] WARN - HHH000342: Could not obtain connection to query metadata : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+03.12.2022 10:22:42.713 [main] INFO - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@482ba4b1, org.springframework.security.web.context.SecurityContextPersistenceFilter@3c33fcf8, org.springframework.security.web.header.HeaderWriterFilter@4a1dda83, org.springframework.security.web.authentication.logout.LogoutFilter@1cde374, by.slemnev.Clinic.security.jwt.JwtTokenFilter@307af381, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@716f94c1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@440ef8d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1510b9a2, org.springframework.security.web.session.SessionManagementFilter@1abcd059, org.springframework.security.web.access.ExceptionTranslationFilter@5345dfe8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2a484710]
+03.12.2022 10:22:42.796 [main] INFO - Starting ProtocolHandler ["http-nio-8075"]
+03.12.2022 10:22:42.857 [main] INFO - Tomcat started on port(s): 8075 (http) with context path ''
+03.12.2022 10:22:42.861 [main] INFO - Triggering deferred initialization of Spring Data repositories…
+03.12.2022 10:22:42.942 [main] WARN - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userCrudRepository' defined in by.slemnev.Clinic.repository.UserCrudRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+03.12.2022 10:22:42.946 [main] INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+03.12.2022 10:22:42.946 [main] WARN - Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+03.12.2022 10:22:42.947 [main] INFO - Shutting down ExecutorService 'applicationTaskExecutor'
+03.12.2022 10:22:42.953 [main] INFO - Pausing ProtocolHandler ["http-nio-8075"]
+03.12.2022 10:22:43.002 [main] INFO - Stopping service [Tomcat]
+03.12.2022 10:22:43.011 [main] INFO - Stopping ProtocolHandler ["http-nio-8075"]
+03.12.2022 10:22:43.051 [main] INFO - Destroying ProtocolHandler ["http-nio-8075"]
+03.12.2022 10:22:43.075 [main] INFO - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+03.12.2022 10:22:43.087 [main] ERROR- Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userCrudRepository' defined in by.slemnev.Clinic.repository.UserCrudRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1697)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1442)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:624)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:612)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:51)
+	at org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent(DeferredRepositoryInitializationListener.java:36)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:898)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at by.slemnev.Clinic.HospitalApplication.main(HospitalApplication.java:10)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 28 common frames omitted
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:118)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:100)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:54)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:137)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	... 17 common frames omitted
+03.12.2022 10:27:02.547 [background-preinit] INFO - HV000001: Hibernate Validator 5.4.1.Final
+03.12.2022 10:27:02.589 [main] INFO - Starting HospitalApplication on VICTORY with PID 17244 (D:\3 kurs\labs\JAVA\js\Hospital\Hospital\target\classes started by VICTORY in D:\3 kurs\labs\JAVA\js\Hospital)
+03.12.2022 10:27:02.591 [main] INFO - No active profile set, falling back to default profiles: default
+03.12.2022 10:27:04.271 [main] INFO - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+03.12.2022 10:27:04.538 [main] INFO - Finished Spring Data repository scanning in 250ms. Found 9 JPA repository interfaces.
+03.12.2022 10:27:05.779 [main] INFO - Tomcat initialized with port(s): 8075 (http)
+03.12.2022 10:27:05.801 [main] INFO - Initializing ProtocolHandler ["http-nio-8075"]
+03.12.2022 10:27:05.802 [main] INFO - Starting service [Tomcat]
+03.12.2022 10:27:05.803 [main] INFO - Starting Servlet engine: [Apache Tomcat/9.0.38]
+03.12.2022 10:27:06.155 [main] INFO - Initializing Spring embedded WebApplicationContext
+03.12.2022 10:27:06.156 [main] INFO - Root WebApplicationContext: initialization completed in 3445 ms
+03.12.2022 10:27:06.542 [main] INFO - Initializing ExecutorService 'applicationTaskExecutor'
+03.12.2022 10:27:06.611 [task-1] INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+03.12.2022 10:27:06.705 [task-1] INFO - HHH000412: Hibernate ORM core version 5.4.21.Final
+03.12.2022 10:27:06.973 [task-1] INFO - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+03.12.2022 10:27:06.980 [main] WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03.12.2022 10:27:07.178 [task-1] INFO - HikariPool-1 - Starting...
+03.12.2022 10:27:07.625 [main] INFO - Adding welcome page template: index
+03.12.2022 10:27:08.105 [task-1] INFO - HikariPool-1 - Start completed.
+03.12.2022 10:27:08.223 [task-1] INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+03.12.2022 10:27:09.372 [main] INFO - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@17216605, org.springframework.security.web.context.SecurityContextPersistenceFilter@722531ab, org.springframework.security.web.header.HeaderWriterFilter@68aec50, org.springframework.security.web.authentication.logout.LogoutFilter@59918c8f, by.slemnev.Clinic.security.jwt.JwtTokenFilter@10a907ec, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@26fadd98, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5882b202, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59b492ec, org.springframework.security.web.session.SessionManagementFilter@74fb5b59, org.springframework.security.web.access.ExceptionTranslationFilter@4c176ff1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7b5021d1]
+03.12.2022 10:27:09.474 [main] INFO - Starting ProtocolHandler ["http-nio-8075"]
+03.12.2022 10:27:09.533 [main] INFO - Tomcat started on port(s): 8075 (http) with context path ''
+03.12.2022 10:27:09.537 [main] INFO - Triggering deferred initialization of Spring Data repositories…
+03.12.2022 10:27:10.185 [task-1] INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+03.12.2022 10:27:10.198 [task-1] INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+03.12.2022 10:27:11.035 [main] INFO - Spring Data repositories initialized!
+03.12.2022 10:27:11.070 [main] INFO - Started HospitalApplication in 9.178 seconds (JVM running for 11.254)
+03.12.2022 10:27:54.102 [http-nio-8075-exec-1] INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+03.12.2022 10:27:54.103 [http-nio-8075-exec-1] INFO - Initializing Servlet 'dispatcherServlet'
+03.12.2022 10:27:54.120 [http-nio-8075-exec-1] INFO - Completed initialization in 17 ms
+03.12.2022 10:29:33.701 [SpringContextShutdownHook] INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+03.12.2022 10:29:33.706 [SpringContextShutdownHook] INFO - Shutting down ExecutorService 'applicationTaskExecutor'
+03.12.2022 10:29:33.707 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown initiated...
+03.12.2022 10:29:33.739 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown completed.
+03.12.2022 10:29:40.020 [background-preinit] INFO - HV000001: Hibernate Validator 5.4.1.Final
+03.12.2022 10:29:40.059 [main] INFO - Starting HospitalApplication on VICTORY with PID 7760 (D:\3 kurs\labs\JAVA\js\Hospital\Hospital\target\classes started by VICTORY in D:\3 kurs\labs\JAVA\js\Hospital)
+03.12.2022 10:29:40.060 [main] INFO - No active profile set, falling back to default profiles: default
+03.12.2022 10:29:41.602 [main] INFO - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+03.12.2022 10:29:41.836 [main] INFO - Finished Spring Data repository scanning in 220ms. Found 9 JPA repository interfaces.
+03.12.2022 10:29:42.989 [main] INFO - Tomcat initialized with port(s): 8075 (http)
+03.12.2022 10:29:43.005 [main] INFO - Initializing ProtocolHandler ["http-nio-8075"]
+03.12.2022 10:29:43.006 [main] INFO - Starting service [Tomcat]
+03.12.2022 10:29:43.007 [main] INFO - Starting Servlet engine: [Apache Tomcat/9.0.38]
+03.12.2022 10:29:43.313 [main] INFO - Initializing Spring embedded WebApplicationContext
+03.12.2022 10:29:43.314 [main] INFO - Root WebApplicationContext: initialization completed in 3158 ms
+03.12.2022 10:29:43.640 [main] INFO - Initializing ExecutorService 'applicationTaskExecutor'
+03.12.2022 10:29:43.717 [task-1] INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+03.12.2022 10:29:43.800 [task-1] INFO - HHH000412: Hibernate ORM core version 5.4.21.Final
+03.12.2022 10:29:44.063 [task-1] INFO - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+03.12.2022 10:29:44.070 [main] WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03.12.2022 10:29:44.249 [task-1] INFO - HikariPool-1 - Starting...
+03.12.2022 10:29:44.620 [main] INFO - Adding welcome page template: index
+03.12.2022 10:29:45.197 [task-1] INFO - HikariPool-1 - Start completed.
+03.12.2022 10:29:45.253 [task-1] INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+03.12.2022 10:29:46.415 [main] INFO - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a572ea0, org.springframework.security.web.context.SecurityContextPersistenceFilter@5882b202, org.springframework.security.web.header.HeaderWriterFilter@69d103f0, org.springframework.security.web.authentication.logout.LogoutFilter@4a1dda83, by.slemnev.Clinic.security.jwt.JwtTokenFilter@45287377, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@b506ed0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6f96dd64, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7159d601, org.springframework.security.web.session.SessionManagementFilter@6bce4140, org.springframework.security.web.access.ExceptionTranslationFilter@44fd7ba4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@17216605]
+03.12.2022 10:29:46.512 [main] INFO - Starting ProtocolHandler ["http-nio-8075"]
+03.12.2022 10:29:46.572 [main] INFO - Tomcat started on port(s): 8075 (http) with context path ''
+03.12.2022 10:29:46.575 [main] INFO - Triggering deferred initialization of Spring Data repositories…
+03.12.2022 10:29:47.227 [task-1] INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+03.12.2022 10:29:47.243 [task-1] INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+03.12.2022 10:29:48.012 [main] INFO - Spring Data repositories initialized!
+03.12.2022 10:29:48.039 [main] INFO - Started HospitalApplication in 8.547 seconds (JVM running for 10.371)
+03.12.2022 10:29:53.814 [http-nio-8075-exec-1] INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+03.12.2022 10:29:53.815 [http-nio-8075-exec-1] INFO - Initializing Servlet 'dispatcherServlet'
+03.12.2022 10:29:53.830 [http-nio-8075-exec-1] INFO - Completed initialization in 15 ms
+03.12.2022 10:30:32.294 [http-nio-8075-exec-5] INFO - IN findByUsername - user: User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+03.12.2022 10:30:32.575 [http-nio-8075-exec-5] INFO - IN findByUsername - user: User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+03.12.2022 10:30:32.654 [http-nio-8075-exec-5] INFO - IN findByUsername - user: User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+03.12.2022 10:30:32.669 [http-nio-8075-exec-5] INFO - IN findbyUser - patient: not found
+03.12.2022 10:30:32.685 [http-nio-8075-exec-5] INFO - IN findByUsername - user: User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+03.12.2022 10:30:32.685 [http-nio-8075-exec-5] INFO - IN findbyUser - Doctor: 1 
+03.12.2022 10:30:32.701 [http-nio-8075-exec-5] INFO - IN findByUsername - user: User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+03.12.2022 10:30:32.701 [http-nio-8075-exec-5] INFO - IN findbyUser - patient: not found
+03.12.2022 10:30:32.701 [http-nio-8075-exec-5] INFO - IN findByUsername - user: User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+03.12.2022 10:30:32.701 [http-nio-8075-exec-5] INFO - IN findbyUser - Doctor: 1 
+03.12.2022 10:30:32.701 [http-nio-8075-exec-5] INFO - login:/api/v1/auth/login
+03.12.2022 10:30:44.507 [http-nio-8075-exec-10] INFO - IN findByUsername - user: User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+03.12.2022 10:30:44.517 [http-nio-8075-exec-10] INFO - GetAllReceptionForDoctor:/api/v1/users/doctor/{id}
+03.12.2022 10:30:44.557 [http-nio-8075-exec-10] INFO - IN findById - Doctor found by id: Doctor{id=1, user=User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]}, specialty='Терапевт', Name_Hospital='BraslawCentral', Passport='12345678911'}
+03.12.2022 10:30:44.579 [http-nio-8075-exec-10] INFO - IN getByIdDoctor - Reception  found by id: [Reception{id=1, doctor=Doctor{id=1, user=User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]}, specialty='Терапевт', Name_Hospital='BraslawCentral', Passport='12345678911'}, patient=by.slemnev.Clinic.model.Patient@1cc20ce8, time='10:15', date_reception='2022-12-15', symptoms='huevo', diagnosis='---', comments='---'}]
+03.12.2022 10:33:17.894 [SpringContextShutdownHook] INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+03.12.2022 10:33:17.899 [SpringContextShutdownHook] INFO - Shutting down ExecutorService 'applicationTaskExecutor'
+03.12.2022 10:33:17.901 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown initiated...
+03.12.2022 10:33:17.949 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown completed.
+03.12.2022 10:33:24.344 [background-preinit] INFO - HV000001: Hibernate Validator 5.4.1.Final
+03.12.2022 10:33:24.401 [main] INFO - Starting HospitalApplication on VICTORY with PID 8680 (D:\3 kurs\labs\JAVA\js\Hospital\Hospital\target\classes started by VICTORY in D:\3 kurs\labs\JAVA\js\Hospital)
+03.12.2022 10:33:24.403 [main] INFO - No active profile set, falling back to default profiles: default
+03.12.2022 10:33:26.030 [main] INFO - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+03.12.2022 10:33:26.276 [main] INFO - Finished Spring Data repository scanning in 229ms. Found 9 JPA repository interfaces.
+03.12.2022 10:33:27.428 [main] INFO - Tomcat initialized with port(s): 8075 (http)
+03.12.2022 10:33:27.445 [main] INFO - Initializing ProtocolHandler ["http-nio-8075"]
+03.12.2022 10:33:27.446 [main] INFO - Starting service [Tomcat]
+03.12.2022 10:33:27.446 [main] INFO - Starting Servlet engine: [Apache Tomcat/9.0.38]
+03.12.2022 10:33:27.789 [main] INFO - Initializing Spring embedded WebApplicationContext
+03.12.2022 10:33:27.789 [main] INFO - Root WebApplicationContext: initialization completed in 3267 ms
+03.12.2022 10:33:28.124 [main] INFO - Initializing ExecutorService 'applicationTaskExecutor'
+03.12.2022 10:33:28.197 [task-1] INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+03.12.2022 10:33:28.277 [task-1] INFO - HHH000412: Hibernate ORM core version 5.4.21.Final
+03.12.2022 10:33:28.518 [main] WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03.12.2022 10:33:28.529 [task-1] INFO - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+03.12.2022 10:33:28.726 [task-1] INFO - HikariPool-1 - Starting...
+03.12.2022 10:33:29.128 [main] INFO - Adding welcome page template: index
+03.12.2022 10:33:29.709 [task-1] INFO - HikariPool-1 - Start completed.
+03.12.2022 10:33:29.753 [task-1] INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+03.12.2022 10:33:30.835 [main] INFO - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@9263c54, org.springframework.security.web.context.SecurityContextPersistenceFilter@4c176ff1, org.springframework.security.web.header.HeaderWriterFilter@3dfd7eaa, org.springframework.security.web.authentication.logout.LogoutFilter@5aea8994, by.slemnev.Clinic.security.jwt.JwtTokenFilter@28daf506, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@68aec50, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@44fd7ba4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4662752a, org.springframework.security.web.session.SessionManagementFilter@783b3aa0, org.springframework.security.web.access.ExceptionTranslationFilter@21f9c6ea, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@267891bf]
+03.12.2022 10:33:30.908 [main] INFO - Starting ProtocolHandler ["http-nio-8075"]
+03.12.2022 10:33:30.967 [main] INFO - Tomcat started on port(s): 8075 (http) with context path ''
+03.12.2022 10:33:30.970 [main] INFO - Triggering deferred initialization of Spring Data repositories…
+03.12.2022 10:33:31.547 [task-1] INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+03.12.2022 10:33:31.560 [task-1] INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+03.12.2022 10:33:32.285 [main] INFO - Spring Data repositories initialized!
+03.12.2022 10:33:32.308 [main] INFO - Started HospitalApplication in 8.578 seconds (JVM running for 10.439)
+03.12.2022 10:34:42.182 [http-nio-8075-exec-1] INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+03.12.2022 10:34:42.182 [http-nio-8075-exec-1] INFO - Initializing Servlet 'dispatcherServlet'
+03.12.2022 10:34:42.196 [http-nio-8075-exec-1] INFO - Completed initialization in 14 ms
+03.12.2022 10:35:19.009 [http-nio-8075-exec-5] INFO - IN findByUsername - user: User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+03.12.2022 10:35:19.228 [http-nio-8075-exec-5] INFO - IN findByUsername - user: User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+03.12.2022 10:35:19.321 [http-nio-8075-exec-5] INFO - IN findByUsername - user: User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+03.12.2022 10:35:19.337 [http-nio-8075-exec-5] INFO - IN findbyUser - patient: not found
+03.12.2022 10:35:19.337 [http-nio-8075-exec-5] INFO - IN findByUsername - user: User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+03.12.2022 10:35:19.353 [http-nio-8075-exec-5] INFO - IN findbyUser - Doctor: 1 
+03.12.2022 10:35:19.353 [http-nio-8075-exec-5] INFO - IN findByUsername - user: User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+03.12.2022 10:35:19.353 [http-nio-8075-exec-5] INFO - IN findbyUser - patient: not found
+03.12.2022 10:35:19.353 [http-nio-8075-exec-5] INFO - IN findByUsername - user: User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+03.12.2022 10:35:19.368 [http-nio-8075-exec-5] INFO - IN findbyUser - Doctor: 1 
+03.12.2022 10:35:19.368 [http-nio-8075-exec-5] INFO - login:/api/v1/auth/login
+03.12.2022 10:35:45.508 [SpringContextShutdownHook] INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+03.12.2022 10:35:45.513 [SpringContextShutdownHook] INFO - Shutting down ExecutorService 'applicationTaskExecutor'
+03.12.2022 10:35:45.514 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown initiated...
+03.12.2022 10:35:45.549 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown completed.
+03.12.2022 10:35:53.353 [background-preinit] INFO - HV000001: Hibernate Validator 5.4.1.Final
+03.12.2022 10:35:53.406 [main] INFO - Starting HospitalApplication on VICTORY with PID 14240 (D:\3 kurs\labs\JAVA\js\Hospital\Hospital\target\classes started by VICTORY in D:\3 kurs\labs\JAVA\js\Hospital)
+03.12.2022 10:35:53.409 [main] INFO - No active profile set, falling back to default profiles: default
+03.12.2022 10:35:55.023 [main] INFO - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+03.12.2022 10:35:55.276 [main] INFO - Finished Spring Data repository scanning in 237ms. Found 9 JPA repository interfaces.
+03.12.2022 10:35:56.460 [main] INFO - Tomcat initialized with port(s): 8075 (http)
+03.12.2022 10:35:56.476 [main] INFO - Initializing ProtocolHandler ["http-nio-8075"]
+03.12.2022 10:35:56.477 [main] INFO - Starting service [Tomcat]
+03.12.2022 10:35:56.478 [main] INFO - Starting Servlet engine: [Apache Tomcat/9.0.38]
+03.12.2022 10:35:56.794 [main] INFO - Initializing Spring embedded WebApplicationContext
+03.12.2022 10:35:56.794 [main] INFO - Root WebApplicationContext: initialization completed in 3260 ms
+03.12.2022 10:35:57.086 [main] INFO - Initializing ExecutorService 'applicationTaskExecutor'
+03.12.2022 10:35:57.161 [task-1] INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+03.12.2022 10:35:57.246 [task-1] INFO - HHH000412: Hibernate ORM core version 5.4.21.Final
+03.12.2022 10:35:57.499 [main] WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03.12.2022 10:35:57.511 [task-1] INFO - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+03.12.2022 10:35:57.708 [task-1] INFO - HikariPool-1 - Starting...
+03.12.2022 10:35:58.123 [main] INFO - Adding welcome page template: index
+03.12.2022 10:35:58.680 [task-1] INFO - HikariPool-1 - Start completed.
+03.12.2022 10:35:58.728 [task-1] INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+03.12.2022 10:35:59.821 [main] INFO - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@17216605, org.springframework.security.web.context.SecurityContextPersistenceFilter@722531ab, org.springframework.security.web.header.HeaderWriterFilter@68aec50, org.springframework.security.web.authentication.logout.LogoutFilter@59918c8f, by.slemnev.Clinic.security.jwt.JwtTokenFilter@10a907ec, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@26fadd98, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5882b202, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59b492ec, org.springframework.security.web.session.SessionManagementFilter@74fb5b59, org.springframework.security.web.access.ExceptionTranslationFilter@4c176ff1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7b5021d1]
+03.12.2022 10:35:59.904 [main] INFO - Starting ProtocolHandler ["http-nio-8075"]
+03.12.2022 10:35:59.962 [main] INFO - Tomcat started on port(s): 8075 (http) with context path ''
+03.12.2022 10:35:59.965 [main] INFO - Triggering deferred initialization of Spring Data repositories…
+03.12.2022 10:36:00.557 [task-1] INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+03.12.2022 10:36:00.571 [task-1] INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+03.12.2022 10:36:01.431 [main] INFO - Spring Data repositories initialized!
+03.12.2022 10:36:01.454 [main] INFO - Started HospitalApplication in 8.733 seconds (JVM running for 10.697)
+03.12.2022 10:36:06.855 [http-nio-8075-exec-1] INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+03.12.2022 10:36:06.856 [http-nio-8075-exec-1] INFO - Initializing Servlet 'dispatcherServlet'
+03.12.2022 10:36:06.873 [http-nio-8075-exec-1] INFO - Completed initialization in 17 ms
+03.12.2022 10:36:31.542 [http-nio-8075-exec-9] INFO - IN findByUsername - user: User{firstName='Vadim', lastName='Poperdim', email='victorslemnev@gmail.com', password='$2a$10$TTc9QVVSD8Tw1EZyZPHi..hP3Win9S4cquv4SuOlCuS0QFMTtx7iS', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victorslemnev@gmail.com
+03.12.2022 10:36:31.776 [http-nio-8075-exec-9] INFO - IN findByUsername - user: User{firstName='Vadim', lastName='Poperdim', email='victorslemnev@gmail.com', password='$2a$10$TTc9QVVSD8Tw1EZyZPHi..hP3Win9S4cquv4SuOlCuS0QFMTtx7iS', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victorslemnev@gmail.com
+03.12.2022 10:36:31.870 [http-nio-8075-exec-9] INFO - IN findByUsername - user: User{firstName='Vadim', lastName='Poperdim', email='victorslemnev@gmail.com', password='$2a$10$TTc9QVVSD8Tw1EZyZPHi..hP3Win9S4cquv4SuOlCuS0QFMTtx7iS', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victorslemnev@gmail.com
+03.12.2022 10:36:31.885 [http-nio-8075-exec-9] INFO - IN findbyUser - patient: 1 
+03.12.2022 10:36:31.885 [http-nio-8075-exec-9] INFO - IN findByUsername - user: User{firstName='Vadim', lastName='Poperdim', email='victorslemnev@gmail.com', password='$2a$10$TTc9QVVSD8Tw1EZyZPHi..hP3Win9S4cquv4SuOlCuS0QFMTtx7iS', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victorslemnev@gmail.com
+03.12.2022 10:36:31.901 [http-nio-8075-exec-9] INFO - IN findbyUser - patient: 1 
+03.12.2022 10:36:31.901 [http-nio-8075-exec-9] INFO - IN findByUsername - user: User{firstName='Vadim', lastName='Poperdim', email='victorslemnev@gmail.com', password='$2a$10$TTc9QVVSD8Tw1EZyZPHi..hP3Win9S4cquv4SuOlCuS0QFMTtx7iS', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victorslemnev@gmail.com
+03.12.2022 10:36:31.901 [http-nio-8075-exec-9] INFO - IN findbyUser - patient: 1 
+03.12.2022 10:36:31.901 [http-nio-8075-exec-9] INFO - login:/api/v1/auth/login
+03.12.2022 10:37:11.103 [http-nio-8075-exec-5] INFO - IN findByUsername - user: null found by username: 1234
+03.12.2022 10:39:00.365 [SpringContextShutdownHook] INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+03.12.2022 10:39:00.371 [SpringContextShutdownHook] INFO - Shutting down ExecutorService 'applicationTaskExecutor'
+03.12.2022 10:39:00.375 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown initiated...
+03.12.2022 10:39:00.453 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown completed.
+03.12.2022 10:39:08.605 [background-preinit] INFO - HV000001: Hibernate Validator 5.4.1.Final
+03.12.2022 10:39:08.655 [main] INFO - Starting HospitalApplication on VICTORY with PID 10332 (D:\3 kurs\labs\JAVA\js\Hospital\Hospital\target\classes started by VICTORY in D:\3 kurs\labs\JAVA\js\Hospital)
+03.12.2022 10:39:08.657 [main] INFO - No active profile set, falling back to default profiles: default
+03.12.2022 10:39:10.393 [main] INFO - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+03.12.2022 10:39:10.613 [main] INFO - Finished Spring Data repository scanning in 205ms. Found 9 JPA repository interfaces.
+03.12.2022 10:39:11.876 [main] INFO - Tomcat initialized with port(s): 8075 (http)
+03.12.2022 10:39:11.896 [main] INFO - Initializing ProtocolHandler ["http-nio-8075"]
+03.12.2022 10:39:11.897 [main] INFO - Starting service [Tomcat]
+03.12.2022 10:39:11.898 [main] INFO - Starting Servlet engine: [Apache Tomcat/9.0.38]
+03.12.2022 10:39:12.255 [main] INFO - Initializing Spring embedded WebApplicationContext
+03.12.2022 10:39:12.255 [main] INFO - Root WebApplicationContext: initialization completed in 3465 ms
+03.12.2022 10:39:12.660 [main] INFO - Initializing ExecutorService 'applicationTaskExecutor'
+03.12.2022 10:39:12.738 [task-1] INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+03.12.2022 10:39:12.824 [task-1] INFO - HHH000412: Hibernate ORM core version 5.4.21.Final
+03.12.2022 10:39:13.043 [task-1] INFO - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+03.12.2022 10:39:13.081 [main] WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+03.12.2022 10:39:13.244 [task-1] INFO - HikariPool-1 - Starting...
+03.12.2022 10:39:13.742 [main] INFO - Adding welcome page template: index
+03.12.2022 10:39:14.157 [task-1] INFO - HikariPool-1 - Start completed.
+03.12.2022 10:39:14.232 [task-1] INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+03.12.2022 10:39:15.424 [main] INFO - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33bdd01, org.springframework.security.web.context.SecurityContextPersistenceFilter@5463f035, org.springframework.security.web.header.HeaderWriterFilter@3030836d, org.springframework.security.web.authentication.logout.LogoutFilter@76ac68b0, by.slemnev.Clinic.security.jwt.JwtTokenFilter@159ac15f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@44fd7ba4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3db6dd52, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7ac48f05, org.springframework.security.web.session.SessionManagementFilter@4975dda1, org.springframework.security.web.access.ExceptionTranslationFilter@3e6748ae, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1cde374]
+03.12.2022 10:39:15.495 [main] INFO - Starting ProtocolHandler ["http-nio-8075"]
+03.12.2022 10:39:15.552 [main] INFO - Tomcat started on port(s): 8075 (http) with context path ''
+03.12.2022 10:39:15.556 [main] INFO - Triggering deferred initialization of Spring Data repositories…
+03.12.2022 10:39:16.092 [task-1] INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+03.12.2022 10:39:16.107 [task-1] INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+03.12.2022 10:39:16.871 [main] INFO - Spring Data repositories initialized!
+03.12.2022 10:39:16.894 [main] INFO - Started HospitalApplication in 9.045 seconds (JVM running for 11.629)
+03.12.2022 10:39:20.709 [http-nio-8075-exec-1] INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+03.12.2022 10:39:20.710 [http-nio-8075-exec-1] INFO - Initializing Servlet 'dispatcherServlet'
+03.12.2022 10:39:20.731 [http-nio-8075-exec-1] INFO - Completed initialization in 21 ms
+03.12.2022 10:41:58.995 [SpringContextShutdownHook] INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+03.12.2022 10:41:58.999 [SpringContextShutdownHook] INFO - Shutting down ExecutorService 'applicationTaskExecutor'
+03.12.2022 10:41:59.001 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown initiated...
+03.12.2022 10:41:59.027 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown completed.

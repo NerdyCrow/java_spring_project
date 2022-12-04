@@ -1,0 +1,434 @@
+29.11.2022 16:22:45.867 [background-preinit] INFO - HV000001: Hibernate Validator 5.4.1.Final
+29.11.2022 16:22:45.939 [main] INFO - Starting HospitalApplication on VICTORY with PID 1900 (D:\3 kurs\labs\JAVA\js\Hospital\Hospital\target\classes started by VICTORY in D:\3 kurs\labs\JAVA\js\Hospital)
+29.11.2022 16:22:45.941 [main] INFO - No active profile set, falling back to default profiles: default
+29.11.2022 16:22:47.554 [main] INFO - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+29.11.2022 16:22:47.774 [main] INFO - Finished Spring Data repository scanning in 202ms. Found 9 JPA repository interfaces.
+29.11.2022 16:22:48.894 [main] INFO - Tomcat initialized with port(s): 8075 (http)
+29.11.2022 16:22:48.913 [main] INFO - Initializing ProtocolHandler ["http-nio-8075"]
+29.11.2022 16:22:48.914 [main] INFO - Starting service [Tomcat]
+29.11.2022 16:22:48.915 [main] INFO - Starting Servlet engine: [Apache Tomcat/9.0.38]
+29.11.2022 16:22:49.213 [main] INFO - Initializing Spring embedded WebApplicationContext
+29.11.2022 16:22:49.214 [main] INFO - Root WebApplicationContext: initialization completed in 3157 ms
+29.11.2022 16:22:49.566 [main] INFO - Initializing ExecutorService 'applicationTaskExecutor'
+29.11.2022 16:22:49.645 [task-1] INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+29.11.2022 16:22:49.760 [task-1] INFO - HHH000412: Hibernate ORM core version 5.4.21.Final
+29.11.2022 16:22:50.016 [main] WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+29.11.2022 16:22:50.084 [task-1] INFO - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+29.11.2022 16:22:50.297 [task-1] INFO - HikariPool-1 - Starting...
+29.11.2022 16:22:50.588 [main] INFO - Adding welcome page template: index
+29.11.2022 16:22:51.374 [task-1] INFO - HikariPool-1 - Start completed.
+29.11.2022 16:22:51.447 [task-1] INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+29.11.2022 16:22:52.365 [main] INFO - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@11826398, org.springframework.security.web.context.SecurityContextPersistenceFilter@1e92c3b6, org.springframework.security.web.header.HeaderWriterFilter@54247647, org.springframework.security.web.authentication.logout.LogoutFilter@2776fd8f, by.bolvako.Hospital.security.jwt.JwtTokenFilter@6c5ca0b6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@207dd1b7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@18cf5c52, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@37b01ce2, org.springframework.security.web.session.SessionManagementFilter@66451058, org.springframework.security.web.access.ExceptionTranslationFilter@134a8ead, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@159ac15f]
+29.11.2022 16:22:52.439 [main] INFO - Starting ProtocolHandler ["http-nio-8075"]
+29.11.2022 16:22:52.499 [main] INFO - Tomcat started on port(s): 8075 (http) with context path ''
+29.11.2022 16:22:52.503 [main] INFO - Triggering deferred initialization of Spring Data repositories…
+29.11.2022 16:22:53.730 [task-1] INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+29.11.2022 16:22:53.743 [task-1] INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+29.11.2022 16:22:54.479 [main] INFO - Spring Data repositories initialized!
+29.11.2022 16:22:54.502 [main] INFO - Started HospitalApplication in 9.206 seconds (JVM running for 11.427)
+29.11.2022 16:23:18.528 [http-nio-8075-exec-1] INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+29.11.2022 16:23:18.529 [http-nio-8075-exec-1] INFO - Initializing Servlet 'dispatcherServlet'
+29.11.2022 16:23:18.546 [http-nio-8075-exec-1] INFO - Completed initialization in 16 ms
+29.11.2022 16:23:48.134 [http-nio-8075-exec-7] INFO - Regiser:/api/v1/auth/Register
+29.11.2022 16:23:48.326 [http-nio-8075-exec-7] INFO - IN findByUsername - user: null found by username: victor.slemnev@mail.ru
+29.11.2022 16:23:48.678 [http-nio-8075-exec-7] INFO - IN register - user: User{firstName='victor', lastName='Slemnev', email='victor.slemnev@mail.ru', password='$2a$10$cU3VEyhSAm3tTd8MQkqjFOJrS4E6uOAGWPojIevS2FFbckC3VWsjS', roles=[null]} successfully registered
+29.11.2022 16:23:59.749 [http-nio-8075-exec-9] INFO - IN findByUsername - user: User{firstName='victor', lastName='Slemnev', email='victor.slemnev@mail.ru', password='$2a$10$cU3VEyhSAm3tTd8MQkqjFOJrS4E6uOAGWPojIevS2FFbckC3VWsjS', roles=[]} found by username: victor.slemnev@mail.ru
+29.11.2022 16:24:44.191 [http-nio-8075-exec-1] INFO - IN findByUsername - user: null found by username: victorslemnev@gmail.com
+29.11.2022 16:30:07.192 [SpringContextShutdownHook] INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+29.11.2022 16:30:07.195 [SpringContextShutdownHook] INFO - Shutting down ExecutorService 'applicationTaskExecutor'
+29.11.2022 16:30:07.197 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown initiated...
+29.11.2022 16:30:07.221 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown completed.
+29.11.2022 16:30:23.334 [background-preinit] INFO - HV000001: Hibernate Validator 5.4.1.Final
+29.11.2022 16:30:23.375 [main] INFO - Starting HospitalApplication on VICTORY with PID 18420 (D:\3 kurs\labs\JAVA\js\Hospital\Hospital\target\classes started by VICTORY in D:\3 kurs\labs\JAVA\js\Hospital)
+29.11.2022 16:30:23.377 [main] INFO - No active profile set, falling back to default profiles: default
+29.11.2022 16:30:25.040 [main] INFO - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+29.11.2022 16:30:25.273 [main] INFO - Finished Spring Data repository scanning in 218ms. Found 9 JPA repository interfaces.
+29.11.2022 16:30:26.368 [main] INFO - Tomcat initialized with port(s): 8075 (http)
+29.11.2022 16:30:26.385 [main] INFO - Initializing ProtocolHandler ["http-nio-8075"]
+29.11.2022 16:30:26.386 [main] INFO - Starting service [Tomcat]
+29.11.2022 16:30:26.386 [main] INFO - Starting Servlet engine: [Apache Tomcat/9.0.38]
+29.11.2022 16:30:26.675 [main] INFO - Initializing Spring embedded WebApplicationContext
+29.11.2022 16:30:26.676 [main] INFO - Root WebApplicationContext: initialization completed in 3188 ms
+29.11.2022 16:30:27.018 [main] INFO - Initializing ExecutorService 'applicationTaskExecutor'
+29.11.2022 16:30:27.088 [task-1] INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+29.11.2022 16:30:27.167 [task-1] INFO - HHH000412: Hibernate ORM core version 5.4.21.Final
+29.11.2022 16:30:27.394 [main] WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+29.11.2022 16:30:27.415 [task-1] INFO - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+29.11.2022 16:30:27.595 [task-1] INFO - HikariPool-1 - Starting...
+29.11.2022 16:30:27.963 [main] INFO - Adding welcome page template: index
+29.11.2022 16:30:28.481 [task-1] INFO - HikariPool-1 - Start completed.
+29.11.2022 16:30:28.523 [task-1] INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+29.11.2022 16:30:29.594 [main] INFO - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@59b492ec, org.springframework.security.web.context.SecurityContextPersistenceFilter@26fadd98, org.springframework.security.web.header.HeaderWriterFilter@1d60059f, org.springframework.security.web.authentication.logout.LogoutFilter@1c74d19, by.bolvako.Hospital.security.jwt.JwtTokenFilter@55c1ced9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3db6dd52, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@b506ed0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@49cc9b2a, org.springframework.security.web.session.SessionManagementFilter@722531ab, org.springframework.security.web.access.ExceptionTranslationFilter@68aec50, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@21d9cd04]
+29.11.2022 16:30:29.667 [main] INFO - Starting ProtocolHandler ["http-nio-8075"]
+29.11.2022 16:30:29.726 [main] INFO - Tomcat started on port(s): 8075 (http) with context path ''
+29.11.2022 16:30:29.729 [main] INFO - Triggering deferred initialization of Spring Data repositories…
+29.11.2022 16:30:30.348 [task-1] INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+29.11.2022 16:30:30.362 [task-1] INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+29.11.2022 16:30:31.073 [main] INFO - Spring Data repositories initialized!
+29.11.2022 16:30:31.095 [main] INFO - Started HospitalApplication in 8.365 seconds (JVM running for 10.373)
+29.11.2022 16:30:37.238 [http-nio-8075-exec-1] INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+29.11.2022 16:30:37.239 [http-nio-8075-exec-1] INFO - Initializing Servlet 'dispatcherServlet'
+29.11.2022 16:30:37.252 [http-nio-8075-exec-1] INFO - Completed initialization in 13 ms
+29.11.2022 16:31:00.889 [http-nio-8075-exec-5] INFO - Regiser:/api/v1/auth/Register
+29.11.2022 16:31:01.123 [http-nio-8075-exec-5] INFO - IN findByUsername - user: null found by username: makaronikdurachok@gmail.com
+29.11.2022 16:31:01.500 [http-nio-8075-exec-5] INFO - IN register - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[null]} successfully registered
+29.11.2022 16:31:11.870 [http-nio-8075-exec-8] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[]} found by username: makaronikdurachok@gmail.com
+29.11.2022 16:31:56.289 [http-nio-8075-exec-10] INFO - IN findByUsername - user: null found by username: victor
+29.11.2022 16:32:02.309 [http-nio-8075-exec-1] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[]} found by username: makaronikdurachok@gmail.com
+29.11.2022 16:33:01.386 [http-nio-8075-exec-2] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[]} found by username: makaronikdurachok@gmail.com
+29.11.2022 16:33:01.600 [http-nio-8075-exec-2] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[]} found by username: makaronikdurachok@gmail.com
+29.11.2022 16:33:01.665 [http-nio-8075-exec-2] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[]} found by username: makaronikdurachok@gmail.com
+29.11.2022 16:33:01.678 [http-nio-8075-exec-2] INFO - IN findbyUser - patient: not found
+29.11.2022 16:33:01.681 [http-nio-8075-exec-2] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[]} found by username: makaronikdurachok@gmail.com
+29.11.2022 16:33:01.691 [http-nio-8075-exec-2] INFO - IN findbyUser - Doctor: not found
+29.11.2022 16:33:01.692 [http-nio-8075-exec-2] INFO - login:/api/v1/auth/login
+29.11.2022 16:33:01.698 [http-nio-8075-exec-2] ERROR- Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0] with root cause
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at org.hibernate.collection.internal.PersistentBag.get(PersistentBag.java:562)
+	at by.bolvako.Hospital.rest.AuthenticationRestControllerV1.login(AuthenticationRestControllerV1.java:143)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:65)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at by.bolvako.Hospital.security.jwt.JwtTokenFilter.doFilter(JwtTokenFilter.java:38)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+29.11.2022 16:33:03.021 [http-nio-8075-exec-3] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[]} found by username: makaronikdurachok@gmail.com
+29.11.2022 16:33:03.238 [http-nio-8075-exec-3] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[]} found by username: makaronikdurachok@gmail.com
+29.11.2022 16:33:03.243 [http-nio-8075-exec-3] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[]} found by username: makaronikdurachok@gmail.com
+29.11.2022 16:33:03.246 [http-nio-8075-exec-3] INFO - IN findbyUser - patient: not found
+29.11.2022 16:33:03.250 [http-nio-8075-exec-3] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[]} found by username: makaronikdurachok@gmail.com
+29.11.2022 16:33:03.253 [http-nio-8075-exec-3] INFO - IN findbyUser - Doctor: not found
+29.11.2022 16:33:03.254 [http-nio-8075-exec-3] INFO - login:/api/v1/auth/login
+29.11.2022 16:33:03.255 [http-nio-8075-exec-3] ERROR- Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0] with root cause
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at org.hibernate.collection.internal.PersistentBag.get(PersistentBag.java:562)
+	at by.bolvako.Hospital.rest.AuthenticationRestControllerV1.login(AuthenticationRestControllerV1.java:143)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:65)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at by.bolvako.Hospital.security.jwt.JwtTokenFilter.doFilter(JwtTokenFilter.java:38)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+29.11.2022 16:36:03.537 [SpringContextShutdownHook] INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+29.11.2022 16:36:03.541 [SpringContextShutdownHook] INFO - Shutting down ExecutorService 'applicationTaskExecutor'
+29.11.2022 16:36:03.542 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown initiated...
+29.11.2022 16:36:03.713 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown completed.
+29.11.2022 16:36:13.809 [background-preinit] INFO - HV000001: Hibernate Validator 5.4.1.Final
+29.11.2022 16:36:13.856 [main] INFO - Starting HospitalApplication on VICTORY with PID 8376 (D:\3 kurs\labs\JAVA\js\Hospital\Hospital\target\classes started by VICTORY in D:\3 kurs\labs\JAVA\js\Hospital)
+29.11.2022 16:36:13.858 [main] INFO - No active profile set, falling back to default profiles: default
+29.11.2022 16:36:15.406 [main] INFO - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+29.11.2022 16:36:15.631 [main] INFO - Finished Spring Data repository scanning in 210ms. Found 9 JPA repository interfaces.
+29.11.2022 16:36:16.747 [main] INFO - Tomcat initialized with port(s): 8075 (http)
+29.11.2022 16:36:16.768 [main] INFO - Initializing ProtocolHandler ["http-nio-8075"]
+29.11.2022 16:36:16.769 [main] INFO - Starting service [Tomcat]
+29.11.2022 16:36:16.770 [main] INFO - Starting Servlet engine: [Apache Tomcat/9.0.38]
+29.11.2022 16:36:17.097 [main] INFO - Initializing Spring embedded WebApplicationContext
+29.11.2022 16:36:17.098 [main] INFO - Root WebApplicationContext: initialization completed in 3121 ms
+29.11.2022 16:36:17.434 [main] INFO - Initializing ExecutorService 'applicationTaskExecutor'
+29.11.2022 16:36:17.524 [task-1] INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+29.11.2022 16:36:17.616 [task-1] INFO - HHH000412: Hibernate ORM core version 5.4.21.Final
+29.11.2022 16:36:17.915 [task-1] INFO - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+29.11.2022 16:36:17.918 [main] WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+29.11.2022 16:36:18.103 [task-1] INFO - HikariPool-1 - Starting...
+29.11.2022 16:36:18.466 [main] INFO - Adding welcome page template: index
+29.11.2022 16:36:19.072 [task-1] INFO - HikariPool-1 - Start completed.
+29.11.2022 16:36:19.122 [task-1] INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+29.11.2022 16:36:20.289 [main] INFO - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70b33256, org.springframework.security.web.context.SecurityContextPersistenceFilter@282c4da0, org.springframework.security.web.header.HeaderWriterFilter@130a6eb9, org.springframework.security.web.authentication.logout.LogoutFilter@760f1081, by.bolvako.Hospital.security.jwt.JwtTokenFilter@33d230ce, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@18cf5c52, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@73d62b5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@35e74e08, org.springframework.security.web.session.SessionManagementFilter@120df990, org.springframework.security.web.access.ExceptionTranslationFilter@5b742bc8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@55c1ced9]
+29.11.2022 16:36:20.389 [main] INFO - Starting ProtocolHandler ["http-nio-8075"]
+29.11.2022 16:36:20.484 [main] INFO - Tomcat started on port(s): 8075 (http) with context path ''
+29.11.2022 16:36:20.488 [main] INFO - Triggering deferred initialization of Spring Data repositories…
+29.11.2022 16:36:21.269 [task-1] INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+29.11.2022 16:36:21.282 [task-1] INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+29.11.2022 16:36:21.986 [main] INFO - Spring Data repositories initialized!
+29.11.2022 16:36:22.008 [main] INFO - Started HospitalApplication in 8.794 seconds (JVM running for 10.728)
+29.11.2022 16:37:27.850 [http-nio-8075-exec-1] INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+29.11.2022 16:37:27.850 [http-nio-8075-exec-1] INFO - Initializing Servlet 'dispatcherServlet'
+29.11.2022 16:37:27.867 [http-nio-8075-exec-1] INFO - Completed initialization in 16 ms
+29.11.2022 16:37:49.136 [http-nio-8075-exec-5] INFO - Regiser:/api/v1/auth/Register
+29.11.2022 16:37:49.360 [http-nio-8075-exec-5] INFO - IN findByUsername - user: User{firstName='victor', lastName='Slemnev', email='victor.slemnev@mail.ru', password='$2a$10$cU3VEyhSAm3tTd8MQkqjFOJrS4E6uOAGWPojIevS2FFbckC3VWsjS', roles=[]} found by username: victor.slemnev@mail.ru
+29.11.2022 16:38:40.027 [http-nio-8075-exec-9] INFO - Regiser:/api/v1/auth/Register
+29.11.2022 16:38:40.032 [http-nio-8075-exec-9] INFO - IN findByUsername - user: null found by username: victor.slemnev@mail.ru
+29.11.2022 16:38:40.345 [http-nio-8075-exec-9] INFO - IN register - user: User{firstName='Pes', lastName='Pes', email='victor.slemnev@mail.ru', password='$2a$10$6KYvZCb077HUDMmqqpTeDutwVeRNY322/zUgf/iBpGQGLwNCQKbA2', roles=[Role{id: 1, name: ROLE_USER}]} successfully registered
+29.11.2022 16:38:50.615 [http-nio-8075-exec-2] INFO - IN findByUsername - user: User{firstName='Pes', lastName='Pes', email='victor.slemnev@mail.ru', password='$2a$10$6KYvZCb077HUDMmqqpTeDutwVeRNY322/zUgf/iBpGQGLwNCQKbA2', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victor.slemnev@mail.ru
+29.11.2022 16:39:51.806 [http-nio-8075-exec-8] INFO - IN findByUsername - user: User{firstName='Pes', lastName='Pes', email='victor.slemnev@mail.ru', password='$2a$10$6KYvZCb077HUDMmqqpTeDutwVeRNY322/zUgf/iBpGQGLwNCQKbA2', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victor.slemnev@mail.ru
+29.11.2022 16:39:51.999 [http-nio-8075-exec-8] INFO - IN findByUsername - user: User{firstName='Pes', lastName='Pes', email='victor.slemnev@mail.ru', password='$2a$10$6KYvZCb077HUDMmqqpTeDutwVeRNY322/zUgf/iBpGQGLwNCQKbA2', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victor.slemnev@mail.ru
+29.11.2022 16:39:52.061 [http-nio-8075-exec-8] INFO - IN findByUsername - user: User{firstName='Pes', lastName='Pes', email='victor.slemnev@mail.ru', password='$2a$10$6KYvZCb077HUDMmqqpTeDutwVeRNY322/zUgf/iBpGQGLwNCQKbA2', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victor.slemnev@mail.ru
+29.11.2022 16:39:52.077 [http-nio-8075-exec-8] INFO - IN findbyUser - patient: not found
+29.11.2022 16:39:52.077 [http-nio-8075-exec-8] INFO - IN findByUsername - user: User{firstName='Pes', lastName='Pes', email='victor.slemnev@mail.ru', password='$2a$10$6KYvZCb077HUDMmqqpTeDutwVeRNY322/zUgf/iBpGQGLwNCQKbA2', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victor.slemnev@mail.ru
+29.11.2022 16:39:52.093 [http-nio-8075-exec-8] INFO - IN findbyUser - Doctor: not found
+29.11.2022 16:39:52.093 [http-nio-8075-exec-8] INFO - login:/api/v1/auth/login
+29.11.2022 16:40:09.580 [http-nio-8075-exec-3] INFO - IN findByUsername - user: User{firstName='Pes', lastName='Pes', email='victor.slemnev@mail.ru', password='$2a$10$6KYvZCb077HUDMmqqpTeDutwVeRNY322/zUgf/iBpGQGLwNCQKbA2', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victor.slemnev@mail.ru
+29.11.2022 16:40:09.582 [http-nio-8075-exec-8] INFO - IN findByUsername - user: User{firstName='Pes', lastName='Pes', email='victor.slemnev@mail.ru', password='$2a$10$6KYvZCb077HUDMmqqpTeDutwVeRNY322/zUgf/iBpGQGLwNCQKbA2', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victor.slemnev@mail.ru
+29.11.2022 16:40:09.599 [http-nio-8075-exec-8] INFO - IN findByUsername - user: User{firstName='Pes', lastName='Pes', email='victor.slemnev@mail.ru', password='$2a$10$6KYvZCb077HUDMmqqpTeDutwVeRNY322/zUgf/iBpGQGLwNCQKbA2', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victor.slemnev@mail.ru
+29.11.2022 16:40:09.600 [http-nio-8075-exec-3] INFO - IN findByUsername - user: User{firstName='Pes', lastName='Pes', email='victor.slemnev@mail.ru', password='$2a$10$6KYvZCb077HUDMmqqpTeDutwVeRNY322/zUgf/iBpGQGLwNCQKbA2', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victor.slemnev@mail.ru
+29.11.2022 16:40:19.477 [http-nio-8075-exec-7] INFO - IN findByUsername - user: User{firstName='Pes', lastName='Pes', email='victor.slemnev@mail.ru', password='$2a$10$6KYvZCb077HUDMmqqpTeDutwVeRNY322/zUgf/iBpGQGLwNCQKbA2', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victor.slemnev@mail.ru
+29.11.2022 16:40:19.489 [http-nio-8075-exec-7] INFO - IN findByUsername - user: User{firstName='Pes', lastName='Pes', email='victor.slemnev@mail.ru', password='$2a$10$6KYvZCb077HUDMmqqpTeDutwVeRNY322/zUgf/iBpGQGLwNCQKbA2', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victor.slemnev@mail.ru
+29.11.2022 16:40:23.473 [http-nio-8075-exec-5] INFO - IN findByUsername - user: User{firstName='Pes', lastName='Pes', email='victor.slemnev@mail.ru', password='$2a$10$6KYvZCb077HUDMmqqpTeDutwVeRNY322/zUgf/iBpGQGLwNCQKbA2', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victor.slemnev@mail.ru
+29.11.2022 16:40:23.480 [http-nio-8075-exec-5] INFO - IN findByUsername - user: User{firstName='Pes', lastName='Pes', email='victor.slemnev@mail.ru', password='$2a$10$6KYvZCb077HUDMmqqpTeDutwVeRNY322/zUgf/iBpGQGLwNCQKbA2', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victor.slemnev@mail.ru
+29.11.2022 16:40:25.016 [http-nio-8075-exec-6] INFO - IN findByUsername - user: User{firstName='Pes', lastName='Pes', email='victor.slemnev@mail.ru', password='$2a$10$6KYvZCb077HUDMmqqpTeDutwVeRNY322/zUgf/iBpGQGLwNCQKbA2', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victor.slemnev@mail.ru
+29.11.2022 16:40:25.021 [http-nio-8075-exec-6] INFO - IN findByUsername - user: User{firstName='Pes', lastName='Pes', email='victor.slemnev@mail.ru', password='$2a$10$6KYvZCb077HUDMmqqpTeDutwVeRNY322/zUgf/iBpGQGLwNCQKbA2', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victor.slemnev@mail.ru
+29.11.2022 16:40:42.972 [http-nio-8075-exec-5] INFO - IN findByUsername - user: User{firstName='Pes', lastName='Pes', email='victor.slemnev@mail.ru', password='$2a$10$6KYvZCb077HUDMmqqpTeDutwVeRNY322/zUgf/iBpGQGLwNCQKbA2', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victor.slemnev@mail.ru
+29.11.2022 16:40:43.182 [http-nio-8075-exec-5] INFO - IN findByUsername - user: User{firstName='Pes', lastName='Pes', email='victor.slemnev@mail.ru', password='$2a$10$6KYvZCb077HUDMmqqpTeDutwVeRNY322/zUgf/iBpGQGLwNCQKbA2', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victor.slemnev@mail.ru
+29.11.2022 16:40:43.182 [http-nio-8075-exec-5] INFO - IN findByUsername - user: User{firstName='Pes', lastName='Pes', email='victor.slemnev@mail.ru', password='$2a$10$6KYvZCb077HUDMmqqpTeDutwVeRNY322/zUgf/iBpGQGLwNCQKbA2', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victor.slemnev@mail.ru
+29.11.2022 16:40:43.182 [http-nio-8075-exec-5] INFO - IN findbyUser - patient: not found
+29.11.2022 16:40:43.182 [http-nio-8075-exec-5] INFO - IN findByUsername - user: User{firstName='Pes', lastName='Pes', email='victor.slemnev@mail.ru', password='$2a$10$6KYvZCb077HUDMmqqpTeDutwVeRNY322/zUgf/iBpGQGLwNCQKbA2', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victor.slemnev@mail.ru
+29.11.2022 16:40:43.198 [http-nio-8075-exec-5] INFO - IN findbyUser - Doctor: not found
+29.11.2022 16:40:43.198 [http-nio-8075-exec-5] INFO - login:/api/v1/auth/login
+29.11.2022 16:45:13.067 [SpringContextShutdownHook] INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+29.11.2022 16:45:13.067 [SpringContextShutdownHook] INFO - Shutting down ExecutorService 'applicationTaskExecutor'
+29.11.2022 16:45:13.067 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown initiated...
+29.11.2022 16:45:13.114 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown completed.
+29.11.2022 19:10:28.283 [background-preinit] INFO - HV000001: Hibernate Validator 5.4.1.Final
+29.11.2022 19:10:28.345 [main] INFO - Starting HospitalApplication on VICTORY with PID 18924 (D:\3 kurs\labs\JAVA\js\Hospital\Hospital\target\classes started by VICTORY in D:\3 kurs\labs\JAVA\js\Hospital)
+29.11.2022 19:10:28.348 [main] INFO - No active profile set, falling back to default profiles: default
+29.11.2022 19:10:30.181 [main] INFO - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+29.11.2022 19:10:30.475 [main] INFO - Finished Spring Data repository scanning in 273ms. Found 9 JPA repository interfaces.
+29.11.2022 19:10:31.770 [main] INFO - Tomcat initialized with port(s): 8075 (http)
+29.11.2022 19:10:31.787 [main] INFO - Initializing ProtocolHandler ["http-nio-8075"]
+29.11.2022 19:10:31.788 [main] INFO - Starting service [Tomcat]
+29.11.2022 19:10:31.788 [main] INFO - Starting Servlet engine: [Apache Tomcat/9.0.38]
+29.11.2022 19:10:32.144 [main] INFO - Initializing Spring embedded WebApplicationContext
+29.11.2022 19:10:32.144 [main] INFO - Root WebApplicationContext: initialization completed in 3627 ms
+29.11.2022 19:10:32.512 [main] INFO - Initializing ExecutorService 'applicationTaskExecutor'
+29.11.2022 19:10:32.591 [task-1] INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+29.11.2022 19:10:32.678 [task-1] INFO - HHH000412: Hibernate ORM core version 5.4.21.Final
+29.11.2022 19:10:32.920 [main] WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+29.11.2022 19:10:32.925 [task-1] INFO - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+29.11.2022 19:10:33.122 [task-1] INFO - HikariPool-1 - Starting...
+29.11.2022 19:10:33.547 [main] INFO - Adding welcome page template: index
+29.11.2022 19:10:34.130 [task-1] INFO - HikariPool-1 - Start completed.
+29.11.2022 19:10:34.190 [task-1] INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+29.11.2022 19:10:35.449 [main] INFO - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7159d601, org.springframework.security.web.context.SecurityContextPersistenceFilter@b506ed0, org.springframework.security.web.header.HeaderWriterFilter@74fb5b59, org.springframework.security.web.authentication.logout.LogoutFilter@7a358613, by.bolvako.Hospital.security.jwt.JwtTokenFilter@70b33256, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@65f3e805, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@409732fb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@33d230ce, org.springframework.security.web.session.SessionManagementFilter@5882b202, org.springframework.security.web.access.ExceptionTranslationFilter@69d103f0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@59b492ec]
+29.11.2022 19:10:35.532 [main] INFO - Starting ProtocolHandler ["http-nio-8075"]
+29.11.2022 19:10:35.614 [main] INFO - Tomcat started on port(s): 8075 (http) with context path ''
+29.11.2022 19:10:35.617 [main] INFO - Triggering deferred initialization of Spring Data repositories…
+29.11.2022 19:10:36.272 [task-1] INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+29.11.2022 19:10:36.288 [task-1] INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+29.11.2022 19:10:37.098 [main] INFO - Spring Data repositories initialized!
+29.11.2022 19:10:37.125 [main] INFO - Started HospitalApplication in 9.562 seconds (JVM running for 11.89)
+29.11.2022 19:10:53.179 [http-nio-8075-exec-1] INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+29.11.2022 19:10:53.179 [http-nio-8075-exec-1] INFO - Initializing Servlet 'dispatcherServlet'
+29.11.2022 19:10:53.196 [http-nio-8075-exec-1] INFO - Completed initialization in 17 ms
+29.11.2022 19:11:42.473 [http-nio-8075-exec-5] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+29.11.2022 19:11:42.699 [http-nio-8075-exec-5] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+29.11.2022 19:11:42.788 [http-nio-8075-exec-5] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+29.11.2022 19:11:42.802 [http-nio-8075-exec-5] INFO - IN findbyUser - patient: not found
+29.11.2022 19:11:42.805 [http-nio-8075-exec-5] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+29.11.2022 19:11:42.813 [http-nio-8075-exec-5] INFO - IN findbyUser - Doctor: not found
+29.11.2022 19:11:42.814 [http-nio-8075-exec-5] INFO - login:/api/v1/auth/login
+29.11.2022 19:11:54.988 [http-nio-8075-exec-4] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+29.11.2022 19:11:54.988 [http-nio-8075-exec-3] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+29.11.2022 19:11:55.056 [http-nio-8075-exec-3] INFO - Post:/api/v1/admin/admin/{page}
+29.11.2022 19:11:55.060 [http-nio-8075-exec-4] INFO - GetPagesCount:/api/v1/admin/admin/pages
+29.11.2022 19:12:06.046 [http-nio-8075-exec-5] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+29.11.2022 19:12:06.066 [http-nio-8075-exec-5] INFO - Post:/api/v1/admin/admin/{page}
+29.11.2022 19:12:16.005 [http-nio-8075-exec-6] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+29.11.2022 19:12:16.022 [http-nio-8075-exec-6] INFO - IN delete - reception successfully deleted
+29.11.2022 19:12:16.022 [http-nio-8075-exec-6] INFO - DeleteRECEPTION:/api/v1/admin/delreception
+29.11.2022 19:12:28.758 [http-nio-8075-exec-9] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+29.11.2022 19:12:28.784 [http-nio-8075-exec-9] INFO - IN getAll - [] Doctor found
+29.11.2022 19:12:28.784 [http-nio-8075-exec-9] INFO - PostDoctor:/api/v1/admin/doctor
+29.11.2022 19:12:36.333 [http-nio-8075-exec-2] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+29.11.2022 19:12:36.335 [http-nio-8075-exec-4] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+29.11.2022 19:12:36.352 [http-nio-8075-exec-4] INFO - GetPagesCount:/api/v1/admin/admin/pages
+29.11.2022 19:12:36.355 [http-nio-8075-exec-2] INFO - Post:/api/v1/admin/admin/{page}
+29.11.2022 19:12:38.060 [http-nio-8075-exec-6] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+29.11.2022 19:12:38.079 [http-nio-8075-exec-6] INFO - IN getAll - [] patient 
+29.11.2022 19:12:38.081 [http-nio-8075-exec-6] INFO - PostPatient:/api/v1/admin/patient
+29.11.2022 19:14:02.220 [http-nio-8075-exec-9] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+29.11.2022 19:14:14.610 [http-nio-8075-exec-10] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+29.11.2022 19:14:31.891 [http-nio-8075-exec-1] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+29.11.2022 19:14:52.627 [http-nio-8075-exec-10] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+29.11.2022 19:14:52.640 [http-nio-8075-exec-1] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+29.11.2022 19:14:52.648 [http-nio-8075-exec-10] INFO - Post:/api/v1/admin/admin/{page}
+29.11.2022 19:14:52.659 [http-nio-8075-exec-1] INFO - GetPagesCount:/api/v1/admin/admin/pages
+29.11.2022 19:15:09.163 [http-nio-8075-exec-4] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+29.11.2022 19:15:09.182 [http-nio-8075-exec-4] INFO - IN findById - user: User{firstName='Pes', lastName='Pes', email='victor.slemnev@mail.ru', password='$2a$10$6KYvZCb077HUDMmqqpTeDutwVeRNY322/zUgf/iBpGQGLwNCQKbA2', roles=[Role{id: 1, name: ROLE_USER}]} 
+29.11.2022 19:15:09.189 [http-nio-8075-exec-4] INFO - IN findById - user: User{firstName='Pes', lastName='Pes', email='victor.slemnev@mail.ru', password='$2a$10$6KYvZCb077HUDMmqqpTeDutwVeRNY322/zUgf/iBpGQGLwNCQKbA2', roles=[Role{id: 1, name: ROLE_USER}]} 
+29.11.2022 19:15:09.193 [http-nio-8075-exec-4] INFO - IN GetUserInPatient - true patient
+29.11.2022 19:15:09.199 [http-nio-8075-exec-4] INFO - IN findById - user: User{firstName='Pes', lastName='Pes', email='victor.slemnev@mail.ru', password='$2a$10$6KYvZCb077HUDMmqqpTeDutwVeRNY322/zUgf/iBpGQGLwNCQKbA2', roles=[Role{id: 1, name: ROLE_USER}]} 
+29.11.2022 19:15:09.206 [http-nio-8075-exec-4] INFO - IN GetUserInDoctor - Doctor: true 
+29.11.2022 19:15:09.288 [http-nio-8075-exec-4] INFO - IN delete - user  successfully deleted
+29.11.2022 19:15:09.289 [http-nio-8075-exec-4] INFO - DeleteUser:/api/v1/admin/doctor
+29.11.2022 19:15:11.596 [http-nio-8075-exec-2] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+29.11.2022 19:15:11.608 [http-nio-8075-exec-2] INFO - Post:/api/v1/admin/admin/{page}
+29.11.2022 19:15:34.736 [http-nio-8075-exec-6] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+29.11.2022 19:15:34.749 [http-nio-8075-exec-6] INFO - IN getAll - [] Doctor found
+29.11.2022 19:15:34.750 [http-nio-8075-exec-6] INFO - PostDoctor:/api/v1/admin/doctor
+29.11.2022 19:15:52.067 [http-nio-8075-exec-9] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+29.11.2022 19:15:52.071 [http-nio-8075-exec-10] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+29.11.2022 19:15:52.084 [http-nio-8075-exec-9] INFO - Post:/api/v1/admin/admin/{page}
+29.11.2022 19:15:52.089 [http-nio-8075-exec-10] INFO - GetPagesCount:/api/v1/admin/admin/pages
+29.11.2022 19:15:54.158 [http-nio-8075-exec-2] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+29.11.2022 19:15:54.170 [http-nio-8075-exec-2] INFO - IN getAll - [] patient 
+29.11.2022 19:15:54.170 [http-nio-8075-exec-2] INFO - PostPatient:/api/v1/admin/patient
+29.11.2022 19:17:25.009 [SpringContextShutdownHook] INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+29.11.2022 19:17:25.017 [SpringContextShutdownHook] INFO - Shutting down ExecutorService 'applicationTaskExecutor'
+29.11.2022 19:17:25.021 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown initiated...
+29.11.2022 19:17:25.069 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown completed.

@@ -1,0 +1,140 @@
+04.12.2022 17:36:07.690 [background-preinit] INFO - HV000001: Hibernate Validator 5.4.1.Final
+04.12.2022 17:36:07.857 [main] INFO - Starting ClinicApplication on VICTORY with PID 1200 (D:\3 kurs\labs\JAVA\js\Hospital\Clinic\target\classes started by VICTORY in D:\3 kurs\labs\JAVA\js\Hospital)
+04.12.2022 17:36:07.864 [main] INFO - No active profile set, falling back to default profiles: default
+04.12.2022 17:36:10.629 [main] INFO - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+04.12.2022 17:36:10.947 [main] INFO - Finished Spring Data repository scanning in 295ms. Found 9 JPA repository interfaces.
+04.12.2022 17:36:12.748 [main] INFO - Tomcat initialized with port(s): 8075 (http)
+04.12.2022 17:36:12.777 [main] INFO - Initializing ProtocolHandler ["http-nio-8075"]
+04.12.2022 17:36:12.780 [main] INFO - Starting service [Tomcat]
+04.12.2022 17:36:12.781 [main] INFO - Starting Servlet engine: [Apache Tomcat/9.0.38]
+04.12.2022 17:36:13.287 [main] INFO - Initializing Spring embedded WebApplicationContext
+04.12.2022 17:36:13.287 [main] INFO - Root WebApplicationContext: initialization completed in 5143 ms
+04.12.2022 17:36:13.766 [main] INFO - Initializing ExecutorService 'applicationTaskExecutor'
+04.12.2022 17:36:13.893 [task-1] INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+04.12.2022 17:36:14.100 [task-1] INFO - HHH000412: Hibernate ORM core version 5.4.21.Final
+04.12.2022 17:36:14.615 [main] WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04.12.2022 17:36:14.710 [task-1] INFO - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+04.12.2022 17:36:15.040 [task-1] INFO - HikariPool-1 - Starting...
+04.12.2022 17:36:15.575 [main] INFO - Adding welcome page template: index
+04.12.2022 17:36:16.753 [task-1] INFO - HikariPool-1 - Start completed.
+04.12.2022 17:36:16.843 [task-1] INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+04.12.2022 17:36:18.618 [main] INFO - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33d230ce, org.springframework.security.web.context.SecurityContextPersistenceFilter@65f3e805, org.springframework.security.web.header.HeaderWriterFilter@722531ab, org.springframework.security.web.authentication.logout.LogoutFilter@52621501, by.slemnev.Clinic.security.jwt.JwtTokenFilter@35e74e08, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@10618775, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5e99e2cb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@a316f6b, org.springframework.security.web.session.SessionManagementFilter@b506ed0, org.springframework.security.web.access.ExceptionTranslationFilter@74fb5b59, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@49cc9b2a]
+04.12.2022 17:36:18.772 [main] INFO - Starting ProtocolHandler ["http-nio-8075"]
+04.12.2022 17:36:18.858 [main] INFO - Tomcat started on port(s): 8075 (http) with context path ''
+04.12.2022 17:36:18.863 [main] INFO - Triggering deferred initialization of Spring Data repositories…
+04.12.2022 17:36:19.948 [task-1] INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+04.12.2022 17:36:19.967 [task-1] INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+04.12.2022 17:36:21.140 [main] INFO - Spring Data repositories initialized!
+04.12.2022 17:36:21.173 [main] INFO - Started ClinicApplication in 14.541 seconds (JVM running for 19.791)
+04.12.2022 17:43:19.085 [http-nio-8075-exec-1] INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+04.12.2022 17:43:19.086 [http-nio-8075-exec-1] INFO - Initializing Servlet 'dispatcherServlet'
+04.12.2022 17:43:19.106 [http-nio-8075-exec-1] INFO - Completed initialization in 19 ms
+04.12.2022 17:53:04.906 [SpringContextShutdownHook] INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+04.12.2022 17:53:04.924 [SpringContextShutdownHook] INFO - Shutting down ExecutorService 'applicationTaskExecutor'
+04.12.2022 17:53:04.926 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown initiated...
+04.12.2022 17:53:05.049 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown completed.
+04.12.2022 17:53:17.629 [background-preinit] INFO - HV000001: Hibernate Validator 5.4.1.Final
+04.12.2022 17:53:17.729 [main] INFO - Starting ClinicApplication on VICTORY with PID 19484 (D:\3 kurs\labs\JAVA\js\Hospital\Clinic\target\classes started by VICTORY in D:\3 kurs\labs\JAVA\js\Hospital)
+04.12.2022 17:53:17.736 [main] INFO - No active profile set, falling back to default profiles: default
+04.12.2022 17:53:20.216 [main] INFO - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+04.12.2022 17:53:20.553 [main] INFO - Finished Spring Data repository scanning in 317ms. Found 9 JPA repository interfaces.
+04.12.2022 17:53:22.341 [main] INFO - Tomcat initialized with port(s): 8090 (http)
+04.12.2022 17:53:22.361 [main] INFO - Initializing ProtocolHandler ["http-nio-8090"]
+04.12.2022 17:53:22.363 [main] INFO - Starting service [Tomcat]
+04.12.2022 17:53:22.363 [main] INFO - Starting Servlet engine: [Apache Tomcat/9.0.38]
+04.12.2022 17:53:22.870 [main] INFO - Initializing Spring embedded WebApplicationContext
+04.12.2022 17:53:22.871 [main] INFO - Root WebApplicationContext: initialization completed in 4911 ms
+04.12.2022 17:53:23.294 [main] INFO - Initializing ExecutorService 'applicationTaskExecutor'
+04.12.2022 17:53:23.423 [task-1] INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+04.12.2022 17:53:23.588 [task-1] INFO - HHH000412: Hibernate ORM core version 5.4.21.Final
+04.12.2022 17:53:24.041 [main] WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04.12.2022 17:53:24.079 [task-1] INFO - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+04.12.2022 17:53:24.459 [task-1] INFO - HikariPool-1 - Starting...
+04.12.2022 17:53:25.330 [main] INFO - Adding welcome page template: index
+04.12.2022 17:53:26.123 [task-1] INFO - HikariPool-1 - Start completed.
+04.12.2022 17:53:26.325 [task-1] INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+04.12.2022 17:53:28.564 [main] INFO - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a572ea0, org.springframework.security.web.context.SecurityContextPersistenceFilter@5882b202, org.springframework.security.web.header.HeaderWriterFilter@69d103f0, org.springframework.security.web.authentication.logout.LogoutFilter@4a1dda83, by.slemnev.Clinic.security.jwt.JwtTokenFilter@45287377, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@b506ed0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6f96dd64, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7159d601, org.springframework.security.web.session.SessionManagementFilter@6bce4140, org.springframework.security.web.access.ExceptionTranslationFilter@44fd7ba4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@17216605]
+04.12.2022 17:53:28.701 [main] INFO - Starting ProtocolHandler ["http-nio-8090"]
+04.12.2022 17:53:28.860 [main] INFO - Tomcat started on port(s): 8090 (http) with context path ''
+04.12.2022 17:53:28.865 [main] INFO - Triggering deferred initialization of Spring Data repositories…
+04.12.2022 17:53:29.425 [task-1] INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+04.12.2022 17:53:29.440 [task-1] INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+04.12.2022 17:53:30.549 [main] INFO - Spring Data repositories initialized!
+04.12.2022 17:53:30.595 [main] INFO - Started ClinicApplication in 13.913 seconds (JVM running for 17.029)
+04.12.2022 17:57:01.001 [http-nio-8090-exec-1] INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+04.12.2022 17:57:01.001 [http-nio-8090-exec-1] INFO - Initializing Servlet 'dispatcherServlet'
+04.12.2022 17:57:01.018 [http-nio-8090-exec-1] INFO - Completed initialization in 16 ms
+04.12.2022 17:57:42.642 [SpringContextShutdownHook] INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+04.12.2022 17:57:42.646 [SpringContextShutdownHook] INFO - Shutting down ExecutorService 'applicationTaskExecutor'
+04.12.2022 17:57:42.647 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown initiated...
+04.12.2022 17:57:42.674 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown completed.
+04.12.2022 17:57:53.572 [background-preinit] INFO - HV000001: Hibernate Validator 5.4.1.Final
+04.12.2022 17:57:53.626 [main] INFO - Starting ClinicApplication on VICTORY with PID 16200 (D:\3 kurs\labs\JAVA\js\Hospital\Clinic\target\classes started by VICTORY in D:\3 kurs\labs\JAVA\js\Hospital)
+04.12.2022 17:57:53.629 [main] INFO - No active profile set, falling back to default profiles: default
+04.12.2022 17:57:55.522 [main] INFO - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+04.12.2022 17:57:55.826 [main] INFO - Finished Spring Data repository scanning in 287ms. Found 9 JPA repository interfaces.
+04.12.2022 17:57:57.366 [main] INFO - Tomcat initialized with port(s): 8090 (http)
+04.12.2022 17:57:57.390 [main] INFO - Initializing ProtocolHandler ["http-nio-8090"]
+04.12.2022 17:57:57.391 [main] INFO - Starting service [Tomcat]
+04.12.2022 17:57:57.391 [main] INFO - Starting Servlet engine: [Apache Tomcat/9.0.38]
+04.12.2022 17:57:57.758 [main] INFO - Initializing Spring embedded WebApplicationContext
+04.12.2022 17:57:57.759 [main] INFO - Root WebApplicationContext: initialization completed in 3995 ms
+04.12.2022 17:57:58.189 [main] INFO - Initializing ExecutorService 'applicationTaskExecutor'
+04.12.2022 17:57:58.312 [task-1] INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+04.12.2022 17:57:58.427 [task-1] INFO - HHH000412: Hibernate ORM core version 5.4.21.Final
+04.12.2022 17:57:58.681 [main] WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04.12.2022 17:57:58.684 [task-1] INFO - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+04.12.2022 17:57:58.943 [task-1] INFO - HikariPool-1 - Starting...
+04.12.2022 17:57:59.371 [main] INFO - Adding welcome page template: index
+04.12.2022 17:58:00.171 [task-1] INFO - HikariPool-1 - Start completed.
+04.12.2022 17:58:00.337 [task-1] INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+04.12.2022 17:58:01.528 [main] INFO - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@681de87f, org.springframework.security.web.context.SecurityContextPersistenceFilter@f559c74, org.springframework.security.web.header.HeaderWriterFilter@b506ed0, org.springframework.security.web.authentication.logout.LogoutFilter@716f94c1, by.slemnev.Clinic.security.jwt.JwtTokenFilter@2eb1c615, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@720f56e2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2776fd8f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2674d4f6, org.springframework.security.web.session.SessionManagementFilter@5e99e2cb, org.springframework.security.web.access.ExceptionTranslationFilter@5882b202, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@a316f6b]
+04.12.2022 17:58:01.621 [main] INFO - Starting ProtocolHandler ["http-nio-8090"]
+04.12.2022 17:58:01.684 [main] INFO - Tomcat started on port(s): 8090 (http) with context path ''
+04.12.2022 17:58:01.688 [main] INFO - Triggering deferred initialization of Spring Data repositories…
+04.12.2022 17:58:02.548 [task-1] INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+04.12.2022 17:58:02.567 [task-1] INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+04.12.2022 17:58:03.480 [main] INFO - Spring Data repositories initialized!
+04.12.2022 17:58:03.512 [main] INFO - Started ClinicApplication in 10.539 seconds (JVM running for 12.773)
+04.12.2022 17:59:08.621 [http-nio-8090-exec-1] INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+04.12.2022 17:59:08.621 [http-nio-8090-exec-1] INFO - Initializing Servlet 'dispatcherServlet'
+04.12.2022 17:59:08.641 [http-nio-8090-exec-1] INFO - Completed initialization in 20 ms
+04.12.2022 18:01:03.148 [SpringContextShutdownHook] INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+04.12.2022 18:01:03.152 [SpringContextShutdownHook] INFO - Shutting down ExecutorService 'applicationTaskExecutor'
+04.12.2022 18:01:03.153 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown initiated...
+04.12.2022 18:01:03.198 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown completed.
+04.12.2022 18:01:15.544 [background-preinit] INFO - HV000001: Hibernate Validator 5.4.1.Final
+04.12.2022 18:01:15.772 [main] INFO - Starting ClinicApplication on VICTORY with PID 17356 (D:\3 kurs\labs\JAVA\js\Hospital\Clinic\target\classes started by VICTORY in D:\3 kurs\labs\JAVA\js\Hospital)
+04.12.2022 18:01:15.780 [main] INFO - No active profile set, falling back to default profiles: default
+04.12.2022 18:01:19.507 [main] INFO - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+04.12.2022 18:01:19.930 [main] INFO - Finished Spring Data repository scanning in 399ms. Found 9 JPA repository interfaces.
+04.12.2022 18:01:22.053 [main] INFO - Tomcat initialized with port(s): 8090 (http)
+04.12.2022 18:01:22.081 [main] INFO - Initializing ProtocolHandler ["http-nio-8090"]
+04.12.2022 18:01:22.083 [main] INFO - Starting service [Tomcat]
+04.12.2022 18:01:22.084 [main] INFO - Starting Servlet engine: [Apache Tomcat/9.0.38]
+04.12.2022 18:01:22.881 [main] INFO - Initializing Spring embedded WebApplicationContext
+04.12.2022 18:01:22.883 [main] INFO - Root WebApplicationContext: initialization completed in 6811 ms
+04.12.2022 18:01:23.262 [main] INFO - Initializing ExecutorService 'applicationTaskExecutor'
+04.12.2022 18:01:23.392 [task-1] INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+04.12.2022 18:01:23.582 [task-1] INFO - HHH000412: Hibernate ORM core version 5.4.21.Final
+04.12.2022 18:01:24.138 [task-1] INFO - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+04.12.2022 18:01:24.212 [main] WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04.12.2022 18:01:24.453 [task-1] INFO - HikariPool-1 - Starting...
+04.12.2022 18:01:25.049 [main] INFO - Adding welcome page template: index
+04.12.2022 18:01:25.674 [task-1] INFO - HikariPool-1 - Start completed.
+04.12.2022 18:01:25.749 [task-1] INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+04.12.2022 18:01:27.863 [main] INFO - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@230232b0, org.springframework.security.web.context.SecurityContextPersistenceFilter@4b28a7bf, org.springframework.security.web.header.HeaderWriterFilter@5d2a86c0, org.springframework.security.web.authentication.logout.LogoutFilter@16f15ae9, by.slemnev.Clinic.security.jwt.JwtTokenFilter@44fd7ba4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@96abc76, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@9a9aa68, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@22f8adc2, org.springframework.security.web.session.SessionManagementFilter@68bd8ca7, org.springframework.security.web.access.ExceptionTranslationFilter@36510e73, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2ec85a25]
+04.12.2022 18:01:28.033 [main] INFO - Starting ProtocolHandler ["http-nio-8090"]
+04.12.2022 18:01:28.178 [main] INFO - Tomcat started on port(s): 8090 (http) with context path ''
+04.12.2022 18:01:28.184 [main] INFO - Triggering deferred initialization of Spring Data repositories…
+04.12.2022 18:01:28.821 [task-1] INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+04.12.2022 18:01:28.836 [task-1] INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+04.12.2022 18:01:29.839 [main] INFO - Spring Data repositories initialized!
+04.12.2022 18:01:29.869 [main] INFO - Started ClinicApplication in 15.203 seconds (JVM running for 21.107)
+04.12.2022 18:02:03.010 [http-nio-8090-exec-1] INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+04.12.2022 18:02:03.011 [http-nio-8090-exec-1] INFO - Initializing Servlet 'dispatcherServlet'
+04.12.2022 18:02:03.029 [http-nio-8090-exec-1] INFO - Completed initialization in 18 ms
+04.12.2022 18:06:53.074 [SpringContextShutdownHook] INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+04.12.2022 18:06:53.079 [SpringContextShutdownHook] INFO - Shutting down ExecutorService 'applicationTaskExecutor'
+04.12.2022 18:06:53.081 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown initiated...
+04.12.2022 18:06:53.176 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown completed.

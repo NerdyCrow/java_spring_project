@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>AutorisationPage</title>
+
+    <link rel="stylesheet" type="text/css" href ="http://localhost:8090/style.css"/>
+
+</head>
+<body>
+<div class="topnav">
+    <a href="/">Back</a>
+    <h1 class="HeaderText">Hospital</h1>
+</div>
+<div class="content">
+    <b >Email:</b>
+    <input type="text" placeholder="Enter Email" id="Email" autofocus>
+    <hr>
+    <b>Password:</b>
+    <input type="password" placeholder="Enter Password" id="password">
+    <hr>
+    <button onclick="Send()" class="button button5">Submit</button>
+    <div  id="result_for_login"></div>
+</div>
+<script type="text/javascript">
+    async function Send() {
+        let  email = document.getElementById("Email").value;
+        let password = document.getElementById("password").value;
+console.log( email);
+console.log(password);
+        let response = await fetch("/api/v1/auth/login",
+            {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
+                body: JSON.stringify({
+                    email:  email,
+                    password: password
+                })
+            });
+        let data = await response.json();
+        document.getElementById('result_for_login').innerHTML = "";
+        if(response.status === 200)
+        {
+           // console.log(data);
+            localStorage.setItem('token', data.token);
+            localStorage.setItem('email', data.email);
+            localStorage.setItem('Role_id',data.ROLE);
+            localStorage.setItem('User_id',data.USER_ID);
+
+            document.getElementById('result_for_login').innerHTML = "You are successfully autorisation";
+            document.location.href = "/";
+            if(typeof  data.id_patient != "undefined"){
+
+                localStorage.setItem('id_patient',  data.id_patient);
+            }
+            if(typeof  data.id_doc != "undefined"){
+
+                localStorage.setItem('id_doc',  data.id_doc);
+            }
+            if(typeof  data.who != "undefined"){
+
+                localStorage.setItem('who',  data.who);
+            }
+          else  {
+
+                localStorage.setItem('who',  "Error");
+            }
+        }
+        else
+        {
+            document.getElementById('result_for_login').innerHTML=data.error;
+        }
+        console.log(localStorage.getItem('User_id')+"|User id");
+        console.log(localStorage.getItem('token')+"| jwt token");
+        console.log(localStorage.getItem('Role_id')+"| role id");
+        console.log(localStorage.getItem('who')+"| who");
+    }
+
+
+</script>
+<div class="footer">
+    <p style="float: right;">&#169 java spring project 2022</p>
+
+</div>
+</body>
+</html>

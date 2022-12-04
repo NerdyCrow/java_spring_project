@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin page</title>
+    <link rel="stylesheet" type="text/css" href ="http://localhost:8090/style.css"/>
+</head>
+<body>
+<div class="topnav">
+    <a id="rightBut" class="autoris" href="/reg">Регистрация</a>
+    <a id="rightBut" class="autoris" href="/aut">Войти</a>
+    <a  href="/">Main</a>
+    <a id="rightBut" class="autoris" onclick="LogOut()">Выйти</a>
+    <div id="admin_aut"></div>
+    
+    <h1 class="HeaderText">Hospital</h1>
+
+</div>
+
+<div class="content2">
+    <b >Id user:</b><input type="text" placeholder="Input id for delete" id="id_user">
+    <div  id="adminBut"  >
+        <button onclick="Send(0)" class="button button5">Обновить</button>
+        <button onclick="Del_Reception()" class="button button5">Удалить пустые приемы</button>
+        <button onclick="Del()" class="button button5">Удалить</button>
+    </div>
+    <hr>
+    <div id="result_for_login"></div>
+    <div id="pagination"></div>
+    <div id="result_for_delete"></div>
+</div>
+<div class="footer">
+    <p style="float: right;">&#169 java spring project 2022</p>
+
+</div>
+<script type="text/javascript">
+    Send(0);
+    function LogOut(){
+        localStorage.clear();
+        document.location.href = "/aut";
+        document.getElementById('result_for_login').innerHTML="";
+        document.getElementById('result_for_delete').innerHTML="";
+        document.getElementById('admin_aut').innerHTML="";
+    }
+    async function Send(page) {
+
+        document.getElementById('result_for_delete').innerHTML="";
+        let response = await fetch("/api/v1/admin/admin/"+page,
+            {
+                method: 'GET',
+                headers: {'Authorization': 'Bearer_' + localStorage.getItem('token'),'Content-Type': 'application/json', 'Accept': 'application/json'}
+
+            });
+        let data = await response.json();
+        document.getElementById('result_for_login').innerHTML = "";
+        if(response.status === 200)
+        {
+            table_result="<ul>";
+            for(i=0;i<data.length;i++){
+          table_result+=  "<li>";
+          table_result+="id->"+data[i].id+"   |   status->"+data[i].status+"   |   firstName->"+data[i].firstName+"   |   lastName->"+data[i].lastName+
+                  "   |   email->"+data[i].email+"   |   roles->"+data[i].roles[0].name;
+            table_result+=  "</li>";
+            }
+            table_result+="</ul>";
+            document.getElementById('result_for_login').innerHTML =table_result;
+            document.getElementById('admin_aut').innerHTML="<a href='/admin/admin/addDoctor'>Doctor</a>"
+                +"<a href='/admin/admin/addPatient'>Patient</a>"
+        }
+        else
+        {
+            document.getElementById('result_for_login').innerHTML="error";
+        }
+    }
+    async function Del() {
+        document.getElementById('result_for_delete').innerHTML="";
+        if(  document.getElementById('id_user').value !== ""){
+        let response = await fetch('/api/v1/admin/delUser/'+document.getElementById('id_user').value, {
+            method: 'DELETE',
+            headers:  {'Authorization': 'Bearer_' + localStorage.getItem('token'),
+                'Content-Type': 'application/json', 'Accept': 'application/json'
+            }
+        });
+        let data = await response.json();
+        if(response.status === 200)
+        {
+            document.getElementById('result_for_delete').innerHTML ="Delete:"+ data.userError;
+        }
+        else
+        {
+            if(response.status === 403)
+            {
+            document.getElementById('result_for_delete').innerHTML ="Error:no rights";
+            }
+         else  if(response.status === 404)
+            {
+                document.getElementById('result_for_delete').innerHTML ="Error:not input user id";
+            }
+            document.getElementById('result_for_delete').innerHTML= "Delete:"+data.userError+"<br>";
+        }
+        }else{
+            document.getElementById('result_for_delete').innerHTML ="Error:input data";
+        }
+        document.getElementById('id_user').value="";
+    }
+    async function Del_Reception() {
+        document.getElementById('result_for_delete').innerHTML="";
+        let response = await fetch('/api/v1/admin/delreception', {
+            method: 'DELETE',
+            headers:  {'Authorization': 'Bearer_' + localStorage.getItem('token'),
+                'Content-Type': 'application/json', 'Accept': 'application/json'
+            }
+        });
+        let data = await response.json();
+        if(response.status === 200)
+        {
+            document.getElementById('result_for_delete').innerHTML ="Delete reception:"+ data.userError;
+        }
+        else
+        {
+            if(response.status === 403)
+            {
+                document.getElementById('result_for_delete').innerHTML ="Error:no rights";
+            }
+            document.getElementById('result_for_delete').innerHTML= "Delete reception:"+data.userError+"<br>";
+        }
+    }
+   PaginationButtons();
+   async  function PaginationButtons()
+   {
+       console.log(localStorage.getItem('token'));
+       let response = await fetch("/api/v1/admin/admin/pages",
+           {
+               method: 'GET',
+               headers: {'Authorization': 'Bearer_' + localStorage.getItem('token'),'Content-Type': 'application/json', 'Accept': 'application/json'}
+           });
+       let data = await response.json();
+       let count = data.count;
+
+       if(count > 1){
+           for(let i=0; i < count; i++)
+           {
+               let button = document.createElement('button');
+               button.setAttribute('class', 'page btn btn-sm btn-info');
+               button.value = i;
+               button.innerHTML = i + 1;
+               button.onclick = () =>
+               {
+                   Send(button.value);
+               }
+               document.querySelector('#pagination').appendChild(button);
+           }
+       }
+
+   }
+</script>
+</body>
+</html>

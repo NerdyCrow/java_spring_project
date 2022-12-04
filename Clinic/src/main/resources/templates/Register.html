@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>RegisterPage</title>
+
+    <link rel="stylesheet" type="text/css" href ="http://localhost:8090/style.css"/>
+
+</head>
+<body>
+<div class="topnav">
+    <a href="/">Back</a>
+    <a id="rightBut" href="/aut">Autorisation</a>
+    <a  id="rightBut" onclick="LogOut()">LogOut</a>
+    <h1 class="HeaderText">Hospital</h1>
+</div>
+<div class="content">
+    <b>Email:</b>
+    <input type="text" placeholder="Input email" id="email" autofocus>
+    <hr>
+    <b>Password:</b>
+    <input type="password" placeholder="Input password" id="psw">
+    <hr>
+    <b>First name:</b>
+    <input type="text" placeholder="Input first name" id="FirstName">
+    <hr>
+    <b>Last name:</b>
+    <input type="text" placeholder="Input last name" id="LastName">
+    <hr>
+    <button onclick="Send()" class="button button5">Submit</button>
+    <div  id="result"></div>
+</div>
+<script type="text/javascript">
+    function LogOut(){
+        localStorage.clear();
+        document.location.href = "/aut";
+    }
+    async function Send() {
+        let send={
+            email:document.getElementById('email').value,
+            password:document.getElementById('psw').value,
+            firstName:document.getElementById('FirstName').value,
+            lastName:document.getElementById('LastName').value
+        };
+        let response = await fetch('/api/v1/auth/Register', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json', 'Accept': 'application/json'
+            },
+            body: JSON.stringify(send)
+        });
+        let data = await response.json();
+        document.getElementById('result').innerHTML = "";
+        if(response.status === 201)
+        {
+            document.getElementById('result').innerHTML = data.username;
+            //  window.location.href = '/login';
+        }
+        else
+        {
+            if(typeof  data.username != "undefined"){
+                document.getElementById('result').innerHTML = "Error:"+data.username+"<br>";
+            }
+            else{
+                data.errors.forEach(err =>
+                {
+                    document.getElementById('result').innerHTML= "Error:";
+                    document.getElementById('result').innerHTML+=err.field+':'+err.message;
+                });
+            }
+        }
+        document.getElementById('email').value="";
+        document.getElementById('psw').value="";
+        document.getElementById('FirstName').value="";
+        document.getElementById('LastName').value="";
+    }
+
+
+</script>
+<div class="footer">
+    <p style="float: right;">&#169 java spring project 2022</p>
+
+</div>
+</body>
+</html>

@@ -12,7 +12,7 @@ public class PatientDto {
     private  Long id;
     @NotNull(message = "Home adress cannot be null")
     private String Homeadress;
-    @Pattern(regexp = "^\\d{11}$",
+    @Pattern(regexp = "^\\d{12}$",
             message = "phone number is not valid")
     @NotNull(message = "phone number cannot be null")
     private String Passport;

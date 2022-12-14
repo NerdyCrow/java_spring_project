@@ -1,140 +1,699 @@
-04.12.2022 17:36:07.690 [background-preinit] INFO - HV000001: Hibernate Validator 5.4.1.Final
-04.12.2022 17:36:07.857 [main] INFO - Starting ClinicApplication on VICTORY with PID 1200 (D:\3 kurs\labs\JAVA\js\Hospital\Clinic\target\classes started by VICTORY in D:\3 kurs\labs\JAVA\js\Hospital)
-04.12.2022 17:36:07.864 [main] INFO - No active profile set, falling back to default profiles: default
-04.12.2022 17:36:10.629 [main] INFO - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-04.12.2022 17:36:10.947 [main] INFO - Finished Spring Data repository scanning in 295ms. Found 9 JPA repository interfaces.
-04.12.2022 17:36:12.748 [main] INFO - Tomcat initialized with port(s): 8075 (http)
-04.12.2022 17:36:12.777 [main] INFO - Initializing ProtocolHandler ["http-nio-8075"]
-04.12.2022 17:36:12.780 [main] INFO - Starting service [Tomcat]
-04.12.2022 17:36:12.781 [main] INFO - Starting Servlet engine: [Apache Tomcat/9.0.38]
-04.12.2022 17:36:13.287 [main] INFO - Initializing Spring embedded WebApplicationContext
-04.12.2022 17:36:13.287 [main] INFO - Root WebApplicationContext: initialization completed in 5143 ms
-04.12.2022 17:36:13.766 [main] INFO - Initializing ExecutorService 'applicationTaskExecutor'
-04.12.2022 17:36:13.893 [task-1] INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
-04.12.2022 17:36:14.100 [task-1] INFO - HHH000412: Hibernate ORM core version 5.4.21.Final
-04.12.2022 17:36:14.615 [main] WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-04.12.2022 17:36:14.710 [task-1] INFO - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-04.12.2022 17:36:15.040 [task-1] INFO - HikariPool-1 - Starting...
-04.12.2022 17:36:15.575 [main] INFO - Adding welcome page template: index
-04.12.2022 17:36:16.753 [task-1] INFO - HikariPool-1 - Start completed.
-04.12.2022 17:36:16.843 [task-1] INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-04.12.2022 17:36:18.618 [main] INFO - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33d230ce, org.springframework.security.web.context.SecurityContextPersistenceFilter@65f3e805, org.springframework.security.web.header.HeaderWriterFilter@722531ab, org.springframework.security.web.authentication.logout.LogoutFilter@52621501, by.slemnev.Clinic.security.jwt.JwtTokenFilter@35e74e08, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@10618775, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5e99e2cb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@a316f6b, org.springframework.security.web.session.SessionManagementFilter@b506ed0, org.springframework.security.web.access.ExceptionTranslationFilter@74fb5b59, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@49cc9b2a]
-04.12.2022 17:36:18.772 [main] INFO - Starting ProtocolHandler ["http-nio-8075"]
-04.12.2022 17:36:18.858 [main] INFO - Tomcat started on port(s): 8075 (http) with context path ''
-04.12.2022 17:36:18.863 [main] INFO - Triggering deferred initialization of Spring Data repositories…
-04.12.2022 17:36:19.948 [task-1] INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-04.12.2022 17:36:19.967 [task-1] INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
-04.12.2022 17:36:21.140 [main] INFO - Spring Data repositories initialized!
-04.12.2022 17:36:21.173 [main] INFO - Started ClinicApplication in 14.541 seconds (JVM running for 19.791)
-04.12.2022 17:43:19.085 [http-nio-8075-exec-1] INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
-04.12.2022 17:43:19.086 [http-nio-8075-exec-1] INFO - Initializing Servlet 'dispatcherServlet'
-04.12.2022 17:43:19.106 [http-nio-8075-exec-1] INFO - Completed initialization in 19 ms
-04.12.2022 17:53:04.906 [SpringContextShutdownHook] INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
-04.12.2022 17:53:04.924 [SpringContextShutdownHook] INFO - Shutting down ExecutorService 'applicationTaskExecutor'
-04.12.2022 17:53:04.926 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown initiated...
-04.12.2022 17:53:05.049 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown completed.
-04.12.2022 17:53:17.629 [background-preinit] INFO - HV000001: Hibernate Validator 5.4.1.Final
-04.12.2022 17:53:17.729 [main] INFO - Starting ClinicApplication on VICTORY with PID 19484 (D:\3 kurs\labs\JAVA\js\Hospital\Clinic\target\classes started by VICTORY in D:\3 kurs\labs\JAVA\js\Hospital)
-04.12.2022 17:53:17.736 [main] INFO - No active profile set, falling back to default profiles: default
-04.12.2022 17:53:20.216 [main] INFO - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-04.12.2022 17:53:20.553 [main] INFO - Finished Spring Data repository scanning in 317ms. Found 9 JPA repository interfaces.
-04.12.2022 17:53:22.341 [main] INFO - Tomcat initialized with port(s): 8090 (http)
-04.12.2022 17:53:22.361 [main] INFO - Initializing ProtocolHandler ["http-nio-8090"]
-04.12.2022 17:53:22.363 [main] INFO - Starting service [Tomcat]
-04.12.2022 17:53:22.363 [main] INFO - Starting Servlet engine: [Apache Tomcat/9.0.38]
-04.12.2022 17:53:22.870 [main] INFO - Initializing Spring embedded WebApplicationContext
-04.12.2022 17:53:22.871 [main] INFO - Root WebApplicationContext: initialization completed in 4911 ms
-04.12.2022 17:53:23.294 [main] INFO - Initializing ExecutorService 'applicationTaskExecutor'
-04.12.2022 17:53:23.423 [task-1] INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
-04.12.2022 17:53:23.588 [task-1] INFO - HHH000412: Hibernate ORM core version 5.4.21.Final
-04.12.2022 17:53:24.041 [main] WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-04.12.2022 17:53:24.079 [task-1] INFO - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-04.12.2022 17:53:24.459 [task-1] INFO - HikariPool-1 - Starting...
-04.12.2022 17:53:25.330 [main] INFO - Adding welcome page template: index
-04.12.2022 17:53:26.123 [task-1] INFO - HikariPool-1 - Start completed.
-04.12.2022 17:53:26.325 [task-1] INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-04.12.2022 17:53:28.564 [main] INFO - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a572ea0, org.springframework.security.web.context.SecurityContextPersistenceFilter@5882b202, org.springframework.security.web.header.HeaderWriterFilter@69d103f0, org.springframework.security.web.authentication.logout.LogoutFilter@4a1dda83, by.slemnev.Clinic.security.jwt.JwtTokenFilter@45287377, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@b506ed0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6f96dd64, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7159d601, org.springframework.security.web.session.SessionManagementFilter@6bce4140, org.springframework.security.web.access.ExceptionTranslationFilter@44fd7ba4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@17216605]
-04.12.2022 17:53:28.701 [main] INFO - Starting ProtocolHandler ["http-nio-8090"]
-04.12.2022 17:53:28.860 [main] INFO - Tomcat started on port(s): 8090 (http) with context path ''
-04.12.2022 17:53:28.865 [main] INFO - Triggering deferred initialization of Spring Data repositories…
-04.12.2022 17:53:29.425 [task-1] INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-04.12.2022 17:53:29.440 [task-1] INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
-04.12.2022 17:53:30.549 [main] INFO - Spring Data repositories initialized!
-04.12.2022 17:53:30.595 [main] INFO - Started ClinicApplication in 13.913 seconds (JVM running for 17.029)
-04.12.2022 17:57:01.001 [http-nio-8090-exec-1] INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
-04.12.2022 17:57:01.001 [http-nio-8090-exec-1] INFO - Initializing Servlet 'dispatcherServlet'
-04.12.2022 17:57:01.018 [http-nio-8090-exec-1] INFO - Completed initialization in 16 ms
-04.12.2022 17:57:42.642 [SpringContextShutdownHook] INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
-04.12.2022 17:57:42.646 [SpringContextShutdownHook] INFO - Shutting down ExecutorService 'applicationTaskExecutor'
-04.12.2022 17:57:42.647 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown initiated...
-04.12.2022 17:57:42.674 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown completed.
-04.12.2022 17:57:53.572 [background-preinit] INFO - HV000001: Hibernate Validator 5.4.1.Final
-04.12.2022 17:57:53.626 [main] INFO - Starting ClinicApplication on VICTORY with PID 16200 (D:\3 kurs\labs\JAVA\js\Hospital\Clinic\target\classes started by VICTORY in D:\3 kurs\labs\JAVA\js\Hospital)
-04.12.2022 17:57:53.629 [main] INFO - No active profile set, falling back to default profiles: default
-04.12.2022 17:57:55.522 [main] INFO - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-04.12.2022 17:57:55.826 [main] INFO - Finished Spring Data repository scanning in 287ms. Found 9 JPA repository interfaces.
-04.12.2022 17:57:57.366 [main] INFO - Tomcat initialized with port(s): 8090 (http)
-04.12.2022 17:57:57.390 [main] INFO - Initializing ProtocolHandler ["http-nio-8090"]
-04.12.2022 17:57:57.391 [main] INFO - Starting service [Tomcat]
-04.12.2022 17:57:57.391 [main] INFO - Starting Servlet engine: [Apache Tomcat/9.0.38]
-04.12.2022 17:57:57.758 [main] INFO - Initializing Spring embedded WebApplicationContext
-04.12.2022 17:57:57.759 [main] INFO - Root WebApplicationContext: initialization completed in 3995 ms
-04.12.2022 17:57:58.189 [main] INFO - Initializing ExecutorService 'applicationTaskExecutor'
-04.12.2022 17:57:58.312 [task-1] INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
-04.12.2022 17:57:58.427 [task-1] INFO - HHH000412: Hibernate ORM core version 5.4.21.Final
-04.12.2022 17:57:58.681 [main] WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-04.12.2022 17:57:58.684 [task-1] INFO - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-04.12.2022 17:57:58.943 [task-1] INFO - HikariPool-1 - Starting...
-04.12.2022 17:57:59.371 [main] INFO - Adding welcome page template: index
-04.12.2022 17:58:00.171 [task-1] INFO - HikariPool-1 - Start completed.
-04.12.2022 17:58:00.337 [task-1] INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-04.12.2022 17:58:01.528 [main] INFO - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@681de87f, org.springframework.security.web.context.SecurityContextPersistenceFilter@f559c74, org.springframework.security.web.header.HeaderWriterFilter@b506ed0, org.springframework.security.web.authentication.logout.LogoutFilter@716f94c1, by.slemnev.Clinic.security.jwt.JwtTokenFilter@2eb1c615, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@720f56e2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2776fd8f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2674d4f6, org.springframework.security.web.session.SessionManagementFilter@5e99e2cb, org.springframework.security.web.access.ExceptionTranslationFilter@5882b202, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@a316f6b]
-04.12.2022 17:58:01.621 [main] INFO - Starting ProtocolHandler ["http-nio-8090"]
-04.12.2022 17:58:01.684 [main] INFO - Tomcat started on port(s): 8090 (http) with context path ''
-04.12.2022 17:58:01.688 [main] INFO - Triggering deferred initialization of Spring Data repositories…
-04.12.2022 17:58:02.548 [task-1] INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-04.12.2022 17:58:02.567 [task-1] INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
-04.12.2022 17:58:03.480 [main] INFO - Spring Data repositories initialized!
-04.12.2022 17:58:03.512 [main] INFO - Started ClinicApplication in 10.539 seconds (JVM running for 12.773)
-04.12.2022 17:59:08.621 [http-nio-8090-exec-1] INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
-04.12.2022 17:59:08.621 [http-nio-8090-exec-1] INFO - Initializing Servlet 'dispatcherServlet'
-04.12.2022 17:59:08.641 [http-nio-8090-exec-1] INFO - Completed initialization in 20 ms
-04.12.2022 18:01:03.148 [SpringContextShutdownHook] INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
-04.12.2022 18:01:03.152 [SpringContextShutdownHook] INFO - Shutting down ExecutorService 'applicationTaskExecutor'
-04.12.2022 18:01:03.153 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown initiated...
-04.12.2022 18:01:03.198 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown completed.
-04.12.2022 18:01:15.544 [background-preinit] INFO - HV000001: Hibernate Validator 5.4.1.Final
-04.12.2022 18:01:15.772 [main] INFO - Starting ClinicApplication on VICTORY with PID 17356 (D:\3 kurs\labs\JAVA\js\Hospital\Clinic\target\classes started by VICTORY in D:\3 kurs\labs\JAVA\js\Hospital)
-04.12.2022 18:01:15.780 [main] INFO - No active profile set, falling back to default profiles: default
-04.12.2022 18:01:19.507 [main] INFO - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-04.12.2022 18:01:19.930 [main] INFO - Finished Spring Data repository scanning in 399ms. Found 9 JPA repository interfaces.
-04.12.2022 18:01:22.053 [main] INFO - Tomcat initialized with port(s): 8090 (http)
-04.12.2022 18:01:22.081 [main] INFO - Initializing ProtocolHandler ["http-nio-8090"]
-04.12.2022 18:01:22.083 [main] INFO - Starting service [Tomcat]
-04.12.2022 18:01:22.084 [main] INFO - Starting Servlet engine: [Apache Tomcat/9.0.38]
-04.12.2022 18:01:22.881 [main] INFO - Initializing Spring embedded WebApplicationContext
-04.12.2022 18:01:22.883 [main] INFO - Root WebApplicationContext: initialization completed in 6811 ms
-04.12.2022 18:01:23.262 [main] INFO - Initializing ExecutorService 'applicationTaskExecutor'
-04.12.2022 18:01:23.392 [task-1] INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
-04.12.2022 18:01:23.582 [task-1] INFO - HHH000412: Hibernate ORM core version 5.4.21.Final
-04.12.2022 18:01:24.138 [task-1] INFO - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-04.12.2022 18:01:24.212 [main] WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-04.12.2022 18:01:24.453 [task-1] INFO - HikariPool-1 - Starting...
-04.12.2022 18:01:25.049 [main] INFO - Adding welcome page template: index
-04.12.2022 18:01:25.674 [task-1] INFO - HikariPool-1 - Start completed.
-04.12.2022 18:01:25.749 [task-1] INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-04.12.2022 18:01:27.863 [main] INFO - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@230232b0, org.springframework.security.web.context.SecurityContextPersistenceFilter@4b28a7bf, org.springframework.security.web.header.HeaderWriterFilter@5d2a86c0, org.springframework.security.web.authentication.logout.LogoutFilter@16f15ae9, by.slemnev.Clinic.security.jwt.JwtTokenFilter@44fd7ba4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@96abc76, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@9a9aa68, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@22f8adc2, org.springframework.security.web.session.SessionManagementFilter@68bd8ca7, org.springframework.security.web.access.ExceptionTranslationFilter@36510e73, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2ec85a25]
-04.12.2022 18:01:28.033 [main] INFO - Starting ProtocolHandler ["http-nio-8090"]
-04.12.2022 18:01:28.178 [main] INFO - Tomcat started on port(s): 8090 (http) with context path ''
-04.12.2022 18:01:28.184 [main] INFO - Triggering deferred initialization of Spring Data repositories…
-04.12.2022 18:01:28.821 [task-1] INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-04.12.2022 18:01:28.836 [task-1] INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
-04.12.2022 18:01:29.839 [main] INFO - Spring Data repositories initialized!
-04.12.2022 18:01:29.869 [main] INFO - Started ClinicApplication in 15.203 seconds (JVM running for 21.107)
-04.12.2022 18:02:03.010 [http-nio-8090-exec-1] INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
-04.12.2022 18:02:03.011 [http-nio-8090-exec-1] INFO - Initializing Servlet 'dispatcherServlet'
-04.12.2022 18:02:03.029 [http-nio-8090-exec-1] INFO - Completed initialization in 18 ms
-04.12.2022 18:06:53.074 [SpringContextShutdownHook] INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
-04.12.2022 18:06:53.079 [SpringContextShutdownHook] INFO - Shutting down ExecutorService 'applicationTaskExecutor'
-04.12.2022 18:06:53.081 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown initiated...
-04.12.2022 18:06:53.176 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown completed.
+12.12.2022 13:16:33.675 [background-preinit] INFO - HV000001: Hibernate Validator 5.4.1.Final
+12.12.2022 13:16:33.811 [main] INFO - Starting ClinicApplication on VICTORY with PID 25628 (D:\3 kurs\labs\JAVA\java_spring_project\Clinic\target\classes started by VICTORY in D:\3 kurs\labs\JAVA\java_spring_project)
+12.12.2022 13:16:33.814 [main] INFO - No active profile set, falling back to default profiles: default
+12.12.2022 13:16:36.110 [main] INFO - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+12.12.2022 13:16:36.421 [main] INFO - Finished Spring Data repository scanning in 292ms. Found 9 JPA repository interfaces.
+12.12.2022 13:16:37.923 [main] INFO - Tomcat initialized with port(s): 8090 (http)
+12.12.2022 13:16:37.943 [main] INFO - Initializing ProtocolHandler ["http-nio-8090"]
+12.12.2022 13:16:37.944 [main] INFO - Starting service [Tomcat]
+12.12.2022 13:16:37.945 [main] INFO - Starting Servlet engine: [Apache Tomcat/9.0.38]
+12.12.2022 13:16:38.372 [main] INFO - Initializing Spring embedded WebApplicationContext
+12.12.2022 13:16:38.373 [main] INFO - Root WebApplicationContext: initialization completed in 4383 ms
+12.12.2022 13:16:38.755 [main] INFO - Initializing ExecutorService 'applicationTaskExecutor'
+12.12.2022 13:16:38.864 [task-1] INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+12.12.2022 13:16:39.019 [task-1] INFO - HHH000412: Hibernate ORM core version 5.4.21.Final
+12.12.2022 13:16:39.314 [main] WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12.12.2022 13:16:39.478 [task-1] INFO - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+12.12.2022 13:16:39.840 [task-1] INFO - HikariPool-1 - Starting...
+12.12.2022 13:16:40.082 [main] INFO - Adding welcome page template: index
+12.12.2022 13:16:41.733 [task-1] INFO - HikariPool-1 - Start completed.
+12.12.2022 13:16:41.778 [task-1] INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+12.12.2022 13:16:42.790 [main] INFO - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5db0003d, org.springframework.security.web.context.SecurityContextPersistenceFilter@24e5389c, org.springframework.security.web.header.HeaderWriterFilter@dada335, org.springframework.security.web.authentication.logout.LogoutFilter@642c6461, by.slemnev.Clinic.security.jwt.JwtTokenFilter@7f12094d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5e9bf744, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@111a7973, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@589fb74d, org.springframework.security.web.session.SessionManagementFilter@6f315b08, org.springframework.security.web.access.ExceptionTranslationFilter@61a87366, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4bcdd11]
+12.12.2022 13:16:42.942 [main] INFO - Starting ProtocolHandler ["http-nio-8090"]
+12.12.2022 13:16:43.035 [main] INFO - Tomcat started on port(s): 8090 (http) with context path ''
+12.12.2022 13:16:43.048 [main] INFO - Triggering deferred initialization of Spring Data repositories…
+12.12.2022 13:16:44.240 [task-1] INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+12.12.2022 13:16:44.255 [task-1] INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12.12.2022 13:16:45.172 [main] INFO - Spring Data repositories initialized!
+12.12.2022 13:16:45.202 [main] INFO - Started ClinicApplication in 12.34 seconds (JVM running for 15.615)
+12.12.2022 13:17:24.896 [http-nio-8090-exec-1] INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12.12.2022 13:17:24.898 [http-nio-8090-exec-1] INFO - Initializing Servlet 'dispatcherServlet'
+12.12.2022 13:17:24.914 [http-nio-8090-exec-1] INFO - Completed initialization in 16 ms
+12.12.2022 13:17:49.905 [http-nio-8090-exec-8] INFO - IN findByUsername - user: null found by username: victor
+12.12.2022 13:17:58.998 [http-nio-8090-exec-9] INFO - IN findByUsername - user: null found by username: victor
+12.12.2022 13:20:42.608 [http-nio-8090-exec-6] INFO - IN findByUsername - user: null found by username: makaronikdurachhok@gmail.com
+12.12.2022 13:20:44.775 [http-nio-8090-exec-1] INFO - IN findByUsername - user: null found by username: makaronikdurachhok@gmail.com
+12.12.2022 13:20:56.417 [http-nio-8090-exec-2] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:20:56.639 [http-nio-8090-exec-2] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:20:56.701 [http-nio-8090-exec-2] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:20:56.736 [http-nio-8090-exec-2] INFO - IN findbyUser - patient: not found
+12.12.2022 13:20:56.736 [http-nio-8090-exec-2] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:20:56.752 [http-nio-8090-exec-2] INFO - IN findbyUser - Doctor: not found
+12.12.2022 13:20:56.752 [http-nio-8090-exec-2] INFO - login:/api/v1/auth/login
+12.12.2022 13:20:59.385 [http-nio-8090-exec-4] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:20:59.387 [http-nio-8090-exec-8] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:20:59.443 [http-nio-8090-exec-4] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 13:20:59.449 [http-nio-8090-exec-8] INFO - GetPagesCount:/api/v1/admin/admin/pages
+12.12.2022 13:21:28.632 [http-nio-8090-exec-10] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:21:28.640 [http-nio-8090-exec-5] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:21:28.653 [http-nio-8090-exec-10] INFO - GetPagesCount:/api/v1/admin/admin/pages
+12.12.2022 13:21:28.668 [http-nio-8090-exec-5] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 13:21:46.729 [http-nio-8090-exec-1] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:21:46.729 [http-nio-8090-exec-2] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:21:46.755 [http-nio-8090-exec-2] INFO - GetPagesCount:/api/v1/admin/admin/pages
+12.12.2022 13:21:46.760 [http-nio-8090-exec-1] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 13:21:51.658 [http-nio-8090-exec-8] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:21:51.658 [http-nio-8090-exec-4] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:21:51.677 [http-nio-8090-exec-4] INFO - GetPagesCount:/api/v1/admin/admin/pages
+12.12.2022 13:21:51.685 [http-nio-8090-exec-8] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 13:26:45.590 [SpringContextShutdownHook] INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+12.12.2022 13:26:45.610 [SpringContextShutdownHook] INFO - Shutting down ExecutorService 'applicationTaskExecutor'
+12.12.2022 13:26:45.611 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown initiated...
+12.12.2022 13:26:45.665 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown completed.
+12.12.2022 13:26:57.237 [background-preinit] INFO - HV000001: Hibernate Validator 5.4.1.Final
+12.12.2022 13:26:57.340 [main] INFO - Starting ClinicApplication on VICTORY with PID 5028 (D:\3 kurs\labs\JAVA\java_spring_project\Clinic\target\classes started by VICTORY in D:\3 kurs\labs\JAVA\java_spring_project)
+12.12.2022 13:26:57.343 [main] INFO - No active profile set, falling back to default profiles: default
+12.12.2022 13:26:59.401 [main] INFO - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+12.12.2022 13:26:59.698 [main] INFO - Finished Spring Data repository scanning in 276ms. Found 9 JPA repository interfaces.
+12.12.2022 13:27:01.011 [main] INFO - Tomcat initialized with port(s): 8090 (http)
+12.12.2022 13:27:01.026 [main] INFO - Initializing ProtocolHandler ["http-nio-8090"]
+12.12.2022 13:27:01.026 [main] INFO - Starting service [Tomcat]
+12.12.2022 13:27:01.026 [main] INFO - Starting Servlet engine: [Apache Tomcat/9.0.38]
+12.12.2022 13:27:01.402 [main] INFO - Initializing Spring embedded WebApplicationContext
+12.12.2022 13:27:01.402 [main] INFO - Root WebApplicationContext: initialization completed in 3896 ms
+12.12.2022 13:27:01.731 [main] INFO - Initializing ExecutorService 'applicationTaskExecutor'
+12.12.2022 13:27:01.844 [task-1] INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+12.12.2022 13:27:01.930 [task-1] INFO - HHH000412: Hibernate ORM core version 5.4.21.Final
+12.12.2022 13:27:02.238 [main] WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12.12.2022 13:27:02.254 [task-1] INFO - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+12.12.2022 13:27:02.524 [task-1] INFO - HikariPool-1 - Starting...
+12.12.2022 13:27:02.973 [main] INFO - Adding welcome page template: index
+12.12.2022 13:27:04.006 [task-1] INFO - HikariPool-1 - Start completed.
+12.12.2022 13:27:04.115 [task-1] INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+12.12.2022 13:27:05.365 [main] INFO - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3af236d0, org.springframework.security.web.context.SecurityContextPersistenceFilter@7c0df4ab, org.springframework.security.web.header.HeaderWriterFilter@6afbe6a1, org.springframework.security.web.authentication.logout.LogoutFilter@6befbb12, by.slemnev.Clinic.security.jwt.JwtTokenFilter@23564dd2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@388be5fd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@48cdb156, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@54895681, org.springframework.security.web.session.SessionManagementFilter@3915e7c3, org.springframework.security.web.access.ExceptionTranslationFilter@18c880ea, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6793f752]
+12.12.2022 13:27:05.474 [main] INFO - Starting ProtocolHandler ["http-nio-8090"]
+12.12.2022 13:27:05.552 [main] INFO - Tomcat started on port(s): 8090 (http) with context path ''
+12.12.2022 13:27:05.552 [main] INFO - Triggering deferred initialization of Spring Data repositories…
+12.12.2022 13:27:06.396 [task-1] INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+12.12.2022 13:27:06.412 [task-1] INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12.12.2022 13:27:07.197 [main] INFO - Spring Data repositories initialized!
+12.12.2022 13:27:07.228 [main] INFO - Started ClinicApplication in 10.692 seconds (JVM running for 13.173)
+12.12.2022 13:27:32.248 [http-nio-8090-exec-1] INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12.12.2022 13:27:32.249 [http-nio-8090-exec-1] INFO - Initializing Servlet 'dispatcherServlet'
+12.12.2022 13:27:32.267 [http-nio-8090-exec-1] INFO - Completed initialization in 18 ms
+12.12.2022 13:27:33.550 [http-nio-8090-exec-3] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:27:33.550 [http-nio-8090-exec-6] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:27:33.644 [http-nio-8090-exec-6] INFO - GetPagesCount:/api/v1/admin/admin/pages
+12.12.2022 13:27:33.644 [http-nio-8090-exec-3] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 13:33:42.159 [http-nio-8090-exec-6] INFO - Regiser:/api/v1/auth/Register
+12.12.2022 13:33:42.170 [http-nio-8090-exec-6] INFO - IN findByUsername - user: User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+12.12.2022 13:33:54.101 [http-nio-8090-exec-8] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:33:54.337 [http-nio-8090-exec-8] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:33:54.385 [http-nio-8090-exec-8] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:33:54.405 [http-nio-8090-exec-8] INFO - IN findbyUser - patient: not found
+12.12.2022 13:33:54.409 [http-nio-8090-exec-8] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:33:54.422 [http-nio-8090-exec-8] INFO - IN findbyUser - Doctor: not found
+12.12.2022 13:33:54.422 [http-nio-8090-exec-8] INFO - login:/api/v1/auth/login
+12.12.2022 13:33:56.143 [http-nio-8090-exec-6] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:33:56.150 [http-nio-8090-exec-3] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:33:56.180 [http-nio-8090-exec-6] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 13:33:56.184 [http-nio-8090-exec-3] INFO - GetPagesCount:/api/v1/admin/admin/pages
+12.12.2022 13:34:13.140 [http-nio-8090-exec-5] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:34:13.161 [http-nio-8090-exec-5] INFO - IN findById - user: User{firstName='Vadim', lastName='Poperdim', email='victorslemnev@gmail.com', password='$2a$10$TTc9QVVSD8Tw1EZyZPHi..hP3Win9S4cquv4SuOlCuS0QFMTtx7iS', roles=[Role{id: 1, name: ROLE_USER}]} 
+12.12.2022 13:34:13.170 [http-nio-8090-exec-5] INFO - IN findById - user: User{firstName='Vadim', lastName='Poperdim', email='victorslemnev@gmail.com', password='$2a$10$TTc9QVVSD8Tw1EZyZPHi..hP3Win9S4cquv4SuOlCuS0QFMTtx7iS', roles=[Role{id: 1, name: ROLE_USER}]} 
+12.12.2022 13:34:13.183 [http-nio-8090-exec-5] INFO - IN GetUserInPatient - false patient
+12.12.2022 13:34:25.766 [http-nio-8090-exec-9] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:34:25.778 [http-nio-8090-exec-9] INFO - IN findById - user: User{firstName='Vadim', lastName='Poperdim', email='victorslemnev@gmail.com', password='$2a$10$TTc9QVVSD8Tw1EZyZPHi..hP3Win9S4cquv4SuOlCuS0QFMTtx7iS', roles=[Role{id: 1, name: ROLE_USER}]} 
+12.12.2022 13:34:25.786 [http-nio-8090-exec-9] INFO - IN findById - user: User{firstName='Vadim', lastName='Poperdim', email='victorslemnev@gmail.com', password='$2a$10$TTc9QVVSD8Tw1EZyZPHi..hP3Win9S4cquv4SuOlCuS0QFMTtx7iS', roles=[Role{id: 1, name: ROLE_USER}]} 
+12.12.2022 13:34:25.790 [http-nio-8090-exec-9] INFO - IN GetUserInPatient - false patient
+12.12.2022 13:34:42.088 [http-nio-8090-exec-4] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:34:42.124 [http-nio-8090-exec-4] INFO - IN findById - no patient: found by id: not found
+12.12.2022 13:34:42.124 [http-nio-8090-exec-4] INFO - DelPatient:/api/v1/admin/delPatient
+12.12.2022 13:34:44.621 [http-nio-8090-exec-6] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:34:44.621 [http-nio-8090-exec-2] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:34:44.637 [http-nio-8090-exec-6] INFO - GetPagesCount:/api/v1/admin/admin/pages
+12.12.2022 13:34:44.646 [http-nio-8090-exec-2] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 13:34:45.825 [http-nio-8090-exec-3] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:34:45.848 [http-nio-8090-exec-3] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 13:34:49.087 [http-nio-8090-exec-5] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:34:49.101 [http-nio-8090-exec-5] INFO - IN findById - user: User{firstName='Vadim', lastName='Poperdim', email='victorslemnev@gmail.com', password='$2a$10$TTc9QVVSD8Tw1EZyZPHi..hP3Win9S4cquv4SuOlCuS0QFMTtx7iS', roles=[Role{id: 1, name: ROLE_USER}]} 
+12.12.2022 13:34:49.108 [http-nio-8090-exec-5] INFO - IN findById - user: User{firstName='Vadim', lastName='Poperdim', email='victorslemnev@gmail.com', password='$2a$10$TTc9QVVSD8Tw1EZyZPHi..hP3Win9S4cquv4SuOlCuS0QFMTtx7iS', roles=[Role{id: 1, name: ROLE_USER}]} 
+12.12.2022 13:34:49.113 [http-nio-8090-exec-5] INFO - IN GetUserInPatient - false patient
+12.12.2022 13:35:00.030 [http-nio-8090-exec-8] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:35:00.052 [http-nio-8090-exec-8] INFO - IN findById - no Doctor found by id: not found
+12.12.2022 13:35:00.052 [http-nio-8090-exec-8] INFO -  DelDoctor:/api/v1/admin/delDoctor
+12.12.2022 13:35:02.387 [http-nio-8090-exec-1] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:35:02.391 [http-nio-8090-exec-6] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:35:02.407 [http-nio-8090-exec-6] INFO - GetPagesCount:/api/v1/admin/admin/pages
+12.12.2022 13:35:02.412 [http-nio-8090-exec-1] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 13:35:06.194 [http-nio-8090-exec-2] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:35:06.216 [http-nio-8090-exec-2] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 13:35:06.737 [http-nio-8090-exec-3] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:35:06.754 [http-nio-8090-exec-3] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 13:35:06.898 [http-nio-8090-exec-5] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:35:06.916 [http-nio-8090-exec-5] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 13:35:07.917 [http-nio-8090-exec-4] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:35:07.917 [http-nio-8090-exec-8] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:35:07.933 [http-nio-8090-exec-4] INFO - GetPagesCount:/api/v1/admin/admin/pages
+12.12.2022 13:35:07.940 [http-nio-8090-exec-8] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 13:35:13.856 [http-nio-8090-exec-10] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:35:13.896 [http-nio-8090-exec-10] INFO - IN delete - reception successfully deleted
+12.12.2022 13:35:13.897 [http-nio-8090-exec-10] INFO - DeleteRECEPTION:/api/v1/admin/delreception
+12.12.2022 13:35:20.673 [http-nio-8090-exec-6] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:35:20.685 [http-nio-8090-exec-6] INFO - IN findById - user: User{firstName='Vadim', lastName='Poperdim', email='victorslemnev@gmail.com', password='$2a$10$TTc9QVVSD8Tw1EZyZPHi..hP3Win9S4cquv4SuOlCuS0QFMTtx7iS', roles=[Role{id: 1, name: ROLE_USER}]} 
+12.12.2022 13:35:20.691 [http-nio-8090-exec-6] INFO - IN findById - user: User{firstName='Vadim', lastName='Poperdim', email='victorslemnev@gmail.com', password='$2a$10$TTc9QVVSD8Tw1EZyZPHi..hP3Win9S4cquv4SuOlCuS0QFMTtx7iS', roles=[Role{id: 1, name: ROLE_USER}]} 
+12.12.2022 13:35:20.695 [http-nio-8090-exec-6] INFO - IN GetUserInPatient - false patient
+12.12.2022 13:35:27.098 [http-nio-8090-exec-1] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:35:27.107 [http-nio-8090-exec-1] INFO - IN findById - user: User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]} 
+12.12.2022 13:35:27.111 [http-nio-8090-exec-1] INFO - IN findById - user: User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]} 
+12.12.2022 13:35:27.114 [http-nio-8090-exec-1] INFO - IN GetUserInPatient - true patient
+12.12.2022 13:35:27.119 [http-nio-8090-exec-1] INFO - IN findById - user: User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]} 
+12.12.2022 13:35:27.123 [http-nio-8090-exec-1] INFO - IN GetUserInDoctor - Doctor: false 
+12.12.2022 13:35:32.474 [http-nio-8090-exec-2] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:35:32.485 [http-nio-8090-exec-2] INFO - IN findById - no user found by id: 3
+12.12.2022 13:35:56.440 [http-nio-8090-exec-9] INFO - IN findByUsername - user: User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+12.12.2022 13:35:56.699 [http-nio-8090-exec-9] INFO - IN findByUsername - user: User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+12.12.2022 13:35:56.703 [http-nio-8090-exec-9] INFO - IN findByUsername - user: User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+12.12.2022 13:35:56.706 [http-nio-8090-exec-9] INFO - IN findbyUser - patient: not found
+12.12.2022 13:35:56.708 [http-nio-8090-exec-9] INFO - IN findByUsername - user: User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+12.12.2022 13:35:56.712 [http-nio-8090-exec-9] INFO - IN findbyUser - Doctor: 1 
+12.12.2022 13:35:56.715 [http-nio-8090-exec-9] INFO - IN findByUsername - user: User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+12.12.2022 13:35:56.718 [http-nio-8090-exec-9] INFO - IN findbyUser - patient: not found
+12.12.2022 13:35:56.722 [http-nio-8090-exec-9] INFO - IN findByUsername - user: User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+12.12.2022 13:35:56.725 [http-nio-8090-exec-9] INFO - IN findbyUser - Doctor: 1 
+12.12.2022 13:35:56.726 [http-nio-8090-exec-9] INFO - login:/api/v1/auth/login
+12.12.2022 13:35:58.563 [http-nio-8090-exec-6] INFO - IN findByUsername - user: User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+12.12.2022 13:35:58.567 [http-nio-8090-exec-6] INFO - GetAllReceptionForDoctor:/api/v1/users/doctor/{id}
+12.12.2022 13:35:58.579 [http-nio-8090-exec-6] INFO - IN findById - Doctor found by id: Doctor{id=1, user=User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]}, specialty='Терапевт', Name_Hospital='BraslawCentral', Passport='12345678911'}
+12.12.2022 13:35:58.610 [http-nio-8090-exec-6] INFO - IN getByIdDoctor - Reception  found by id: [Reception{id=1, doctor=Doctor{id=1, user=User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]}, specialty='Терапевт', Name_Hospital='BraslawCentral', Passport='12345678911'}, patient=by.slemnev.Clinic.model.Patient@7148e4dc, time='10:15', date_reception='2022-12-15', symptoms='huevo', diagnosis='---', comments='---'}]
+12.12.2022 13:36:24.188 [http-nio-8090-exec-7] INFO - IN findByUsername - user: User{firstName='Vadim', lastName='Poperdim', email='victorslemnev@gmail.com', password='$2a$10$TTc9QVVSD8Tw1EZyZPHi..hP3Win9S4cquv4SuOlCuS0QFMTtx7iS', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victorslemnev@gmail.com
+12.12.2022 13:36:24.451 [http-nio-8090-exec-7] INFO - IN findByUsername - user: User{firstName='Vadim', lastName='Poperdim', email='victorslemnev@gmail.com', password='$2a$10$TTc9QVVSD8Tw1EZyZPHi..hP3Win9S4cquv4SuOlCuS0QFMTtx7iS', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victorslemnev@gmail.com
+12.12.2022 13:36:24.454 [http-nio-8090-exec-7] INFO - IN findByUsername - user: User{firstName='Vadim', lastName='Poperdim', email='victorslemnev@gmail.com', password='$2a$10$TTc9QVVSD8Tw1EZyZPHi..hP3Win9S4cquv4SuOlCuS0QFMTtx7iS', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victorslemnev@gmail.com
+12.12.2022 13:36:24.458 [http-nio-8090-exec-7] INFO - IN findbyUser - patient: 1 
+12.12.2022 13:36:24.461 [http-nio-8090-exec-7] INFO - IN findByUsername - user: User{firstName='Vadim', lastName='Poperdim', email='victorslemnev@gmail.com', password='$2a$10$TTc9QVVSD8Tw1EZyZPHi..hP3Win9S4cquv4SuOlCuS0QFMTtx7iS', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victorslemnev@gmail.com
+12.12.2022 13:36:24.464 [http-nio-8090-exec-7] INFO - IN findbyUser - patient: 1 
+12.12.2022 13:36:24.467 [http-nio-8090-exec-7] INFO - IN findByUsername - user: User{firstName='Vadim', lastName='Poperdim', email='victorslemnev@gmail.com', password='$2a$10$TTc9QVVSD8Tw1EZyZPHi..hP3Win9S4cquv4SuOlCuS0QFMTtx7iS', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victorslemnev@gmail.com
+12.12.2022 13:36:24.470 [http-nio-8090-exec-7] INFO - IN findbyUser - patient: 1 
+12.12.2022 13:36:24.470 [http-nio-8090-exec-7] INFO - login:/api/v1/auth/login
+12.12.2022 13:36:26.454 [http-nio-8090-exec-1] INFO - IN findByUsername - user: User{firstName='Vadim', lastName='Poperdim', email='victorslemnev@gmail.com', password='$2a$10$TTc9QVVSD8Tw1EZyZPHi..hP3Win9S4cquv4SuOlCuS0QFMTtx7iS', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victorslemnev@gmail.com
+12.12.2022 13:36:26.484 [http-nio-8090-exec-1] INFO - IN getAll - [Doctor{id=1, user=User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]}, specialty='Терапевт', Name_Hospital='BraslawCentral', Passport='12345678911'}] Doctor found
+12.12.2022 13:36:26.488 [http-nio-8090-exec-1] INFO - PostDoctor:/api/v1/users/allDoctor
+12.12.2022 13:36:26.536 [http-nio-8090-exec-2] INFO - IN findByUsername - user: User{firstName='Vadim', lastName='Poperdim', email='victorslemnev@gmail.com', password='$2a$10$TTc9QVVSD8Tw1EZyZPHi..hP3Win9S4cquv4SuOlCuS0QFMTtx7iS', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victorslemnev@gmail.com
+12.12.2022 13:36:26.539 [http-nio-8090-exec-2] INFO - GetAllReceptionForPatient:/api/v1/users/patient/{id}
+12.12.2022 13:36:26.551 [http-nio-8090-exec-2] INFO - IN findById - patient:  found by id: by.slemnev.Clinic.model.Patient@2d70cd33
+12.12.2022 13:36:26.562 [http-nio-8090-exec-2] INFO - IN getByIdPatient - Reception  found by id: [Reception{id=1, doctor=Doctor{id=1, user=User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]}, specialty='Терапевт', Name_Hospital='BraslawCentral', Passport='12345678911'}, patient=by.slemnev.Clinic.model.Patient@2d70cd33, time='10:15', date_reception='2022-12-15', symptoms='huevo', diagnosis='---', comments='---'}]
+12.12.2022 13:36:52.727 [http-nio-8090-exec-9] INFO - IN findByUsername - user: User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+12.12.2022 13:36:52.967 [http-nio-8090-exec-9] INFO - IN findByUsername - user: User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+12.12.2022 13:36:52.971 [http-nio-8090-exec-9] INFO - IN findByUsername - user: User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+12.12.2022 13:36:52.974 [http-nio-8090-exec-9] INFO - IN findbyUser - patient: not found
+12.12.2022 13:36:52.977 [http-nio-8090-exec-9] INFO - IN findByUsername - user: User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+12.12.2022 13:36:52.981 [http-nio-8090-exec-9] INFO - IN findbyUser - Doctor: 1 
+12.12.2022 13:36:52.984 [http-nio-8090-exec-9] INFO - IN findByUsername - user: User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+12.12.2022 13:36:52.987 [http-nio-8090-exec-9] INFO - IN findbyUser - patient: not found
+12.12.2022 13:36:52.990 [http-nio-8090-exec-9] INFO - IN findByUsername - user: User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+12.12.2022 13:36:52.993 [http-nio-8090-exec-9] INFO - IN findbyUser - Doctor: 1 
+12.12.2022 13:36:52.994 [http-nio-8090-exec-9] INFO - login:/api/v1/auth/login
+12.12.2022 13:36:54.534 [http-nio-8090-exec-6] INFO - IN findByUsername - user: User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+12.12.2022 13:36:54.536 [http-nio-8090-exec-6] INFO - GetAllReceptionForDoctor:/api/v1/users/doctor/{id}
+12.12.2022 13:36:54.547 [http-nio-8090-exec-6] INFO - IN findById - Doctor found by id: Doctor{id=1, user=User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]}, specialty='Терапевт', Name_Hospital='BraslawCentral', Passport='12345678911'}
+12.12.2022 13:36:54.557 [http-nio-8090-exec-6] INFO - IN getByIdDoctor - Reception  found by id: [Reception{id=1, doctor=Doctor{id=1, user=User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]}, specialty='Терапевт', Name_Hospital='BraslawCentral', Passport='12345678911'}, patient=by.slemnev.Clinic.model.Patient@66074675, time='10:15', date_reception='2022-12-15', symptoms='huevo', diagnosis='---', comments='---'}]
+12.12.2022 13:37:04.381 [http-nio-8090-exec-1] INFO - IN findByUsername - user: User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+12.12.2022 13:37:04.392 [http-nio-8090-exec-1] INFO - UpdateReception:/api/v1/users/updateReception
+12.12.2022 13:37:04.406 [http-nio-8090-exec-1] INFO - IN findById - Reception  found by id: Reception{id=1, doctor=Doctor{id=1, user=User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]}, specialty='Терапевт', Name_Hospital='BraslawCentral', Passport='12345678911'}, patient=by.slemnev.Clinic.model.Patient@5d9aad37, time='10:15', date_reception='2022-12-15', symptoms='huevo', diagnosis='---', comments='---'}
+12.12.2022 13:37:06.964 [http-nio-8090-exec-2] INFO - IN findByUsername - user: User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+12.12.2022 13:37:06.967 [http-nio-8090-exec-2] INFO - GetAllReceptionForDoctor:/api/v1/users/doctor/{id}
+12.12.2022 13:37:06.977 [http-nio-8090-exec-2] INFO - IN findById - Doctor found by id: Doctor{id=1, user=User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]}, specialty='Терапевт', Name_Hospital='BraslawCentral', Passport='12345678911'}
+12.12.2022 13:37:06.986 [http-nio-8090-exec-2] INFO - IN getByIdDoctor - Reception  found by id: [Reception{id=1, doctor=Doctor{id=1, user=User{firstName='Daniil', lastName='Sokolovskii', email='victor.slemnev@mail.ru', password='$2a$10$ojD8ncjSnzVugVbTY3fssuoZ41yzkQp7f8RuetD2rq8l2orziliAi', roles=[Role{id: 3, name: ROLE_DOCTOR}]}, specialty='Терапевт', Name_Hospital='BraslawCentral', Passport='12345678911'}, patient=by.slemnev.Clinic.model.Patient@3c8ce5a1, time='10:15', date_reception='2022-12-15', symptoms='huevo', diagnosis='ewq', comments='qwer'}]
+12.12.2022 13:37:16.269 [http-nio-8090-exec-7] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:37:16.498 [http-nio-8090-exec-7] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:37:16.501 [http-nio-8090-exec-7] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:37:16.504 [http-nio-8090-exec-7] INFO - IN findbyUser - patient: not found
+12.12.2022 13:37:16.507 [http-nio-8090-exec-7] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:37:16.510 [http-nio-8090-exec-7] INFO - IN findbyUser - Doctor: not found
+12.12.2022 13:37:16.510 [http-nio-8090-exec-7] INFO - login:/api/v1/auth/login
+12.12.2022 13:37:18.179 [http-nio-8090-exec-2] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:37:18.181 [http-nio-8090-exec-1] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:37:18.197 [http-nio-8090-exec-2] INFO - GetPagesCount:/api/v1/admin/admin/pages
+12.12.2022 13:37:18.203 [http-nio-8090-exec-1] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 13:37:23.272 [http-nio-8090-exec-8] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:37:23.275 [http-nio-8090-exec-4] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:37:23.287 [http-nio-8090-exec-8] INFO - GetPagesCount:/api/v1/admin/admin/pages
+12.12.2022 13:37:23.297 [http-nio-8090-exec-4] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 13:37:24.053 [http-nio-8090-exec-10] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:37:24.057 [http-nio-8090-exec-10] INFO - IN delete - reception successfully deleted
+12.12.2022 13:37:24.058 [http-nio-8090-exec-10] INFO - DeleteRECEPTION:/api/v1/admin/delreception
+12.12.2022 13:37:28.021 [http-nio-8090-exec-6] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:37:28.031 [http-nio-8090-exec-6] INFO - IN findById - user: User{firstName='Vadim', lastName='Poperdim', email='victorslemnev@gmail.com', password='$2a$10$TTc9QVVSD8Tw1EZyZPHi..hP3Win9S4cquv4SuOlCuS0QFMTtx7iS', roles=[Role{id: 1, name: ROLE_USER}]} 
+12.12.2022 13:37:28.035 [http-nio-8090-exec-6] INFO - IN findById - user: User{firstName='Vadim', lastName='Poperdim', email='victorslemnev@gmail.com', password='$2a$10$TTc9QVVSD8Tw1EZyZPHi..hP3Win9S4cquv4SuOlCuS0QFMTtx7iS', roles=[Role{id: 1, name: ROLE_USER}]} 
+12.12.2022 13:37:28.038 [http-nio-8090-exec-6] INFO - IN GetUserInPatient - false patient
+12.12.2022 13:37:35.920 [http-nio-8090-exec-3] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:37:35.933 [http-nio-8090-exec-3] INFO - IN findById - no patient: found by id: not found
+12.12.2022 13:37:35.933 [http-nio-8090-exec-3] INFO - DelPatient:/api/v1/admin/delPatient
+12.12.2022 13:37:39.172 [http-nio-8090-exec-8] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:37:39.173 [http-nio-8090-exec-7] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:37:39.187 [http-nio-8090-exec-8] INFO - GetPagesCount:/api/v1/admin/admin/pages
+12.12.2022 13:37:39.191 [http-nio-8090-exec-7] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 13:37:43.926 [http-nio-8090-exec-4] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:37:43.945 [http-nio-8090-exec-4] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 13:37:45.110 [http-nio-8090-exec-10] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:37:45.128 [http-nio-8090-exec-10] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 13:37:48.271 [http-nio-8090-exec-6] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:37:48.275 [http-nio-8090-exec-6] INFO - IN delete - reception successfully deleted
+12.12.2022 13:37:48.276 [http-nio-8090-exec-6] INFO - DeleteRECEPTION:/api/v1/admin/delreception
+12.12.2022 13:37:49.076 [http-nio-8090-exec-2] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:37:49.081 [http-nio-8090-exec-2] INFO - IN delete - reception successfully deleted
+12.12.2022 13:37:49.082 [http-nio-8090-exec-2] INFO - DeleteRECEPTION:/api/v1/admin/delreception
+12.12.2022 13:37:49.243 [http-nio-8090-exec-1] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:37:49.248 [http-nio-8090-exec-1] INFO - IN delete - reception successfully deleted
+12.12.2022 13:37:49.248 [http-nio-8090-exec-1] INFO - DeleteRECEPTION:/api/v1/admin/delreception
+12.12.2022 13:37:49.474 [http-nio-8090-exec-3] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:37:49.479 [http-nio-8090-exec-3] INFO - IN delete - reception successfully deleted
+12.12.2022 13:37:49.479 [http-nio-8090-exec-3] INFO - DeleteRECEPTION:/api/v1/admin/delreception
+12.12.2022 13:37:50.665 [http-nio-8090-exec-5] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:37:50.679 [http-nio-8090-exec-5] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 13:37:59.971 [http-nio-8090-exec-7] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:37:59.982 [http-nio-8090-exec-7] INFO - IN findById - no patient: found by id: not found
+12.12.2022 13:37:59.982 [http-nio-8090-exec-7] INFO - DelPatient:/api/v1/admin/delPatient
+12.12.2022 13:38:03.028 [http-nio-8090-exec-2] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:38:03.028 [http-nio-8090-exec-6] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:38:03.041 [http-nio-8090-exec-2] INFO - GetPagesCount:/api/v1/admin/admin/pages
+12.12.2022 13:38:03.046 [http-nio-8090-exec-6] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 13:38:14.602 [http-nio-8090-exec-5] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:38:14.826 [http-nio-8090-exec-5] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:38:14.830 [http-nio-8090-exec-5] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:38:14.833 [http-nio-8090-exec-5] INFO - IN findbyUser - patient: not found
+12.12.2022 13:38:14.835 [http-nio-8090-exec-5] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:38:14.838 [http-nio-8090-exec-5] INFO - IN findbyUser - Doctor: not found
+12.12.2022 13:38:14.838 [http-nio-8090-exec-5] INFO - login:/api/v1/auth/login
+12.12.2022 13:38:16.341 [http-nio-8090-exec-10] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:38:16.342 [http-nio-8090-exec-2] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:38:16.356 [http-nio-8090-exec-2] INFO - GetPagesCount:/api/v1/admin/admin/pages
+12.12.2022 13:38:16.360 [http-nio-8090-exec-10] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 13:49:53.328 [http-nio-8090-exec-3] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:49:53.342 [http-nio-8090-exec-3] INFO - IN findById - user: User{firstName='Vadim', lastName='Poperdim', email='victorslemnev@gmail.com', password='$2a$10$TTc9QVVSD8Tw1EZyZPHi..hP3Win9S4cquv4SuOlCuS0QFMTtx7iS', roles=[Role{id: 1, name: ROLE_USER}]} 
+12.12.2022 13:49:53.349 [http-nio-8090-exec-3] INFO - IN findById - user: User{firstName='Vadim', lastName='Poperdim', email='victorslemnev@gmail.com', password='$2a$10$TTc9QVVSD8Tw1EZyZPHi..hP3Win9S4cquv4SuOlCuS0QFMTtx7iS', roles=[Role{id: 1, name: ROLE_USER}]} 
+12.12.2022 13:49:53.353 [http-nio-8090-exec-3] INFO - IN GetUserInPatient - false patient
+12.12.2022 13:50:20.200 [http-nio-8090-exec-5] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:50:20.220 [http-nio-8090-exec-5] INFO - IN findById - user: User{firstName='Vadim', lastName='Poperdim', email='victorslemnev@gmail.com', password='$2a$10$TTc9QVVSD8Tw1EZyZPHi..hP3Win9S4cquv4SuOlCuS0QFMTtx7iS', roles=[Role{id: 1, name: ROLE_USER}]} 
+12.12.2022 13:50:20.226 [http-nio-8090-exec-5] INFO - IN findById - user: User{firstName='Vadim', lastName='Poperdim', email='victorslemnev@gmail.com', password='$2a$10$TTc9QVVSD8Tw1EZyZPHi..hP3Win9S4cquv4SuOlCuS0QFMTtx7iS', roles=[Role{id: 1, name: ROLE_USER}]} 
+12.12.2022 13:50:20.230 [http-nio-8090-exec-5] INFO - IN GetUserInPatient - false patient
+12.12.2022 13:50:51.472 [http-nio-8090-exec-7] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:51:07.623 [http-nio-8090-exec-4] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:51:09.560 [http-nio-8090-exec-2] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:51:20.908 [http-nio-8090-exec-10] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:51:38.077 [http-nio-8090-exec-1] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:52:10.596 [http-nio-8090-exec-6] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:52:23.547 [http-nio-8090-exec-3] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:52:23.563 [http-nio-8090-exec-3] INFO - IN findById - user: User{firstName='Vadim', lastName='Poperdim', email='victorslemnev@gmail.com', password='$2a$10$TTc9QVVSD8Tw1EZyZPHi..hP3Win9S4cquv4SuOlCuS0QFMTtx7iS', roles=[Role{id: 1, name: ROLE_USER}]} 
+12.12.2022 13:52:23.566 [http-nio-8090-exec-3] INFO - IN GetUserInDoctor - Doctor: true 
+12.12.2022 13:52:23.570 [http-nio-8090-exec-3] INFO - IN GetUserInPatient - false patient
+12.12.2022 13:52:23.571 [http-nio-8090-exec-3] INFO - RegiserPatient:/api/v1/admin/addPatient
+12.12.2022 13:52:33.175 [http-nio-8090-exec-5] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:52:33.190 [http-nio-8090-exec-5] INFO - IN findById - no patient: found by id: not found
+12.12.2022 13:52:33.190 [http-nio-8090-exec-5] INFO - DelPatient:/api/v1/admin/delPatient
+12.12.2022 13:52:35.613 [http-nio-8090-exec-4] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:52:35.615 [http-nio-8090-exec-7] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:52:35.630 [http-nio-8090-exec-4] INFO - GetPagesCount:/api/v1/admin/admin/pages
+12.12.2022 13:52:35.636 [http-nio-8090-exec-7] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 13:52:39.348 [http-nio-8090-exec-2] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:52:39.348 [http-nio-8090-exec-2] INFO - IN findById - user: User{firstName='Vadim', lastName='Poperdim', email='victorslemnev@gmail.com', password='$2a$10$TTc9QVVSD8Tw1EZyZPHi..hP3Win9S4cquv4SuOlCuS0QFMTtx7iS', roles=[Role{id: 1, name: ROLE_USER}]} 
+12.12.2022 13:52:39.348 [http-nio-8090-exec-2] INFO - IN findById - user: User{firstName='Vadim', lastName='Poperdim', email='victorslemnev@gmail.com', password='$2a$10$TTc9QVVSD8Tw1EZyZPHi..hP3Win9S4cquv4SuOlCuS0QFMTtx7iS', roles=[Role{id: 1, name: ROLE_USER}]} 
+12.12.2022 13:52:39.364 [http-nio-8090-exec-2] INFO - IN GetUserInPatient - false patient
+12.12.2022 13:52:40.551 [http-nio-8090-exec-10] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:52:40.572 [http-nio-8090-exec-10] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 13:52:41.047 [http-nio-8090-exec-1] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:52:41.063 [http-nio-8090-exec-1] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 13:52:41.206 [http-nio-8090-exec-6] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 13:52:41.223 [http-nio-8090-exec-6] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 13:58:29.720 [SpringContextShutdownHook] INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+12.12.2022 13:58:29.734 [SpringContextShutdownHook] INFO - Shutting down ExecutorService 'applicationTaskExecutor'
+12.12.2022 13:58:29.735 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown initiated...
+12.12.2022 13:58:29.769 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown completed.
+12.12.2022 13:58:42.616 [background-preinit] INFO - HV000001: Hibernate Validator 5.4.1.Final
+12.12.2022 13:58:42.670 [main] INFO - Starting ClinicApplication on VICTORY with PID 3604 (D:\3 kurs\labs\JAVA\java_spring_project\Clinic\target\classes started by VICTORY in D:\3 kurs\labs\JAVA\java_spring_project)
+12.12.2022 13:58:42.673 [main] INFO - No active profile set, falling back to default profiles: default
+12.12.2022 13:58:44.289 [main] INFO - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+12.12.2022 13:58:44.484 [main] INFO - Finished Spring Data repository scanning in 183ms. Found 9 JPA repository interfaces.
+12.12.2022 13:58:45.618 [main] INFO - Tomcat initialized with port(s): 8090 (http)
+12.12.2022 13:58:45.633 [main] INFO - Initializing ProtocolHandler ["http-nio-8090"]
+12.12.2022 13:58:45.634 [main] INFO - Starting service [Tomcat]
+12.12.2022 13:58:45.635 [main] INFO - Starting Servlet engine: [Apache Tomcat/9.0.38]
+12.12.2022 13:58:45.908 [main] INFO - Initializing Spring embedded WebApplicationContext
+12.12.2022 13:58:45.909 [main] INFO - Root WebApplicationContext: initialization completed in 3114 ms
+12.12.2022 13:58:46.200 [main] INFO - Initializing ExecutorService 'applicationTaskExecutor'
+12.12.2022 13:58:46.282 [task-1] INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+12.12.2022 13:58:46.360 [task-1] INFO - HHH000412: Hibernate ORM core version 5.4.21.Final
+12.12.2022 13:58:46.586 [task-1] INFO - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+12.12.2022 13:58:46.599 [main] WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12.12.2022 13:58:46.760 [task-1] INFO - HikariPool-1 - Starting...
+12.12.2022 13:58:47.128 [main] INFO - Adding welcome page template: index
+12.12.2022 13:58:47.678 [task-1] INFO - HikariPool-1 - Start completed.
+12.12.2022 13:58:47.716 [task-1] INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+12.12.2022 13:58:48.788 [main] INFO - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58c42c8c, org.springframework.security.web.context.SecurityContextPersistenceFilter@167a21b, org.springframework.security.web.header.HeaderWriterFilter@5ac044ef, org.springframework.security.web.authentication.logout.LogoutFilter@7b5021d1, by.slemnev.Clinic.security.jwt.JwtTokenFilter@3af236d0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e362407, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@45e140ae, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@23564dd2, org.springframework.security.web.session.SessionManagementFilter@1d99ee1b, org.springframework.security.web.access.ExceptionTranslationFilter@164d01ba, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@44faa4f2]
+12.12.2022 13:58:48.869 [main] INFO - Starting ProtocolHandler ["http-nio-8090"]
+12.12.2022 13:58:48.930 [main] INFO - Tomcat started on port(s): 8090 (http) with context path ''
+12.12.2022 13:58:48.933 [main] INFO - Triggering deferred initialization of Spring Data repositories…
+12.12.2022 13:58:49.550 [task-1] INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+12.12.2022 13:58:49.564 [task-1] INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12.12.2022 13:58:50.273 [main] INFO - Spring Data repositories initialized!
+12.12.2022 13:58:50.296 [main] INFO - Started ClinicApplication in 8.291 seconds (JVM running for 10.474)
+12.12.2022 13:59:30.399 [http-nio-8090-exec-1] INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12.12.2022 13:59:30.399 [http-nio-8090-exec-1] INFO - Initializing Servlet 'dispatcherServlet'
+12.12.2022 13:59:30.410 [http-nio-8090-exec-1] INFO - Completed initialization in 11 ms
+12.12.2022 13:59:46.678 [http-nio-8090-exec-3] INFO - Regiser:/api/v1/auth/Register
+12.12.2022 13:59:46.927 [http-nio-8090-exec-3] INFO - IN findByUsername - user: null found by username: victorslemnev@gmail.com
+12.12.2022 13:59:47.318 [http-nio-8090-exec-3] INFO - IN register - user: User{firstName='Patient', lastName='PAtient', email='victorslemnev@gmail.com', password='$2a$10$QJnNRJ.3E7nKgXe2bzw6/.A4eEeTcLzKqj2Yaa1BRhzoA9ekkRZOu', roles=[Role{id: 1, name: ROLE_USER}]} successfully registered
+12.12.2022 13:59:54.239 [http-nio-8090-exec-6] INFO - IN findByUsername - user: User{firstName='Patient', lastName='PAtient', email='victorslemnev@gmail.com', password='$2a$10$QJnNRJ.3E7nKgXe2bzw6/.A4eEeTcLzKqj2Yaa1BRhzoA9ekkRZOu', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victorslemnev@gmail.com
+12.12.2022 14:00:01.900 [http-nio-8090-exec-7] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:00:02.124 [http-nio-8090-exec-7] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:00:02.187 [http-nio-8090-exec-7] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:00:02.203 [http-nio-8090-exec-7] INFO - IN findbyUser - patient: not found
+12.12.2022 14:00:02.203 [http-nio-8090-exec-7] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:00:02.218 [http-nio-8090-exec-7] INFO - IN findbyUser - Doctor: not found
+12.12.2022 14:00:02.218 [http-nio-8090-exec-7] INFO - login:/api/v1/auth/login
+12.12.2022 14:00:04.061 [http-nio-8090-exec-3] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:00:04.063 [http-nio-8090-exec-2] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:00:04.110 [http-nio-8090-exec-2] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 14:00:04.115 [http-nio-8090-exec-3] INFO - GetPagesCount:/api/v1/admin/admin/pages
+12.12.2022 14:00:14.346 [http-nio-8090-exec-8] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:00:14.347 [http-nio-8090-exec-9] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:00:14.374 [http-nio-8090-exec-9] INFO - GetPagesCount:/api/v1/admin/admin/pages
+12.12.2022 14:00:14.376 [http-nio-8090-exec-8] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 14:00:27.320 [http-nio-8090-exec-3] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:00:27.367 [http-nio-8090-exec-3] INFO - IN findById - user: User{firstName='Patient', lastName='PAtient', email='victorslemnev@gmail.com', password='$2a$10$QJnNRJ.3E7nKgXe2bzw6/.A4eEeTcLzKqj2Yaa1BRhzoA9ekkRZOu', roles=[Role{id: 1, name: ROLE_USER}]} 
+12.12.2022 14:00:27.372 [http-nio-8090-exec-3] INFO - IN GetUserInDoctor - Doctor: true 
+12.12.2022 14:00:27.376 [http-nio-8090-exec-3] INFO - IN GetUserInPatient - true patient
+12.12.2022 14:00:27.415 [http-nio-8090-exec-3] INFO - IN register - Patient: by.slemnev.Clinic.model.Patient@50b020a0 successfully registered
+12.12.2022 14:00:29.591 [http-nio-8090-exec-3] INFO - RegiserPatient:/api/v1/admin/addPatient
+12.12.2022 14:00:31.992 [http-nio-8090-exec-5] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:00:31.992 [http-nio-8090-exec-6] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:00:32.017 [http-nio-8090-exec-5] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 14:00:32.020 [http-nio-8090-exec-6] INFO - GetPagesCount:/api/v1/admin/admin/pages
+12.12.2022 14:00:33.703 [http-nio-8090-exec-7] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:00:33.711 [http-nio-8090-exec-7] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 14:00:59.902 [http-nio-8090-exec-9] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:00:59.917 [http-nio-8090-exec-9] INFO - IN findById - no user found by id: 4
+12.12.2022 14:01:06.484 [http-nio-8090-exec-2] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:01:06.503 [http-nio-8090-exec-4] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:01:06.516 [http-nio-8090-exec-2] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 14:01:06.535 [http-nio-8090-exec-4] INFO - GetPagesCount:/api/v1/admin/admin/pages
+12.12.2022 14:01:09.662 [http-nio-8090-exec-5] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:01:09.675 [http-nio-8090-exec-5] INFO - IN findById - user: User{firstName='Patient', lastName='PAtient', email='victorslemnev@gmail.com', password='$2a$10$QJnNRJ.3E7nKgXe2bzw6/.A4eEeTcLzKqj2Yaa1BRhzoA9ekkRZOu', roles=[Role{id: 1, name: ROLE_USER}]} 
+12.12.2022 14:01:09.679 [http-nio-8090-exec-5] INFO - IN findById - user: User{firstName='Patient', lastName='PAtient', email='victorslemnev@gmail.com', password='$2a$10$QJnNRJ.3E7nKgXe2bzw6/.A4eEeTcLzKqj2Yaa1BRhzoA9ekkRZOu', roles=[Role{id: 1, name: ROLE_USER}]} 
+12.12.2022 14:01:09.679 [http-nio-8090-exec-5] INFO - IN GetUserInPatient - false patient
+12.12.2022 14:01:12.907 [http-nio-8090-exec-9] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:01:12.932 [http-nio-8090-exec-9] INFO - IN findById - no patient: found by id: not found
+12.12.2022 14:01:12.933 [http-nio-8090-exec-9] INFO - DelPatient:/api/v1/admin/delPatient
+12.12.2022 14:01:14.846 [http-nio-8090-exec-1] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:01:14.853 [http-nio-8090-exec-3] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:01:14.872 [http-nio-8090-exec-1] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 14:01:14.875 [http-nio-8090-exec-3] INFO - GetPagesCount:/api/v1/admin/admin/pages
+12.12.2022 14:01:16.946 [http-nio-8090-exec-2] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:01:16.960 [http-nio-8090-exec-2] INFO - IN findById - user: User{firstName='Patient', lastName='PAtient', email='victorslemnev@gmail.com', password='$2a$10$QJnNRJ.3E7nKgXe2bzw6/.A4eEeTcLzKqj2Yaa1BRhzoA9ekkRZOu', roles=[Role{id: 1, name: ROLE_USER}]} 
+12.12.2022 14:01:16.970 [http-nio-8090-exec-2] INFO - IN findById - user: User{firstName='Patient', lastName='PAtient', email='victorslemnev@gmail.com', password='$2a$10$QJnNRJ.3E7nKgXe2bzw6/.A4eEeTcLzKqj2Yaa1BRhzoA9ekkRZOu', roles=[Role{id: 1, name: ROLE_USER}]} 
+12.12.2022 14:01:16.975 [http-nio-8090-exec-2] INFO - IN GetUserInPatient - false patient
+12.12.2022 14:01:20.724 [http-nio-8090-exec-9] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:01:20.724 [http-nio-8090-exec-8] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:01:20.745 [http-nio-8090-exec-9] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 14:01:20.747 [http-nio-8090-exec-8] INFO - GetPagesCount:/api/v1/admin/admin/pages
+12.12.2022 14:05:09.037 [SpringContextShutdownHook] INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+12.12.2022 14:05:09.042 [SpringContextShutdownHook] INFO - Shutting down ExecutorService 'applicationTaskExecutor'
+12.12.2022 14:05:09.043 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown initiated...
+12.12.2022 14:05:09.072 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown completed.
+12.12.2022 14:05:21.797 [background-preinit] INFO - HV000001: Hibernate Validator 5.4.1.Final
+12.12.2022 14:05:21.900 [main] INFO - Starting ClinicApplication on VICTORY with PID 15016 (D:\3 kurs\labs\JAVA\java_spring_project\Clinic\target\classes started by VICTORY in D:\3 kurs\labs\JAVA\java_spring_project)
+12.12.2022 14:05:21.903 [main] INFO - No active profile set, falling back to default profiles: default
+12.12.2022 14:05:24.164 [main] INFO - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+12.12.2022 14:05:24.489 [main] INFO - Finished Spring Data repository scanning in 307ms. Found 9 JPA repository interfaces.
+12.12.2022 14:05:26.316 [main] INFO - Tomcat initialized with port(s): 8090 (http)
+12.12.2022 14:05:26.361 [main] INFO - Initializing ProtocolHandler ["http-nio-8090"]
+12.12.2022 14:05:26.363 [main] INFO - Starting service [Tomcat]
+12.12.2022 14:05:26.363 [main] INFO - Starting Servlet engine: [Apache Tomcat/9.0.38]
+12.12.2022 14:05:26.849 [main] INFO - Initializing Spring embedded WebApplicationContext
+12.12.2022 14:05:26.850 [main] INFO - Root WebApplicationContext: initialization completed in 4777 ms
+12.12.2022 14:05:27.208 [main] INFO - Initializing ExecutorService 'applicationTaskExecutor'
+12.12.2022 14:05:27.314 [task-1] INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+12.12.2022 14:05:27.451 [task-1] INFO - HHH000412: Hibernate ORM core version 5.4.21.Final
+12.12.2022 14:05:27.791 [main] WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12.12.2022 14:05:27.852 [task-1] INFO - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+12.12.2022 14:05:28.149 [task-1] INFO - HikariPool-1 - Starting...
+12.12.2022 14:05:28.707 [main] INFO - Adding welcome page template: index
+12.12.2022 14:05:29.866 [task-1] INFO - HikariPool-1 - Start completed.
+12.12.2022 14:05:29.985 [task-1] INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+12.12.2022 14:05:31.626 [main] INFO - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@35c8be21, org.springframework.security.web.context.SecurityContextPersistenceFilter@3af236d0, org.springframework.security.web.header.HeaderWriterFilter@3cc3f13e, org.springframework.security.web.authentication.logout.LogoutFilter@714e861f, by.slemnev.Clinic.security.jwt.JwtTokenFilter@60807fd9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@54895681, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7de147e9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6bcdd6e4, org.springframework.security.web.session.SessionManagementFilter@5514579e, org.springframework.security.web.access.ExceptionTranslationFilter@424f02b8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@22048bd6]
+12.12.2022 14:05:31.759 [main] INFO - Starting ProtocolHandler ["http-nio-8090"]
+12.12.2022 14:05:31.856 [main] INFO - Tomcat started on port(s): 8090 (http) with context path ''
+12.12.2022 14:05:31.860 [main] INFO - Triggering deferred initialization of Spring Data repositories…
+12.12.2022 14:05:32.815 [task-1] INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+12.12.2022 14:05:32.836 [task-1] INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12.12.2022 14:05:33.727 [main] INFO - Spring Data repositories initialized!
+12.12.2022 14:05:33.755 [main] INFO - Started ClinicApplication in 12.756 seconds (JVM running for 17.418)
+12.12.2022 14:06:19.190 [http-nio-8090-exec-1] INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12.12.2022 14:06:19.191 [http-nio-8090-exec-1] INFO - Initializing Servlet 'dispatcherServlet'
+12.12.2022 14:06:19.207 [http-nio-8090-exec-1] INFO - Completed initialization in 16 ms
+12.12.2022 14:06:20.164 [http-nio-8090-exec-1] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:06:20.343 [http-nio-8090-exec-1] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 14:06:31.489 [http-nio-8090-exec-6] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:06:31.682 [http-nio-8090-exec-6] INFO - IN findById - user: User{firstName='Patient', lastName='PAtient', email='victorslemnev@gmail.com', password='$2a$10$QJnNRJ.3E7nKgXe2bzw6/.A4eEeTcLzKqj2Yaa1BRhzoA9ekkRZOu', roles=[Role{id: 1, name: ROLE_USER}]} 
+12.12.2022 14:06:31.698 [http-nio-8090-exec-6] INFO - IN GetUserInDoctor - Doctor: true 
+12.12.2022 14:06:31.714 [http-nio-8090-exec-6] INFO - IN GetUserInPatient - true patient
+12.12.2022 14:06:31.792 [http-nio-8090-exec-6] INFO - IN register - Patient: by.slemnev.Clinic.model.Patient@1c48b12b successfully registered
+12.12.2022 14:06:33.707 [http-nio-8090-exec-6] INFO - RegiserPatient:/api/v1/admin/addPatient
+12.12.2022 14:06:34.804 [http-nio-8090-exec-5] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:06:34.808 [http-nio-8090-exec-8] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:06:34.837 [http-nio-8090-exec-5] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 14:06:34.848 [http-nio-8090-exec-8] INFO - GetPagesCount:/api/v1/admin/admin/pages
+12.12.2022 14:06:37.826 [http-nio-8090-exec-9] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:06:37.853 [http-nio-8090-exec-9] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 14:06:40.074 [http-nio-8090-exec-10] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:06:40.107 [http-nio-8090-exec-10] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 14:07:05.297 [http-nio-8090-exec-3] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:07:43.518 [http-nio-8090-exec-3] INFO - IN findById - no patient: found by id: not found
+12.12.2022 14:07:43.519 [http-nio-8090-exec-3] INFO - DelPatient:/api/v1/admin/delPatient
+12.12.2022 14:08:12.371 [SpringContextShutdownHook] INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+12.12.2022 14:08:12.375 [SpringContextShutdownHook] INFO - Shutting down ExecutorService 'applicationTaskExecutor'
+12.12.2022 14:08:12.376 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown initiated...
+12.12.2022 14:08:12.409 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown completed.
+12.12.2022 14:08:24.666 [background-preinit] INFO - HV000001: Hibernate Validator 5.4.1.Final
+12.12.2022 14:08:24.747 [main] INFO - Starting ClinicApplication on VICTORY with PID 23428 (D:\3 kurs\labs\JAVA\java_spring_project\Clinic\target\classes started by VICTORY in D:\3 kurs\labs\JAVA\java_spring_project)
+12.12.2022 14:08:24.750 [main] INFO - No active profile set, falling back to default profiles: default
+12.12.2022 14:08:27.284 [main] INFO - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+12.12.2022 14:08:27.598 [main] INFO - Finished Spring Data repository scanning in 295ms. Found 9 JPA repository interfaces.
+12.12.2022 14:08:29.235 [main] INFO - Tomcat initialized with port(s): 8090 (http)
+12.12.2022 14:08:29.262 [main] INFO - Initializing ProtocolHandler ["http-nio-8090"]
+12.12.2022 14:08:29.263 [main] INFO - Starting service [Tomcat]
+12.12.2022 14:08:29.264 [main] INFO - Starting Servlet engine: [Apache Tomcat/9.0.38]
+12.12.2022 14:08:29.752 [main] INFO - Initializing Spring embedded WebApplicationContext
+12.12.2022 14:08:29.753 [main] INFO - Root WebApplicationContext: initialization completed in 4804 ms
+12.12.2022 14:08:30.168 [main] INFO - Initializing ExecutorService 'applicationTaskExecutor'
+12.12.2022 14:08:30.276 [task-1] INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+12.12.2022 14:08:30.450 [task-1] INFO - HHH000412: Hibernate ORM core version 5.4.21.Final
+12.12.2022 14:08:30.812 [main] WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12.12.2022 14:08:30.900 [task-1] INFO - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+12.12.2022 14:08:31.256 [task-1] INFO - HikariPool-1 - Starting...
+12.12.2022 14:08:31.749 [main] INFO - Adding welcome page template: index
+12.12.2022 14:08:33.186 [task-1] INFO - HikariPool-1 - Start completed.
+12.12.2022 14:08:33.290 [task-1] INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+12.12.2022 14:08:36.124 [main] INFO - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52aa7742, org.springframework.security.web.context.SecurityContextPersistenceFilter@4bcdd11, org.springframework.security.web.header.HeaderWriterFilter@661e1399, org.springframework.security.web.authentication.logout.LogoutFilter@687eb455, by.slemnev.Clinic.security.jwt.JwtTokenFilter@3d0d120b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5514579e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5db0003d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6b5c134e, org.springframework.security.web.session.SessionManagementFilter@76a6f045, org.springframework.security.web.access.ExceptionTranslationFilter@74c121d4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1201769d]
+12.12.2022 14:08:36.310 [main] INFO - Starting ProtocolHandler ["http-nio-8090"]
+12.12.2022 14:08:36.454 [main] INFO - Tomcat started on port(s): 8090 (http) with context path ''
+12.12.2022 14:08:36.461 [main] INFO - Triggering deferred initialization of Spring Data repositories…
+12.12.2022 14:08:37.683 [task-1] INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+12.12.2022 14:08:37.704 [task-1] INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12.12.2022 14:08:38.721 [main] INFO - Spring Data repositories initialized!
+12.12.2022 14:08:38.744 [main] INFO - Started ClinicApplication in 14.9 seconds (JVM running for 18.224)
+12.12.2022 14:08:56.109 [http-nio-8090-exec-1] INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12.12.2022 14:08:56.109 [http-nio-8090-exec-1] INFO - Initializing Servlet 'dispatcherServlet'
+12.12.2022 14:08:56.125 [http-nio-8090-exec-1] INFO - Completed initialization in 14 ms
+12.12.2022 14:08:57.612 [http-nio-8090-exec-5] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:08:57.612 [http-nio-8090-exec-7] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:08:57.747 [http-nio-8090-exec-7] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 14:08:57.756 [http-nio-8090-exec-5] INFO - GetPagesCount:/api/v1/admin/admin/pages
+12.12.2022 14:09:02.608 [http-nio-8090-exec-9] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:09:57.173 [HikariPool-1 housekeeper] WARN - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m23s810ms942µs400ns).
+12.12.2022 14:09:57.203 [http-nio-8090-exec-9] INFO - IN findById - patient:  found by id: by.slemnev.Clinic.model.Patient@5baa01cb
+12.12.2022 14:09:57.212 [http-nio-8090-exec-9] INFO - IN findById - user: User{firstName='Patient', lastName='PAtient', email='victorslemnev@gmail.com', password='$2a$10$QJnNRJ.3E7nKgXe2bzw6/.A4eEeTcLzKqj2Yaa1BRhzoA9ekkRZOu', roles=[Role{id: 1, name: ROLE_USER}]} 
+12.12.2022 14:09:57.303 [http-nio-8090-exec-9] INFO - IN delete - patient:  successfully deleted
+12.12.2022 14:09:57.304 [http-nio-8090-exec-9] INFO - DelPatient:/api/v1/admin/delPatient
+12.12.2022 14:10:02.432 [http-nio-8090-exec-2] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:10:02.432 [http-nio-8090-exec-1] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:10:02.454 [http-nio-8090-exec-1] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 14:10:02.457 [http-nio-8090-exec-2] INFO - GetPagesCount:/api/v1/admin/admin/pages
+12.12.2022 14:10:57.167 [http-nio-8090-exec-9] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:10:57.170 [http-nio-8090-exec-8] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:10:57.193 [http-nio-8090-exec-9] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 14:10:57.220 [http-nio-8090-exec-8] INFO - GetPagesCount:/api/v1/admin/admin/pages
+12.12.2022 14:11:30.234 [http-nio-8090-exec-1] INFO - Regiser:/api/v1/auth/Register
+12.12.2022 14:11:30.249 [http-nio-8090-exec-1] INFO - IN findByUsername - user: null found by username: victorslemnev@gmail.com
+12.12.2022 14:11:30.546 [http-nio-8090-exec-1] INFO - IN register - user: User{firstName='pat', lastName='pat', email='victorslemnev@gmail.com', password='$2a$10$w/UOHE7BFRHsabE6k00Ve.pTKta1dKlXYMMJnXmUUyF/3e9JPoQPe', roles=[Role{id: 1, name: ROLE_USER}]} successfully registered
+12.12.2022 14:11:34.655 [http-nio-8090-exec-7] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:11:34.874 [http-nio-8090-exec-7] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:11:34.890 [http-nio-8090-exec-7] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:11:34.906 [http-nio-8090-exec-7] INFO - IN findbyUser - patient: not found
+12.12.2022 14:11:34.921 [http-nio-8090-exec-7] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:11:34.921 [http-nio-8090-exec-7] INFO - IN findbyUser - Doctor: not found
+12.12.2022 14:11:34.921 [http-nio-8090-exec-7] INFO - login:/api/v1/auth/login
+12.12.2022 14:11:36.464 [http-nio-8090-exec-10] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:11:36.466 [http-nio-8090-exec-3] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:11:36.489 [http-nio-8090-exec-3] INFO - GetPagesCount:/api/v1/admin/admin/pages
+12.12.2022 14:11:36.492 [http-nio-8090-exec-10] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 14:11:38.445 [http-nio-8090-exec-4] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:11:38.447 [http-nio-8090-exec-6] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:11:38.472 [http-nio-8090-exec-4] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 14:11:38.475 [http-nio-8090-exec-6] INFO - GetPagesCount:/api/v1/admin/admin/pages
+12.12.2022 14:11:49.987 [http-nio-8090-exec-3] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:11:50.024 [http-nio-8090-exec-3] INFO - IN findById - user: User{firstName='pat', lastName='pat', email='victorslemnev@gmail.com', password='$2a$10$w/UOHE7BFRHsabE6k00Ve.pTKta1dKlXYMMJnXmUUyF/3e9JPoQPe', roles=[Role{id: 1, name: ROLE_USER}]} 
+12.12.2022 14:11:50.028 [http-nio-8090-exec-3] INFO - IN GetUserInDoctor - Doctor: true 
+12.12.2022 14:11:50.032 [http-nio-8090-exec-3] INFO - IN GetUserInPatient - true patient
+12.12.2022 14:11:50.063 [http-nio-8090-exec-3] INFO - IN register - Patient: by.slemnev.Clinic.model.Patient@40ec71c successfully registered
+12.12.2022 14:11:51.894 [http-nio-8090-exec-3] INFO - RegiserPatient:/api/v1/admin/addPatient
+12.12.2022 14:11:53.292 [http-nio-8090-exec-5] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:11:53.296 [http-nio-8090-exec-2] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 14:11:53.314 [http-nio-8090-exec-5] INFO - GetPagesCount:/api/v1/admin/admin/pages
+12.12.2022 14:11:53.320 [http-nio-8090-exec-2] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 14:14:47.005 [SpringContextShutdownHook] INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+12.12.2022 14:14:47.009 [SpringContextShutdownHook] INFO - Shutting down ExecutorService 'applicationTaskExecutor'
+12.12.2022 14:14:47.010 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown initiated...
+12.12.2022 14:14:47.047 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown completed.
+12.12.2022 16:27:48.407 [background-preinit] INFO - HV000001: Hibernate Validator 5.4.1.Final
+12.12.2022 16:27:48.467 [main] INFO - Starting ClinicApplication on VICTORY with PID 5012 (D:\3 kurs\labs\JAVA\java_spring_project\Clinic\target\classes started by VICTORY in D:\3 kurs\labs\JAVA\java_spring_project)
+12.12.2022 16:27:48.471 [main] INFO - No active profile set, falling back to default profiles: default
+12.12.2022 16:27:49.712 [main] INFO - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+12.12.2022 16:27:49.856 [main] INFO - Finished Spring Data repository scanning in 135ms. Found 9 JPA repository interfaces.
+12.12.2022 16:27:50.695 [main] INFO - Tomcat initialized with port(s): 8090 (http)
+12.12.2022 16:27:50.708 [main] INFO - Initializing ProtocolHandler ["http-nio-8090"]
+12.12.2022 16:27:50.709 [main] INFO - Starting service [Tomcat]
+12.12.2022 16:27:50.710 [main] INFO - Starting Servlet engine: [Apache Tomcat/9.0.38]
+12.12.2022 16:27:50.921 [main] INFO - Initializing Spring embedded WebApplicationContext
+12.12.2022 16:27:50.922 [main] INFO - Root WebApplicationContext: initialization completed in 2343 ms
+12.12.2022 16:27:51.137 [main] INFO - Initializing ExecutorService 'applicationTaskExecutor'
+12.12.2022 16:27:51.198 [task-1] INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+12.12.2022 16:27:51.267 [task-1] INFO - HHH000412: Hibernate ORM core version 5.4.21.Final
+12.12.2022 16:27:51.436 [main] WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12.12.2022 16:27:51.490 [task-1] INFO - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+12.12.2022 16:27:51.664 [task-1] INFO - HikariPool-1 - Starting...
+12.12.2022 16:27:51.796 [main] INFO - Adding welcome page template: index
+12.12.2022 16:27:52.930 [task-1] INFO - HikariPool-1 - Start completed.
+12.12.2022 16:27:53.030 [task-1] INFO - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+12.12.2022 16:27:53.638 [main] INFO - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7f12094d, org.springframework.security.web.context.SecurityContextPersistenceFilter@3b170235, org.springframework.security.web.header.HeaderWriterFilter@716f94c1, org.springframework.security.web.authentication.logout.LogoutFilter@3ace6346, by.slemnev.Clinic.security.jwt.JwtTokenFilter@589fb74d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@45e140ae, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a2773a8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@200d1a3d, org.springframework.security.web.session.SessionManagementFilter@6c8efde4, org.springframework.security.web.access.ExceptionTranslationFilter@3c33fcf8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1471b98d]
+12.12.2022 16:27:53.718 [main] INFO - Starting ProtocolHandler ["http-nio-8090"]
+12.12.2022 16:27:53.779 [main] INFO - Tomcat started on port(s): 8090 (http) with context path ''
+12.12.2022 16:27:53.783 [main] INFO - Triggering deferred initialization of Spring Data repositories…
+12.12.2022 16:27:54.424 [task-1] INFO - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+12.12.2022 16:27:54.436 [task-1] INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12.12.2022 16:27:54.906 [main] INFO - Spring Data repositories initialized!
+12.12.2022 16:27:54.918 [main] INFO - Started ClinicApplication in 6.98 seconds (JVM running for 8.925)
+12.12.2022 16:28:29.511 [http-nio-8090-exec-1] INFO - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12.12.2022 16:28:29.511 [http-nio-8090-exec-1] INFO - Initializing Servlet 'dispatcherServlet'
+12.12.2022 16:28:29.519 [http-nio-8090-exec-1] INFO - Completed initialization in 8 ms
+12.12.2022 16:28:33.104 [http-nio-8090-exec-6] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 16:28:33.192 [http-nio-8090-exec-6] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 16:28:33.224 [http-nio-8090-exec-6] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 16:28:33.232 [http-nio-8090-exec-6] INFO - IN findbyUser - patient: not found
+12.12.2022 16:28:33.240 [http-nio-8090-exec-6] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 16:28:33.240 [http-nio-8090-exec-6] INFO - IN findbyUser - Doctor: not found
+12.12.2022 16:28:33.248 [http-nio-8090-exec-6] INFO - login:/api/v1/auth/login
+12.12.2022 16:28:34.981 [http-nio-8090-exec-1] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 16:28:34.981 [http-nio-8090-exec-2] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 16:28:35.022 [http-nio-8090-exec-1] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 16:28:35.030 [http-nio-8090-exec-2] INFO - GetPagesCount:/api/v1/admin/admin/pages
+12.12.2022 16:28:39.276 [http-nio-8090-exec-5] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 16:28:39.340 [http-nio-8090-exec-5] INFO - IN findById - patient:  found by id: by.slemnev.Clinic.model.Patient@29c6e3c
+12.12.2022 16:28:39.340 [http-nio-8090-exec-5] INFO - IN findById - user: User{firstName='pat', lastName='pat', email='victorslemnev@gmail.com', password='$2a$10$w/UOHE7BFRHsabE6k00Ve.pTKta1dKlXYMMJnXmUUyF/3e9JPoQPe', roles=[Role{id: 1, name: ROLE_USER}]} 
+12.12.2022 16:28:39.380 [http-nio-8090-exec-5] INFO - IN delete - patient:  successfully deleted
+12.12.2022 16:28:39.388 [http-nio-8090-exec-5] INFO - DelPatient:/api/v1/admin/delPatient
+12.12.2022 16:28:41.231 [http-nio-8090-exec-9] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 16:28:41.231 [http-nio-8090-exec-8] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 16:28:41.245 [http-nio-8090-exec-8] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 16:28:41.253 [http-nio-8090-exec-9] INFO - GetPagesCount:/api/v1/admin/admin/pages
+12.12.2022 16:28:42.227 [http-nio-8090-exec-10] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 16:28:42.235 [http-nio-8090-exec-10] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 16:32:02.581 [http-nio-8090-exec-3] INFO - Regiser:/api/v1/auth/Register
+12.12.2022 16:32:02.581 [http-nio-8090-exec-3] INFO - IN findByUsername - user: null found by username: victorslemnev@gmail.com
+12.12.2022 16:32:02.693 [http-nio-8090-exec-3] INFO - IN register - user: User{firstName='pat', lastName='pat', email='victorslemnev@gmail.com', password='$2a$10$2wAWT1yGwOQWTHjX64Ahz.LY9X196MFr5tPWHnTPAid.JF2YPvneG', roles=[Role{id: 1, name: ROLE_USER}]} successfully registered
+12.12.2022 16:32:11.804 [http-nio-8090-exec-8] INFO - IN findByUsername - user: User{firstName='pat', lastName='pat', email='victorslemnev@gmail.com', password='$2a$10$2wAWT1yGwOQWTHjX64Ahz.LY9X196MFr5tPWHnTPAid.JF2YPvneG', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victorslemnev@gmail.com
+12.12.2022 16:32:16.415 [http-nio-8090-exec-3] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 16:32:16.495 [http-nio-8090-exec-3] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 16:32:16.503 [http-nio-8090-exec-3] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 16:32:16.503 [http-nio-8090-exec-3] INFO - IN findbyUser - patient: not found
+12.12.2022 16:32:16.503 [http-nio-8090-exec-3] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 16:32:16.511 [http-nio-8090-exec-3] INFO - IN findbyUser - Doctor: not found
+12.12.2022 16:32:16.511 [http-nio-8090-exec-3] INFO - login:/api/v1/auth/login
+12.12.2022 16:32:17.829 [http-nio-8090-exec-8] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 16:32:17.829 [http-nio-8090-exec-9] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 16:32:17.845 [http-nio-8090-exec-9] INFO - GetPagesCount:/api/v1/admin/admin/pages
+12.12.2022 16:32:17.845 [http-nio-8090-exec-8] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 16:32:37.589 [http-nio-8090-exec-1] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 16:32:48.226 [http-nio-8090-exec-3] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 16:32:48.234 [http-nio-8090-exec-3] INFO - IN findById - user: User{firstName='pat', lastName='pat', email='victorslemnev@gmail.com', password='$2a$10$2wAWT1yGwOQWTHjX64Ahz.LY9X196MFr5tPWHnTPAid.JF2YPvneG', roles=[Role{id: 1, name: ROLE_USER}]} 
+12.12.2022 16:32:48.242 [http-nio-8090-exec-3] INFO - IN GetUserInDoctor - Doctor: true 
+12.12.2022 16:32:48.242 [http-nio-8090-exec-3] INFO - IN GetUserInPatient - true patient
+12.12.2022 16:32:48.258 [http-nio-8090-exec-3] INFO - IN register - Patient: by.slemnev.Clinic.model.Patient@10b5ec6a successfully registered
+12.12.2022 16:33:03.195 [http-nio-8090-exec-4] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 16:33:03.203 [http-nio-8090-exec-4] INFO - IN findById - user: User{firstName='pat', lastName='pat', email='victorslemnev@gmail.com', password='$2a$10$2wAWT1yGwOQWTHjX64Ahz.LY9X196MFr5tPWHnTPAid.JF2YPvneG', roles=[Role{id: 1, name: ROLE_USER}]} 
+12.12.2022 16:33:03.203 [http-nio-8090-exec-4] INFO - IN GetUserInDoctor - Doctor: true 
+12.12.2022 16:33:03.211 [http-nio-8090-exec-4] INFO - IN GetUserInPatient - false patient
+12.12.2022 16:33:03.211 [http-nio-8090-exec-4] INFO - RegiserPatient:/api/v1/admin/addPatient
+12.12.2022 16:33:08.751 [http-nio-8090-exec-7] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 16:33:08.751 [http-nio-8090-exec-9] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 16:33:08.767 [http-nio-8090-exec-7] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 16:33:08.767 [http-nio-8090-exec-9] INFO - GetPagesCount:/api/v1/admin/admin/pages
+12.12.2022 16:33:09.370 [http-nio-8090-exec-3] INFO - RegiserPatient:/api/v1/admin/addPatient
+12.12.2022 16:33:09.658 [http-nio-8090-exec-8] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 16:33:09.666 [http-nio-8090-exec-8] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 16:33:19.793 [http-nio-8090-exec-5] INFO - IN findByUsername - user: User{firstName='pat', lastName='pat', email='victorslemnev@gmail.com', password='$2a$10$2wAWT1yGwOQWTHjX64Ahz.LY9X196MFr5tPWHnTPAid.JF2YPvneG', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victorslemnev@gmail.com
+12.12.2022 16:33:19.881 [http-nio-8090-exec-5] INFO - IN findByUsername - user: User{firstName='pat', lastName='pat', email='victorslemnev@gmail.com', password='$2a$10$2wAWT1yGwOQWTHjX64Ahz.LY9X196MFr5tPWHnTPAid.JF2YPvneG', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victorslemnev@gmail.com
+12.12.2022 16:33:19.881 [http-nio-8090-exec-5] INFO - IN findByUsername - user: User{firstName='pat', lastName='pat', email='victorslemnev@gmail.com', password='$2a$10$2wAWT1yGwOQWTHjX64Ahz.LY9X196MFr5tPWHnTPAid.JF2YPvneG', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victorslemnev@gmail.com
+12.12.2022 16:33:19.881 [http-nio-8090-exec-5] INFO - IN findbyUser - patient: 5 
+12.12.2022 16:33:19.881 [http-nio-8090-exec-5] INFO - IN findByUsername - user: User{firstName='pat', lastName='pat', email='victorslemnev@gmail.com', password='$2a$10$2wAWT1yGwOQWTHjX64Ahz.LY9X196MFr5tPWHnTPAid.JF2YPvneG', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victorslemnev@gmail.com
+12.12.2022 16:33:19.889 [http-nio-8090-exec-5] INFO - IN findbyUser - patient: 5 
+12.12.2022 16:33:19.889 [http-nio-8090-exec-5] INFO - IN findByUsername - user: User{firstName='pat', lastName='pat', email='victorslemnev@gmail.com', password='$2a$10$2wAWT1yGwOQWTHjX64Ahz.LY9X196MFr5tPWHnTPAid.JF2YPvneG', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victorslemnev@gmail.com
+12.12.2022 16:33:19.889 [http-nio-8090-exec-5] INFO - IN findbyUser - patient: 5 
+12.12.2022 16:33:19.889 [http-nio-8090-exec-5] INFO - login:/api/v1/auth/login
+12.12.2022 16:33:28.121 [http-nio-8090-exec-8] INFO - IN findByUsername - user: User{firstName='pat', lastName='pat', email='victorslemnev@gmail.com', password='$2a$10$2wAWT1yGwOQWTHjX64Ahz.LY9X196MFr5tPWHnTPAid.JF2YPvneG', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victorslemnev@gmail.com
+12.12.2022 16:33:28.137 [http-nio-8090-exec-8] INFO - IN getAll - [] Doctor found
+12.12.2022 16:33:28.137 [http-nio-8090-exec-8] INFO - PostDoctor:/api/v1/users/allDoctor
+12.12.2022 16:33:28.153 [http-nio-8090-exec-10] INFO - IN findByUsername - user: User{firstName='pat', lastName='pat', email='victorslemnev@gmail.com', password='$2a$10$2wAWT1yGwOQWTHjX64Ahz.LY9X196MFr5tPWHnTPAid.JF2YPvneG', roles=[Role{id: 1, name: ROLE_USER}]} found by username: victorslemnev@gmail.com
+12.12.2022 16:33:28.161 [http-nio-8090-exec-10] INFO - GetAllReceptionForPatient:/api/v1/users/patient/{id}
+12.12.2022 16:33:28.161 [http-nio-8090-exec-10] INFO - IN findById - patient:  found by id: by.slemnev.Clinic.model.Patient@3b3c6633
+12.12.2022 16:33:28.169 [http-nio-8090-exec-10] INFO - IN getByIdPatient - Reception  null
+12.12.2022 16:33:56.936 [http-nio-8090-exec-7] INFO - Regiser:/api/v1/auth/Register
+12.12.2022 16:33:56.944 [http-nio-8090-exec-7] INFO - IN findByUsername - user: null found by username: victor.slemnev@mail.ru
+12.12.2022 16:33:57.039 [http-nio-8090-exec-7] INFO - IN register - user: User{firstName='132', lastName='123', email='victor.slemnev@mail.ru', password='$2a$10$qGJlpafmSQQsFfANETf23uBfbfaoLq/YIhOVDoirCt9YTKDnZUgF2', roles=[Role{id: 1, name: ROLE_USER}]} successfully registered
+12.12.2022 16:34:04.150 [http-nio-8090-exec-1] INFO - IN findByUsername - user: null found by username: makaronikdurachhok@gmail.com
+12.12.2022 16:34:14.530 [http-nio-8090-exec-5] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 16:34:16.209 [http-nio-8090-exec-6] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 16:34:27.371 [http-nio-8090-exec-9] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 16:34:27.459 [http-nio-8090-exec-9] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 16:34:27.459 [http-nio-8090-exec-9] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 16:34:27.459 [http-nio-8090-exec-9] INFO - IN findbyUser - patient: not found
+12.12.2022 16:34:27.467 [http-nio-8090-exec-9] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 16:34:27.467 [http-nio-8090-exec-9] INFO - IN findbyUser - Doctor: not found
+12.12.2022 16:34:27.467 [http-nio-8090-exec-9] INFO - login:/api/v1/auth/login
+12.12.2022 16:34:29.817 [http-nio-8090-exec-2] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 16:34:29.817 [http-nio-8090-exec-1] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 16:34:29.833 [http-nio-8090-exec-1] INFO - GetPagesCount:/api/v1/admin/admin/pages
+12.12.2022 16:34:29.833 [http-nio-8090-exec-2] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 16:34:31.952 [http-nio-8090-exec-3] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 16:34:31.952 [http-nio-8090-exec-7] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 16:34:31.960 [http-nio-8090-exec-3] INFO - GetPagesCount:/api/v1/admin/admin/pages
+12.12.2022 16:34:31.968 [http-nio-8090-exec-7] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 16:34:55.920 [http-nio-8090-exec-1] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 16:34:55.928 [http-nio-8090-exec-1] INFO - IN findById - user: User{firstName='132', lastName='123', email='victor.slemnev@mail.ru', password='$2a$10$qGJlpafmSQQsFfANETf23uBfbfaoLq/YIhOVDoirCt9YTKDnZUgF2', roles=[Role{id: 1, name: ROLE_USER}]} 
+12.12.2022 16:34:55.936 [http-nio-8090-exec-1] INFO - IN GetUserInDoctor - Doctor: true 
+12.12.2022 16:34:55.936 [http-nio-8090-exec-1] INFO - IN GetUserInPatient - true patient
+12.12.2022 16:34:55.952 [http-nio-8090-exec-1] INFO - IN register - Doctor: Doctor{id=2, user=User{firstName='132', lastName='123', email='victor.slemnev@mail.ru', password='$2a$10$qGJlpafmSQQsFfANETf23uBfbfaoLq/YIhOVDoirCt9YTKDnZUgF2', roles=[Role{id: 3, name: ROLE_DOCTOR}]}, specialty='Педиатр', Name_Hospital='паы', Passport='375333363123'} successfully registered
+12.12.2022 16:34:59.009 [http-nio-8090-exec-1] INFO - RegiserDoctor:/api/v1/admin/addDoctor
+12.12.2022 16:35:00.939 [http-nio-8090-exec-5] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 16:35:00.947 [http-nio-8090-exec-6] INFO - IN findByUsername - user: User{firstName='Victor', lastName='Slemnev', email='makaronikdurachok@gmail.com', password='$2a$10$rCLw3JsH9r7GjS9KYAh6lek23ug1RxFV3syTt6SBsW4WnF/FCGFa2', roles=[Role{id: 2, name: ROLE_ADMIN}]} found by username: makaronikdurachok@gmail.com
+12.12.2022 16:35:00.955 [http-nio-8090-exec-6] INFO - GetPagesCount:/api/v1/admin/admin/pages
+12.12.2022 16:35:00.963 [http-nio-8090-exec-5] INFO - Post:/api/v1/admin/admin/{page}
+12.12.2022 16:35:17.738 [http-nio-8090-exec-10] INFO - IN findByUsername - user: User{firstName='132', lastName='123', email='victor.slemnev@mail.ru', password='$2a$10$qGJlpafmSQQsFfANETf23uBfbfaoLq/YIhOVDoirCt9YTKDnZUgF2', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+12.12.2022 16:35:17.826 [http-nio-8090-exec-10] INFO - IN findByUsername - user: User{firstName='132', lastName='123', email='victor.slemnev@mail.ru', password='$2a$10$qGJlpafmSQQsFfANETf23uBfbfaoLq/YIhOVDoirCt9YTKDnZUgF2', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+12.12.2022 16:35:17.826 [http-nio-8090-exec-10] INFO - IN findByUsername - user: User{firstName='132', lastName='123', email='victor.slemnev@mail.ru', password='$2a$10$qGJlpafmSQQsFfANETf23uBfbfaoLq/YIhOVDoirCt9YTKDnZUgF2', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+12.12.2022 16:35:17.826 [http-nio-8090-exec-10] INFO - IN findbyUser - patient: not found
+12.12.2022 16:35:17.834 [http-nio-8090-exec-10] INFO - IN findByUsername - user: User{firstName='132', lastName='123', email='victor.slemnev@mail.ru', password='$2a$10$qGJlpafmSQQsFfANETf23uBfbfaoLq/YIhOVDoirCt9YTKDnZUgF2', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+12.12.2022 16:35:17.834 [http-nio-8090-exec-10] INFO - IN findbyUser - Doctor: 2 
+12.12.2022 16:35:17.834 [http-nio-8090-exec-10] INFO - IN findByUsername - user: User{firstName='132', lastName='123', email='victor.slemnev@mail.ru', password='$2a$10$qGJlpafmSQQsFfANETf23uBfbfaoLq/YIhOVDoirCt9YTKDnZUgF2', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+12.12.2022 16:35:17.834 [http-nio-8090-exec-10] INFO - IN findbyUser - patient: not found
+12.12.2022 16:35:17.842 [http-nio-8090-exec-10] INFO - IN findByUsername - user: User{firstName='132', lastName='123', email='victor.slemnev@mail.ru', password='$2a$10$qGJlpafmSQQsFfANETf23uBfbfaoLq/YIhOVDoirCt9YTKDnZUgF2', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+12.12.2022 16:35:17.842 [http-nio-8090-exec-10] INFO - IN findbyUser - Doctor: 2 
+12.12.2022 16:35:17.842 [http-nio-8090-exec-10] INFO - login:/api/v1/auth/login
+12.12.2022 16:35:19.033 [http-nio-8090-exec-5] INFO - IN findByUsername - user: User{firstName='132', lastName='123', email='victor.slemnev@mail.ru', password='$2a$10$qGJlpafmSQQsFfANETf23uBfbfaoLq/YIhOVDoirCt9YTKDnZUgF2', roles=[Role{id: 3, name: ROLE_DOCTOR}]} found by username: victor.slemnev@mail.ru
+12.12.2022 16:35:19.041 [http-nio-8090-exec-5] INFO - GetAllReceptionForDoctor:/api/v1/users/doctor/{id}
+12.12.2022 16:35:19.041 [http-nio-8090-exec-5] INFO - IN findById - Doctor found by id: Doctor{id=2, user=User{firstName='132', lastName='123', email='victor.slemnev@mail.ru', password='$2a$10$qGJlpafmSQQsFfANETf23uBfbfaoLq/YIhOVDoirCt9YTKDnZUgF2', roles=[Role{id: 3, name: ROLE_DOCTOR}]}, specialty='Педиатр', Name_Hospital='паы', Passport='375333363123'}
+12.12.2022 16:35:19.049 [http-nio-8090-exec-5] INFO - IN getByIdDoctor - Reception  null
+12.12.2022 16:36:06.966 [SpringContextShutdownHook] INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+12.12.2022 16:36:06.966 [SpringContextShutdownHook] INFO - Shutting down ExecutorService 'applicationTaskExecutor'
+12.12.2022 16:36:06.966 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown initiated...
+12.12.2022 16:36:06.982 [SpringContextShutdownHook] INFO - HikariPool-1 - Shutdown completed.

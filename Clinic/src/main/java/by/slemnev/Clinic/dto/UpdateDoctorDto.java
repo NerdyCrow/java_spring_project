@@ -15,7 +15,7 @@ public class UpdateDoctorDto {
     @NotNull(message = "specialty cannot be null")
     private String specialty;
 
-    @Pattern(regexp = "^\\d{11}$",
+    @Pattern(regexp = "^\\d{12}$",
             message = "phone number is not valid")
     @NotNull(message = "phone number cannot be null")
     private  String Passport;
